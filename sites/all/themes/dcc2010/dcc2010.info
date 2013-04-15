@@ -1,0 +1,21 @@
+name = DrupalCampColorado
+description = Custom theme for the Drupal Camp Colorado website.
+version = VERSION
+core = 6.x
+engine = phptemplate
+regions[right]          = sidebar
+regions[content]        = content
+regions[footer]         = footer
+regions[closure_region] = closure
+
+base theme = featherweight
+
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/style.less
+stylesheets[all][] = css/font/stylesheet.css
+stylesheets[all][] = css/text.css
+stylesheets[print][] = css/print.css
+
+scripts[] = js/main.js
+scripts[] = js/jquery.scrollTo-min.js
+scripts[] = js/jquery.easing.js

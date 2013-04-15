@@ -1,0 +1,15 @@
+name = Featherweight
+description = Simplifies HTML provided by views, panels, and more.  Good starting place for themeing.
+core = 6.x
+
+regions[left]           = left sidebar
+regions[right]          = right sidebar
+regions[navbar]         = navigation bar
+regions[content_header] = content header
+regions[content]        = content
+regions[content_footer] = content footer
+regions[header]         = header
+regions[footer]         = footer
+regions[closure_region] = closure
+
+engine = phptemplate

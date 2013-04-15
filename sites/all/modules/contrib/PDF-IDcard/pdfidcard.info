@@ -1,0 +1,18 @@
+; $Id: pdfidcard.info,v 1.2 2009/10/18 18:01:02 ga Exp $
+name = "PDF-IDCard"
+description = "Creates Identification cards for your users. "
+dependencies[] = upload
+package = "PDF"
+
+core = 6.x
+php = 5.1
+project = "PDF-IDcard"
+datestamp = "1190442606"
+
+
+; Information added by drupal.org packaging script on 2010-02-11
+version = "6.x-1.0-beta1"
+core = "6.x"
+project = "PDF-IDcard"
+datestamp = "1265868611"
+
