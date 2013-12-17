@@ -1,9 +1,0 @@
-name = DrupalCamp Colorado
-description = Custom module for DrupalCamp Colorado
-core = 7.x
-
-dependencies[] = cod_news
-dependencies[] = dcco_feature
-dependencies[] = dcco_sitewide_context
-dependencies[] = dcco_front
-dependencies[] = omega_tools

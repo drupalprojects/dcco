@@ -1,6 +1,0 @@
-name = Mobile Menu Toggle
-description = Uses jQuery slideToggle() to hide/show menu zone.
-configure = admin/config/user-interface/mobile-menu-toggle
-
-core = 7.x
-

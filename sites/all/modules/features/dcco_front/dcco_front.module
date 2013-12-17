@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the DCCO Front feature.
- */
-
-include_once 'dcco_front.features.inc';

@@ -1,9 +1,0 @@
-name = dcco_sitewide_context
-core = 7.x
-package = Features
-dependencies[] = context
-dependencies[] = ctools
-dependencies[] = mobile_menu_toggle
-features[context][] = sitewide
-features[ctools][] = context:context:3
-features[features_api][] = api:1
