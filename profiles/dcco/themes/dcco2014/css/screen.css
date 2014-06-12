@@ -673,7 +673,7 @@ tr.even {
 }
 
 body {
-  background: url('../img/splash/background-splash.jpg?1402520917') 50% 50% fixed;
+  background: url('../img/splash/background-splash.jpg?1402544962') 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -682,7 +682,6 @@ body {
 
 #footer {
   background-color: rgba(0, 42, 44, 0.75);
-  margin-top: -6px;
   padding: 0.66667em 0 0.33333em;
   text-transform: uppercase;
   width: 100%;
