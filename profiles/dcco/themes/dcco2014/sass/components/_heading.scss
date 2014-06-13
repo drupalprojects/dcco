@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   @include adjust-font-size-to($fs-xxxxxl);
   border-bottom: 3px solid $clr-border;
   // margin-bottom: rhythm(10, $fs-xxxxxl);
-  margin: 5% 0;
+  padding: 5% 0;
   // margin-top: rhythm(10, $fs-xxxxxl);
   padding-bottom: rhythm(4, $fs-xxxxxl);
   font-family: $ff-heading;

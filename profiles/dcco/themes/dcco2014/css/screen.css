@@ -673,7 +673,7 @@ tr.even {
 }
 
 body {
-  background: url('../img/splash/background-splash.jpg?1402530267') 50% 50% fixed;
+  background: url('../img/splash/background-splash.jpg?1402454870') 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -963,6 +963,7 @@ body {
 #main {
   background-color: white;
   overflow: hidden;
+  padding-bottom: 30px;
 }
 
 .front #main-content {
@@ -1244,7 +1245,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3.33333em;
   line-height: 1.1em;
   border-bottom: 3px solid #8bdec0;
-  margin: 5% 0;
+  padding: 5% 0;
   padding-bottom: 0.4em;
   font-family: "refrigerator-deluxe", Impact, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
