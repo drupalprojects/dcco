@@ -31,7 +31,7 @@
   <div id="masthead">
     <div class="l--constrained">
       <img src="/profiles/dcco/themes/dcco2014/img/logo-dcco-white.png" alt="DrupalCamp Colorado 2014" />
-      <a href="#" class="button--secondary">Register</a>
+      <a href="/register" class="button--secondary">Register</a>
     </div>
   </div>
 <?php endif; ?>
