@@ -103,6 +103,7 @@
 
   @include breakpoint($tablet, $no-query: '.lt-ie9') {
     background: none;
+    padding-bottom: 30px;
     ul.nav {
       padding: 30px 0 0;
       display: table;

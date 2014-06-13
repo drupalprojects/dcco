@@ -1112,6 +1112,7 @@ body {
 @media (min-width: 768px) {
   #navigation {
     background: none;
+    padding-bottom: 30px;
   }
   #navigation ul.nav {
     padding: 30px 0 0;
