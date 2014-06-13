@@ -962,6 +962,7 @@ body {
 
 #main {
   background-color: white;
+  overflow: hidden;
 }
 
 #above-content {
