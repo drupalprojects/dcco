@@ -9,3 +9,19 @@
   font-weight: bold;
   color: blend-overlay(rgba($black, .25), $clr-text);
 }
+
+.field-title-teaser {
+  @include adjust-font-size-to($fs-xxxxl, 6);
+  font-family: $ff-heading;
+  font-weight: bold;
+  margin-bottom: rhythm(2, $fs-xxxxl);
+}
+
+.submitted,
+.field-date {
+  @include adjust-font-size-to($fs-xs);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $teal-darker;
+  margin-bottom: rhythm(2, $fs-xs);
+}

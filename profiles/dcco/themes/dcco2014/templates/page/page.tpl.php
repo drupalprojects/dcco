@@ -18,38 +18,42 @@
         </div>
       <?php endif; // end messages ?>
 
-      <div id="main-content" class="clearfix l--constrained">
+      <div id="main-content">
 
         <?php if (render($tabs)): ?>
           <div id="tabs">
-            <?php print render($tabs); ?>
+            <div class="l--constrained">
+              <?php print render($tabs); ?>
+            </div>
           </div>
         <?php endif; // end tabs ?>
+        
+        <div class="l--constrained">
+          <div id="content">
 
-        <div id="content">
-
-          <?php if ($page['highlighted']): ?>
-            <div id="highlighted">
-              <div class="l--constrained">
-                <?php print render($page['highlighted']); ?>
+            <?php if ($page['highlighted']): ?>
+              <div id="highlighted">
+                <div class="l--constrained">
+                  <?php print render($page['highlighted']); ?>
+                </div>
               </div>
-            </div>
-          <?php endif; // end highlighted ?>
+            <?php endif; // end highlighted ?>
 
-          <?php if (!$is_front && strlen($title) > 0): ?>
-            <h1 <?php if (!empty($title_attributes)) print $title_attributes ?>>
-              <?php print $title; ?>
-            </h1>
-          <?php endif; ?>
+            <?php if (!$is_front && strlen($title) > 0): ?>
+              <h1 <?php if (!empty($title_attributes)) print $title_attributes ?>>
+                <?php print $title; ?>
+              </h1>
+            <?php endif; ?>
 
-          <?php if ($page['help']): ?>
-            <div id="help">
-              <?php print render($page['help']); ?>
-            </div>
-          <?php endif; // end help ?>
+            <?php if ($page['help']): ?>
+              <div id="help">
+                <?php print render($page['help']); ?>
+              </div>
+            <?php endif; // end help ?>
 
-          <?php print render($page['content']); ?>
+            <?php print render($page['content']); ?>
 
+          </div>
         </div>
 
         <?php if ($page['sidebar_first']): ?>

@@ -57,7 +57,7 @@ $clr-text:         $gray-green;     // Default body copy color
 $clr-link:         $teal;     // Default link color
 $clr-link_hover:   $teal-dark;     // Default link color
 $clr-accent:       $teal;     // Default accent color
-$clr-border:       $gray-lighter;    // Default border and required color
+$clr-border:       mix($teal-lightest, $teal-lighter);    // Default border and required color
 $clr-status:       $green;      // Default status color
 $clr-warning:      $orange;          // Default warning color
 $clr-error:        $red;             // Default error and required color
