@@ -964,6 +964,44 @@ body {
   background-color: white;
   overflow: hidden;
 }
+#main #content #block-views-updates-block .block-title {
+  font-family: "refrigerator-deluxe", Impact, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 60px;
+  margin-bottom: 7px;
+  color: #01986c;
+}
+#main #content #block-views-updates-block .view-updates {
+  border-top: solid 1px #c7c7c7;
+  padding-top: 32px;
+}
+#main #content #block-views-updates-block .view-updates table td {
+  border: none;
+}
+#main #content #block-views-updates-block .view-updates .view-content .views-field-created {
+  font-family: "anago", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #00585c;
+}
+#main #content #block-views-updates-block .view-updates .view-content .views-field-title {
+  margin: 10px 0;
+  font-family: "refrigerator-deluxe", Impact, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+}
+#main #content #block-views-updates-block .view-updates .view-content .col-1 {
+  padding: 0 30px 0 0;
+}
+#main #content #block-views-updates-block .view-updates .view-content .col-2 {
+  padding: 0 30px;
+}
+#main #content #block-views-updates-block .view-updates .view-content .col-3 {
+  padding: 0 0 0 30px;
+}
 
 #above-content {
   background-color: rgba(0, 42, 44, 0.85);
