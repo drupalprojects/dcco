@@ -997,6 +997,26 @@ body {
   padding: 0;
 }
 
+.view-sponsors .view-content ul {
+  padding: 0;
+}
+.view-sponsors .view-content ul li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 43%;
+  padding: 2%;
+}
+.view-sponsors .view-content ul li .views-field-field-sponsor-logo {
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .view-sponsors .view-content ul li {
+    width: 23%;
+    padding: 2%;
+  }
+}
+
 #messages {
   padding: 1.33333em 15px 0.33333em;
 }
