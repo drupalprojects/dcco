@@ -95,3 +95,14 @@ select.error {
   // Removes the ackward box outline on :focus
   top: 0;
 }
+
+
+// Spacing on buttons
+input[type="submit"] {
+  margin-right: 1em;
+}
+
+.button, #edit-submit + .button, #edit-cancel {
+  margin-left: 1em;
+  margin-right: 0;
+}

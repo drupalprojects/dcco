@@ -673,7 +673,7 @@ tr.even {
 }
 
 body {
-  background: url('../img/splash/background-splash.jpg?1402591671') 50% 50% fixed;
+  background: url('../img/splash/background-splash.jpg?1402618387') 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1227,6 +1227,15 @@ select.error {
 
 #active-vertical-tab {
   top: 0;
+}
+
+input[type="submit"] {
+  margin-right: 1em;
+}
+
+.button, #edit-submit + .button, #edit-cancel {
+  margin-left: 1em;
+  margin-right: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
