@@ -2,7 +2,7 @@
 // @file
 // Border box mixin.
 // ---------------------------------------------------------------------------
-$box-sizing-polyfill-path: "/sites/all/themes/prototype/polyfills/boxsizing.htc";
+$box-sizing-polyfill-path: "/profiles/dcco/themes/dcco2014/polyfills/boxsizing.htc";
 
 @mixin border-box {
   @include box-sizing(border-box);

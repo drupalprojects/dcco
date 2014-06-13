@@ -286,16 +286,16 @@ figure {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   *box-sizing: content-box;
-  *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
+  *behavior: url("/profiles/dcco/themes/dcco2014/polyfills/boxsizing.htc");
 }
 
 h1 {
-  font-size: 3.33333em;
-  line-height: 1.1em;
+  font-size: 4.66667em;
+  line-height: 1.07143em;
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.07143em;
   font-family: "refrigerator-deluxe", Impact, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 

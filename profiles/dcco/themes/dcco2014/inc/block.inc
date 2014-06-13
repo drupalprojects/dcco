@@ -22,4 +22,11 @@ function dcco2014_preprocess_block(&$vars) {
   // Uncomment the lines below to see variables you can use to target a block.
   // This requires http://drupal.org/project/devel to be installed.
   // dpm($block_id, 'Block ID:');
+  // print($block_id);
+
+  // switch($block_id) {
+  //   case "views-updates-blocks" :
+  //     $classes[] = "updates-list-home";
+  //     break;
+  // }
 }

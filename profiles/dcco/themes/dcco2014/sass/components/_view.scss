@@ -26,3 +26,37 @@
     }
   }
 }
+
+//  Updates
+
+.view-updates {
+  .views-row {
+    border-top: 3px solid $clr-border;
+    margin-bottom: rhythm(10);
+    padding-top: rhythm(10);
+  }
+}
+
+//  Updates - Home
+
+#block-views-updates-block {
+  padding-bottom: rhythm(10);
+  .views-row {
+    border: none;
+    // margin-bottom: rhythm(10);
+    padding-top: 0;
+  }
+  @include breakpoint($tablet, $no-query: '.lt-ie9') {
+    .view-content {
+      display: table;
+      margin-bottom: rhythm(5);
+      margin-left: -30px;
+      margin-right: -30px;
+    }
+    .views-row {
+      display: table-cell;
+      padding: 0 30px;
+      width: 33%;
+    }
+  }
+}

@@ -16,31 +16,6 @@
   }
 }
 
-#block-views-updates-block {
-  padding-bottom: rhythm(10);
-  .views-field-created {
-    @extend .field-date;
-  }
-  .views-field-title{
-    @extend .field-title-teaser;
-  }
-  .views-row {
-    margin-bottom: rhythm(10);
-  }
-
-  @include breakpoint($tablet, $no-query: '.lt-ie9') {
-    .view-content {
-      display: table;
-      margin-bottom: rhythm(5);
-    }
-    .views-row {
-      display: table-cell;
-      padding: 0 30px 0 0;
-      width: 33%;
-    }
-  }
-}
-
 
 // Above content
 #above-content {

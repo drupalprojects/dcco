@@ -25,3 +25,11 @@
   color: $teal-darker;
   margin-bottom: rhythm(2, $fs-xs);
 }
+
+
+.views-field-created {
+  @extend .field-date;
+}
+.views-field-title{
+  @extend .field-title-teaser;
+}
