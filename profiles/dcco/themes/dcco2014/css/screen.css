@@ -673,7 +673,7 @@ tr.even {
 }
 
 body {
-  background: url('../img/splash/background-splash.jpg?1402530267') 50% 50% fixed;
+  background: url('../img/splash/background-splash.jpg?1402520917') 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1923,6 +1923,30 @@ div.password-confirm {
 }
 #block-search-form:after {
   clear: both;
+}
+
+.node-sponsor .field-name-field-sponsor-logo {
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .node-sponsor .field-name-field-sponsor-logo {
+    float: right;
+    margin-left: 20px;
+  }
+}
+.node-sponsor .field-name-field-sponsor-url,
+.node-sponsor .field-name-field-sponsorship-level {
+  margin-top: 15px;
+}
+.node-sponsor .field-name-field-sponsor-url div,
+.node-sponsor .field-name-field-sponsorship-level div {
+  display: inline;
+}
+.node-sponsor #comments {
+  display: none;
+  /* hide existing comments */
 }
 
 #toolbar {
