@@ -1212,8 +1212,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-title {
   font-weight: normal;
-  margin-bottom: 0.71429em;
-  margin-top: 0.71429em;
+  margin-bottom: 0.21429em;
+  margin-top: 0.35714em;
 }
 
 .article-title {
@@ -1820,6 +1820,26 @@ div.password-confirm {
   clear: left;
   margin: 0;
   width: 36.3em;
+}
+
+.entity-profile2 .field {
+  margin-bottom: 10px;
+}
+.entity-profile2 .field-name-field-profile-image {
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .entity-profile2 .field-name-field-profile-image {
+    float: right;
+    margin: 0 0 0 30px;
+  }
+}
+.entity-profile2 .field-name-field-first-name,
+.entity-profile2 .field-name-field-last-name {
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .promos {

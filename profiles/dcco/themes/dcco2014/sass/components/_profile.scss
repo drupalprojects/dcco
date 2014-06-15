@@ -1,0 +1,23 @@
+
+.entity-profile2 {
+  .field {
+    margin-bottom: 10px;
+  }
+  .field-name-field-profile-image {
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+
+    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+      float: right;
+      margin: 0 0 0 30px;
+    }
+  }
+
+  .field-name-field-first-name,
+  .field-name-field-last-name {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+}
