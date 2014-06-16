@@ -1,3 +1,6 @@
 [submodule "profiles/dcco/libraries/coinbase-php"]
 	path = profiles/dcco/libraries/coinbase-php
 	url = https://github.com/coinbase/coinbase-php.git
+[submodule "profiles/dcco/libraries/stripe-php"]
+  path = profiles/dcco/libraries/stripe-php
+  url = https://github.com/stripe/stripe-php.git
