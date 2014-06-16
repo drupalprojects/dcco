@@ -1,0 +1,12 @@
+//
+// @file
+// Misc. rules for items within content area.
+// ----------------------------------------------------------------------------
+
+.travel-map {
+  width: 265px;
+
+  @include breakpoint($tablet, $no-query: '.lt-ie9') {
+    width: 100%;
+  }
+}

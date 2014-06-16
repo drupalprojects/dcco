@@ -699,9 +699,9 @@ body {
 #footer #block-menu-menu-social-menu a {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 2em;
-  line-height: 1.16667em;
-  margin-top: 0.66667em;
+  font-size: 1.33333em;
+  line-height: 1.25em;
+  margin-top: 1em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
@@ -710,6 +710,16 @@ body {
   font-weight: 100;
   letter-spacing: 4px;
   text-decoration: none;
+}
+@media (min-width: 768px) {
+  #footer #block-menu-menu-social-menu a {
+    font-size: 2em;
+    line-height: 1.16667em;
+    margin-top: 0.66667em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+  }
 }
 #footer #block-menu-menu-social-menu a:before {
   font-size: 60px;
@@ -1129,6 +1139,15 @@ body {
 
 .slick-loading .slick-list {
   background-color: transparent !important;
+}
+
+.travel-map {
+  width: 265px;
+}
+@media (min-width: 768px) {
+  .travel-map {
+    width: 100%;
+  }
 }
 
 .form-item,
@@ -2002,9 +2021,10 @@ div.password-confirm {
 }
 
 .view-header .dcco-sponsors-header {
+  font-size: 0.75em;
+  margin: 0 0 10px 0;
+  text-align: center;
   width: 100%;
-  text-align: left;
-  margin: -30px 0 10px 0;
 }
 .view-header .dcco-sponsors-header a {
   padding: 0.5em 1em 0.5em 0;

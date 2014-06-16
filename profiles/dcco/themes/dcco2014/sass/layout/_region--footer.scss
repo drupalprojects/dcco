@@ -19,8 +19,8 @@
     a {
       -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
-      @include adjust-font-size-to($fs-h2);
-      @include rhythm(4, 0, 0, 0, $fs-h2);
+      @include adjust-font-size-to($fs-h3);
+      @include rhythm(4, 0, 0, 0, $fs-h3);
       color: $teal-lighter;
       font-family: $ff-heading;
       font-weight: 100;
@@ -28,6 +28,11 @@
       text-decoration: none;
       @extend .icon-twitter;
       @extend .icon;
+
+      @include breakpoint($tablet, $no-query: '.lt-ie9') {
+        @include adjust-font-size-to($fs-h2);
+        @include rhythm(4, 0, 0, 0, $fs-h2);
+      }
 
       &:before {
         font-size: 60px;
