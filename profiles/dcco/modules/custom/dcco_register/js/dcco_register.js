@@ -16,9 +16,9 @@
 
       // Insert the price points.
 
-      $('<li>' + Drupal.t('Contribute $30 or more and get a t-shirt!') + '</li>')
+      $('<li>' + Drupal.t('Contribute $25 or more and get a t-shirt!') + '</li>')
         .click(function(){
-          $('#edit-amount').val('30');
+          $('#edit-amount').val('25');
         })
         .appendTo(pricePoints);
 
