@@ -33,9 +33,7 @@
 
             <?php if ($page['highlighted']): ?>
               <div id="highlighted">
-                <div class="l--constrained">
-                  <?php print render($page['highlighted']); ?>
-                </div>
+               <?php print render($page['highlighted']); ?>
               </div>
             <?php endif; // end highlighted ?>
 

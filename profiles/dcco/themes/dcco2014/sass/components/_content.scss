@@ -10,3 +10,13 @@
     width: 100%;
   }
 }
+
+.page-register {
+  #highlighted {
+    @include breakpoint($tablet) {
+      float: right;
+      margin-left: 50px;
+      width: 50%;
+    }
+  }
+}

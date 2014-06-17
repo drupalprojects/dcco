@@ -1163,6 +1163,14 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .page-register #highlighted {
+    float: right;
+    margin-left: 50px;
+    width: 50%;
+  }
+}
+
 .form-item,
 .form-actions {
   margin: 1.33333em 0;
