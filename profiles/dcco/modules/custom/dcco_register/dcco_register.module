@@ -57,7 +57,7 @@ function dcco_register_registration() {
     '#type' => 'textfield',
     '#title' => t('Contribution Amount'),
     '#size' => 9,
-    '#default_value' => 15,
+    '#default_value' => 25,
     '#field_suffix' => commerce_default_currency(),
   );
 
