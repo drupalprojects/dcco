@@ -908,10 +908,17 @@ body {
   padding: 0.66667em;
 }
 #branding > h1 {
-  font-size: 1.55556em;
-  line-height: 1.07143em;
+  font-size: 0.88889em;
+  line-height: 1.5em;
+  line-height: 30px;
   margin: 0;
   text-transform: uppercase;
+}
+@media (min-width: 1080px) {
+  #branding > h1 {
+    font-size: 1.55556em;
+    line-height: 1.07143em;
+  }
 }
 #branding > h1 > a {
   color: white;
@@ -928,6 +935,7 @@ body {
   font-size: 1em;
   line-height: 1.66667em;
   color: white;
+  display: none;
   font-family: "anago", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   margin: 0;
@@ -945,6 +953,11 @@ body {
   }
   #branding > h2 {
     float: left;
+  }
+}
+@media (min-width: 1080px) {
+  #branding > h2 {
+    display: block;
   }
 }
 
@@ -1882,13 +1895,14 @@ div.password-confirm {
 }
 .promo h2 {
   color: #00c584;
-  font-size: 32px;
+  font-size: 3.33333em;
+  line-height: 1.1em;
   font-weight: normal;
   letter-spacing: 4px;
   margin-bottom: 0;
   text-transform: uppercase;
 }
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   .promo h2 {
     font-size: 5.83333em;
     line-height: 1.08571em;

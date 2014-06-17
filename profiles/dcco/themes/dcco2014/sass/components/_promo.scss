@@ -25,13 +25,13 @@
 
   h2 {
     color: $teal-light;
-    font-size: $fs-xxxl;
+    @include adjust-font-size-to($fs-xxxxxl);
     font-weight: normal;
     letter-spacing: 4px;
     margin-bottom: 0;
     text-transform: uppercase;
 
-    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+    @include breakpoint($desktop, $no-query: '.lt-ie9') {
       @include adjust-font-size-to($fs-xxxxxl * 1.75);
     }
   }

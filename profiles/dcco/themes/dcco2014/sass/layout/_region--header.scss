@@ -151,9 +151,16 @@
   text-align: center;
   padding: rhythm(2);
   > h1 {
-    @include adjust-font-size-to($fs-xxl, 5);
+
+    @include adjust-font-size-to(16px);
+    line-height: 30px;
     margin: 0;
     text-transform: uppercase;
+
+    @include breakpoint($desktop) {
+      @include adjust-font-size-to($fs-xxl, 5);
+    }
+
     > a {
       color: $white;
       text-decoration: none;
@@ -167,6 +174,7 @@
   > h2 {
     @include adjust-font-size-to($fs-m, 5);
     color: $white;
+    display: none;
     font-family: $ff-body;
     font-weight: normal;
     margin: 0;
@@ -187,6 +195,13 @@
       float: left;
     }
   }
+
+  @include breakpoint($desktop, $no-query: '.lt-ie9') {
+    > h2 {
+      display: block;
+    }
+  }
+
 }
 
 //  Masthead
