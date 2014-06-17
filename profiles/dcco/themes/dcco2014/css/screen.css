@@ -2224,6 +2224,25 @@ div.password-confirm {
   }
 }
 
+.views-exposed-form {
+  margin: 2em 0;
+}
+.views-exposed-form .views-exposed-widget {
+  width: 250px;
+  display: inline-block;
+}
+.views-exposed-form .views-exposed-widget .form-item {
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .views-exposed-form .views-exposed-widget .form-item {
+    margin: 0;
+  }
+}
+.views-exposed-form .views-exposed-widget input[type=submit] {
+  line-height: 0.3em;
+}
+
 .field-label {
   font-size: 0.77778em;
   line-height: 1.28571em;

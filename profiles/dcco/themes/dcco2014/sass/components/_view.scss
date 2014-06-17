@@ -196,3 +196,25 @@
     }
   }
 }
+
+.views-exposed-form {
+  margin: 2em 0;
+
+  .views-exposed-widget {
+    width: 250px;
+    display: inline-block;
+
+    .form-item {
+
+      margin-top: 0;
+
+      @include breakpoint($tablet) {
+        margin: 0;
+      }
+    }
+
+    input[type=submit] {
+      line-height: 0.3em;
+    }
+  }
+}
