@@ -1,0 +1,11 @@
+
+.field-name-field-tags {
+  > div {
+    display: inline-block;
+  }
+  div > div {
+    display: inline-block;
+    margin-right: 15px;
+    text-transform: capitalize;
+  }
+}
