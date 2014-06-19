@@ -444,6 +444,25 @@ input[type="week"] {
   background-color: white;
   border-color: #999999;
   color: #333333;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  textarea,
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="email"],
+  input[type="month"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="time"],
+  input[type="url"],
+  input[type="week"] {
+    width: auto;
+  }
 }
 textarea:focus,
 input[type="date"]:focus,
@@ -487,13 +506,19 @@ button {
   text-transform: uppercase;
   font-size: 1.16667em;
   line-height: 1.14286em;
-  padding: 0.57143em 1.71429em;
+  padding: 0.57143em 0.57143em;
   background: #01986c;
 }
 input[type="submit"]:hover,
 button:hover {
   color: #dae8e2;
   text-decoration: none;
+}
+@media (min-width: 600px) {
+  input[type="submit"],
+  button {
+    padding: 0.57143em 1.71429em;
+  }
 }
 input[type="submit"]:hover,
 button:hover {

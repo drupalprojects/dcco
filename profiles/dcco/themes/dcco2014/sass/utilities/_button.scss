@@ -32,7 +32,10 @@
 
 @mixin button--medium {
   @include adjust-font-size-to($fs-l, 4);
-  padding: rhythm(2, $fs-l) rhythm(6, $fs-l);
+  padding: rhythm(2, $fs-l) rhythm(2, $fs-l);
+  @include breakpoint($mobile-wide, $no-query: '.lt-ie9') {
+    padding: rhythm(2, $fs-l) rhythm(6, $fs-l);
+  }
 }
 
 @mixin button--large {

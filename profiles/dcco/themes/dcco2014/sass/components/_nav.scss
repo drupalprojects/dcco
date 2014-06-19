@@ -29,6 +29,17 @@
 .nav-tabs > li,
 .nav-pills > li {
   float: left;
+  width: 100%;
+  margin-bottom: 4px;
+  text-align: center;
+  @include breakpoint($mobile-wide, $no-query: '.lt-ie9') {
+    width: auto;
+    text-align: left;
+    margin-bottom: 0;
+    a {
+      @include border-radius(0px);
+    }
+  }
 }
 
 .nav-tabs > li > a,

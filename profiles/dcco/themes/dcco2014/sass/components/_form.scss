@@ -13,6 +13,49 @@
   margin: rhythm(4) 0;
 }
 
+.form-item{
+  .image-widget-data{
+    width: 100%
+  }
+}
+
+.button-operator{
+  width: 100%;
+  text-align: center;
+  display: block;
+  @include breakpoint($mobile-wide, $no-query: '.lt-ie9') {
+    width: auto;
+    text-align: initial;
+    display: initial;
+  }
+}
+
+.commerce-credit-card-expiration{
+  .form-select{
+    width: auto;
+  }
+}
+.form-select{
+  width: 100%;
+  @include breakpoint($mobile-wide, $no-query: '.lt-ie9') {
+    width: auto;
+  }
+}
+
+.form-managed-file .form-file{
+  margin-bottom: 10px;
+  @include breakpoint($mobile-wide, $no-query: '.lt-ie9') {
+    margin-bottom: auto;
+  }
+}
+
+.form-submit{
+  width: 100%;
+  @include breakpoint($mobile-wide, $no-query: '.lt-ie9') {
+    width: auto;
+  }
+}
+
 .form-item-description {
   @include adjust-font-size-to($fs-xs);
   font-family: $ff-sans;
@@ -20,6 +63,15 @@
 
 
 // FIELDSETS
+fieldset{
+  min-width: 100%;
+  margin: 0 0 0 -14px;
+  @include breakpoint($mobile-wide, $no-query: '.lt-ie9') {
+    min-width: auto;
+    margin: auto;
+  }
+}
+
 .fieldset-legend {
   font-family: $ff-sans;
   font-weight: bold;

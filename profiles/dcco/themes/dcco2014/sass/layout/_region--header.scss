@@ -32,7 +32,7 @@
     text-align: center;
     > li {
       border-top: 1px solid $teal-dark;
-      padding: rhythm(3);
+      padding: rhythm(3) 0;
     }
     a {
       @include adjust-font-size-to($fs-xs, 4);
@@ -73,7 +73,7 @@
       text-align: left;
       > li {
         border: none;
-        padding: 0 rhythm(1);
+        padding: 0;
         width: auto;
         float: left;
       }
