@@ -132,3 +132,18 @@ function dcco_register_views_api() {
   );
 
 }
+
+/**
+ * Implements hook_js_alter().
+ *
+ * @todo this is ugly, and relies on jquery update being present, but disabled!
+ * We're doing this because the slider on the landing page requires jquery 1.10 wheras
+ * the Stripe payment on checkout requires 1.5.
+ */
+function dcco_register_js_alter(&$javascript) {
+  if (arg(0) == 'checkout') {
+    $javascript['misc/jquery.js']['data'] = drupal_get_path('module', 'jquery_update') . '/replace/jquery/1.5/jquery.min.js';
+  } else {
+    $javascript['misc/jquery.js']['data'] = drupal_get_path('module', 'jquery_update') . '/replace/jquery/1.10/jquery.min.js';
+  }
+}
