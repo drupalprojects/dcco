@@ -690,6 +690,14 @@ tr.even {
   *display: inline;
 }
 
+.float--left {
+  float: left;
+}
+
+.float--right {
+  float: right;
+}
+
 .l--constrained {
   margin: 0 auto;
   max-width: 94%;
@@ -698,7 +706,7 @@ tr.even {
 }
 
 body {
-  background: url('../img/splash/background-splash.jpg?1402454870') 50% 50% fixed;
+  background: url('../img/splash/background-splash.jpg?1402520917') 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1999,8 +2007,21 @@ div.password-confirm {
   }
 }
 
+.entity-profile2 {
+  /* Remove clearfix */
+}
 .entity-profile2 .field {
   margin-bottom: 10px;
+}
+.entity-profile2 .field > div {
+  display: inline-block;
+}
+.entity-profile2 .field > div:first-child {
+  color: #01986c;
+}
+.entity-profile2 .field:after,
+.entity-profile2 .field:before {
+  content: none;
 }
 .entity-profile2 .field-name-field-profile-image {
   margin: 0 auto;
@@ -2017,6 +2038,61 @@ div.password-confirm {
 .entity-profile2 .field-name-field-last-name {
   display: inline-block;
   margin-right: 5px;
+}
+
+.view-user-personal-information h4.label,
+.view-user-personal-information h4.field {
+  display: inline;
+  font-family: "anago", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+.view-user-personal-information h4.field {
+  color: #666666;
+}
+.view-user-personal-information.single-user .community_users {
+  padding: 0;
+}
+.view-user-personal-information.single-user .community_users li {
+  list-style-type: none;
+  padding: 0;
+}
+.view-user-personal-information.single-user .community_users .bio {
+  color: #666666;
+  margin-bottom: 10px;
+}
+.view-user-personal-information.single-user .community_users .button--primary {
+  display: inline-block;
+  margin-top: 1em;
+}
+.view-user-personal-information.single-user .community_users .button--primary a {
+  color: white;
+}
+.view-user-personal-information.all-users .community_users {
+  margin: 0;
+  padding: 0;
+  *zoom: 1;
+  margin-left: 0;
+  margin-right: 0;
+}
+.view-user-personal-information.all-users .community_users:before, .view-user-personal-information.all-users .community_users:after {
+  content: " ";
+  display: table;
+}
+.view-user-personal-information.all-users .community_users:after {
+  clear: both;
+}
+.view-user-personal-information.all-users .community_users li {
+  float: left;
+  padding: 0 0;
+  width: 50%;
+  list-style-type: none;
+  min-height: 200px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .view-user-personal-information.all-users .community_users li {
+    width: 20%;
+  }
 }
 
 .promos {

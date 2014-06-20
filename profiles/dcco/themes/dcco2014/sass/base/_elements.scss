@@ -260,3 +260,10 @@ tr.even { background-color: $clr-table-even; }
 .inline-block {
   @include inline-block;
 }
+
+.float--left {
+  float: left;
+}
+.float--right {
+  float: right;
+}

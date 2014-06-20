@@ -604,6 +604,14 @@ tr.even {
   *display: inline;
 }
 
+.float--left {
+  float: left;
+}
+
+.float--right {
+  float: right;
+}
+
 .image-frame > img,
 .image-frame > a > img {
   -webkit-box-sizing: border-box;

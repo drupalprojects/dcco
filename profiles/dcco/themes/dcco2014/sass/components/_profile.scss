@@ -3,6 +3,20 @@
   .field {
     margin-bottom: 10px;
   }
+
+  .field > div {
+    display: inline-block;
+  }
+
+  .field > div:first-child {
+    color: $teal;
+  }
+  /* Remove clearfix */
+  .field:after,
+  .field:before {
+    content: none;
+  }
+
   .field-name-field-profile-image {
     margin: 0 auto;
     text-align: center;
@@ -19,5 +33,64 @@
     display: inline-block;
     margin-right: 5px;
   }
+}
 
+.view-user-personal-information {
+  h4.label,
+  h4.field {
+    display: inline;
+    font-family: $ff-body;
+    font-weight: normal;
+  }
+
+  h4.field {
+    color: $gray-dark;
+  }
+
+  &.single-user {
+    .community_users {
+      padding: 0;
+
+      li {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .bio {
+        color: $gray-dark;
+        margin-bottom: 10px;
+      }
+
+      .button--primary {
+        display: inline-block;
+        margin-top: 1em;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &.all-users{
+    .community_users {
+      $gutter: 0;
+      $columns: 2;
+      $nup-gutter-method: 'expand';
+      margin: 0;
+      padding: 0;
+      @include nup-container($gutter, $nup-gutter-method);
+      li {
+        @include nup-base($gutter, $columns, $nup-gutter-method);
+        @include nup-item($columns);
+        list-style-type: none;
+        min-height: 200px;
+        text-align: center;
+
+        @include breakpoint($tablet, $no-query: '.lt-ie9') {
+          @include nup-item(5);
+        }
+      }
+    }
+  }
 }
