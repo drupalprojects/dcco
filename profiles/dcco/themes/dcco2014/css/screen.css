@@ -1204,6 +1204,10 @@ body {
   }
 }
 
+.field-name-field-register-for-training {
+  margin-top: 30px;
+}
+
 .form-item,
 .form-actions {
   margin: 1.33333em 0;
@@ -1211,6 +1215,14 @@ body {
 
 .form-item .image-widget-data {
   width: 100%;
+}
+
+.field-label-inline > div {
+  display: inline-block;
+}
+.field-label-inline div > div {
+  display: inline-block;
+  margin-right: 15px;
 }
 
 .button-operator {
