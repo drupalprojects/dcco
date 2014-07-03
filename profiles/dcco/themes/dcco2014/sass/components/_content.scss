@@ -21,6 +21,22 @@
   }
 }
 
+.node-type-article {
+  .field-type-image {
+    float: right;
+    margin: 0 0 30px 30px;
+    max-width: 120px;
+
+    @include breakpoint($mobile-wide) {
+      max-width: 200px;
+    }
+
+    @include breakpoint($tablet) {
+      max-width: 300px;
+    }
+  }
+}
+
 .field-name-field-register-for-training {
   margin-top: 30px;
 }

@@ -7,13 +7,8 @@
   padding: 50px 0;
 
   @include breakpoint($tablet, $no-query: '.lt-ie9') {
-    padding: 150px 0;
+    padding: 50px 0 100px;
   }
-}
-
-.slick-slider.promos__wrapper {
-  margin-bottom: 0;
-  padding: 0;
 }
 
 .promo {
@@ -106,7 +101,7 @@
   width: 100%;
 
   @include breakpoint($tablet, $no-query: '.lt-ie9') {
-    padding: 0 50px;
+    padding: 0 0 0 50px;
   }
 
   a, img {
@@ -114,5 +109,42 @@
     height: auto;
     -webkit-border-radius: 50%; /* Saf3+, Chrome */
     border-radius: 50%; /* Opera 10.5, IE 9 */
+  }
+}
+
+.slick-slider.promos__wrapper {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.slick-prev,
+.slick-next {
+  @include opacity(0);
+
+  @include breakpoint($tablet) {
+    @include opacity(1);
+  }
+}
+
+.slick-prev {
+  left: -10px;
+
+  @include breakpoint($tablet) {
+    left: -40px;
+  }
+}
+
+.slick-next {
+  right: -10px;
+
+  @include breakpoint($tablet) {
+    right: -40px;
+  }
+}
+
+.slick-dots {
+  button[type='button']:before {
+    color: white;
+    font-size: 16px;
   }
 }

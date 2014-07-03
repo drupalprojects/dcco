@@ -12,7 +12,7 @@
 
       // Insert the graph.
 
-      $('<div class="dcco-register-graph" style="width: 100%; border: 1px solid #999;"><div class="bar" style="width: ' + percentRounded + '%; height: 50px; background: green;"></div></div>').appendTo('.view-dcco-register-total-contributions .view-header');
+      $('<div class="dcco-register-graph" style="width: 100%; border: 1px solid #999; border-radius: 3px;"><div class="bar" style="width: ' + percentRounded + '%; height: 50px; background: #00C584;"></div></div>').appendTo('.view-dcco-register-total-contributions .view-header');
 
       // Insert the price points.
 

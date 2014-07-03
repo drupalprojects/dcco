@@ -13,6 +13,14 @@
   clear: both;
 }
 
+.float--left {
+  float: left;
+}
+
+.float--right {
+  float: right;
+}
+
 /* DCCO Icons that come from a subset of Font Awesome fonts edited on icomoon.io */
 @font-face {
   font-family: "DCCO-Icons";
@@ -1183,10 +1191,6 @@ body {
   }
 }
 
-.slick-loading .slick-list {
-  background-color: transparent !important;
-}
-
 .travel-map {
   width: 265px;
 }
@@ -1201,6 +1205,22 @@ body {
     float: right;
     margin-left: 50px;
     width: 50%;
+  }
+}
+
+.node-type-article .field-type-image {
+  float: right;
+  margin: 0 0 30px 30px;
+  max-width: 120px;
+}
+@media (min-width: 600px) {
+  .node-type-article .field-type-image {
+    max-width: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .node-type-article .field-type-image {
+    max-width: 300px;
   }
 }
 
@@ -2112,13 +2132,8 @@ div.password-confirm {
 }
 @media (min-width: 768px) {
   .promos {
-    padding: 150px 0;
+    padding: 50px 0 100px;
   }
-}
-
-.slick-slider.promos__wrapper {
-  margin-bottom: 0;
-  padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -2214,7 +2229,7 @@ div.password-confirm {
 }
 @media (min-width: 768px) {
   .promo__image {
-    padding: 0 50px;
+    padding: 0 0 0 50px;
   }
 }
 .promo__image a, .promo__image img {
@@ -2224,6 +2239,47 @@ div.password-confirm {
   /* Saf3+, Chrome */
   border-radius: 50%;
   /* Opera 10.5, IE 9 */
+}
+
+.slick-slider.promos__wrapper {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.slick-prev,
+.slick-next {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  .slick-prev,
+  .slick-next {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+}
+
+.slick-prev {
+  left: -10px;
+}
+@media (min-width: 768px) {
+  .slick-prev {
+    left: -40px;
+  }
+}
+
+.slick-next {
+  right: -10px;
+}
+@media (min-width: 768px) {
+  .slick-next {
+    right: -40px;
+  }
+}
+
+.slick-dots button[type='button']:before {
+  color: white;
+  font-size: 16px;
 }
 
 #block-search-form {
@@ -2320,7 +2376,7 @@ div.password-confirm {
   #block-views-updates-block .views-row {
     display: table-cell;
     padding: 0 30px;
-    width: 33%;
+    width: 25%;
   }
 }
 
@@ -2546,3 +2602,6 @@ div.password-confirm {
 /* No files to import found in components/menu/* */
 /* No files to import found in components/node/* */
 /* No files to import found in components/page/* */
+.slick-loading .slick-list {
+  background-color: transparent !important;
+}

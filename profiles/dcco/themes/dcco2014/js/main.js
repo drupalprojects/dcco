@@ -11,7 +11,8 @@
       // Activate Slick carousel on landing page promo.
       $('.promos__wrapper').slick({
           slide: 'li',
-          arrows: false,
+          arrows: true,
+          dots: true,
           autoplay: true,
           autoplaySpeed: 5000
       });
