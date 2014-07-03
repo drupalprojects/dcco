@@ -11,7 +11,7 @@
 }
 
 .field-title-teaser {
-  @include adjust-font-size-to($fs-xxxxl, 6);
+  @include adjust-font-size-to($fs-xxl, 6);
   font-family: $ff-heading;
   font-weight: bold;
   margin-bottom: rhythm(2, $fs-xxxxl);

@@ -201,7 +201,7 @@
   margin: 2em 0;
 
   .views-exposed-widget {
-    width: 250px;
+    width: 300px;
     display: inline-block;
 
     .form-item {
@@ -217,4 +217,54 @@
       line-height: 0.3em;
     }
   }
+}
+
+.views-field {
+  h3 {
+    padding-top: 0;
+  }
+}
+
+.footable-toggle {
+  &:before {
+    content: "+";
+    font-size: 40px;
+  }
+
+  @include breakpoint(1123px) {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.footable-detail-show {
+  .footable-toggle {
+    &:before {
+      content: "-";
+      font-size: 40px;
+    }
+
+    @include breakpoint(1123px) {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.footable-row-detail-name {
+  color: $teal;
+  font-family: $ff-heading;
+  font-size: $fs-xxl;
+}
+
+.footable-row-detail-row + .footable-row-detail-row {
+  border-top: 1px solid $gray-lighter;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.footable-row-detail-name {
+  margin-bottom: 8px;
 }

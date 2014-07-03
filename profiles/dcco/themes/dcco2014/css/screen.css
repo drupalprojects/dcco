@@ -2462,7 +2462,7 @@ div.password-confirm {
   margin: 2em 0;
 }
 .views-exposed-form .views-exposed-widget {
-  width: 250px;
+  width: 300px;
   display: inline-block;
 }
 .views-exposed-form .views-exposed-widget .form-item {
@@ -2477,6 +2477,46 @@ div.password-confirm {
   line-height: 0.3em;
 }
 
+.views-field h3 {
+  padding-top: 0;
+}
+
+.footable-toggle:before {
+  content: "+";
+  font-size: 40px;
+}
+@media (min-width: 1123px) {
+  .footable-toggle:before {
+    display: none;
+  }
+}
+
+.footable-detail-show .footable-toggle:before {
+  content: "-";
+  font-size: 40px;
+}
+@media (min-width: 1123px) {
+  .footable-detail-show .footable-toggle:before {
+    display: none;
+  }
+}
+
+.footable-row-detail-name {
+  color: #01986c;
+  font-family: "refrigerator-deluxe", Impact, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+}
+
+.footable-row-detail-row + .footable-row-detail-row {
+  border-top: 1px solid #c7c7c7;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.footable-row-detail-name {
+  margin-bottom: 8px;
+}
+
 .field-label {
   font-size: 0.77778em;
   line-height: 1.28571em;
@@ -2485,8 +2525,8 @@ div.password-confirm {
 }
 
 .field-title-teaser, .views-field-title {
-  font-size: 2em;
-  line-height: 1em;
+  font-size: 1.55556em;
+  line-height: 1.28571em;
   font-family: "refrigerator-deluxe", Impact, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   margin-bottom: 0.33333em;
