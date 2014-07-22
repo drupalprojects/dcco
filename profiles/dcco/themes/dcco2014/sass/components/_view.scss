@@ -225,7 +225,13 @@
   }
 }
 
+.footable-first-column {
+  white-space: nowrap;
+}
+
 .footable-toggle {
+  float: left;
+
   &:before {
     content: "+";
     font-size: 40px;
@@ -238,9 +244,14 @@
   }
 }
 
+.footable-toggle + div {
+  padding-left: 35px;
+}
+
 .footable-detail-show {
   .footable-toggle {
     &:before {
+      color: $teal;
       content: "-";
       font-size: 40px;
     }
@@ -251,6 +262,10 @@
       }
     }
   }
+}
+
+.footable-row-detail-row {
+  background-color: #fcfcfc;
 }
 
 .footable-row-detail-name {
@@ -267,4 +282,17 @@
 
 .footable-row-detail-name {
   margin-bottom: 8px;
+}
+
+/**
+ * Edge-to-edge for view content on mobile
+ */
+
+@include breakpoint('max-width 640px') {
+  .view-cream-schedule-timetable {
+    .view-content {
+      margin-left: -27px;
+      margin-right: -27px;
+    }
+  }
 }

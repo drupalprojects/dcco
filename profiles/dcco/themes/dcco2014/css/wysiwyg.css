@@ -290,13 +290,19 @@ figure {
 }
 
 h1 {
-  font-size: 4.66667em;
-  line-height: 1.07143em;
-  margin-top: 0em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 0.07143em;
   font-family: "refrigerator-deluxe", Impact, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.1;
+  font-size: 40px;
+}
+@media (min-width: 640px) {
+  h1 {
+    font-size: 4.66667em;
+    line-height: 1.07143em;
+    margin-top: 0em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-bottom: 0.07143em;
+  }
 }
 
 h2 {

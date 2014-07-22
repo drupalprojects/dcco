@@ -384,13 +384,19 @@ figure {
 }
 
 h1 {
-  font-size: 4.66667em;
-  line-height: 1.07143em;
-  margin-top: 0em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 0.07143em;
   font-family: "refrigerator-deluxe", Impact, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.1;
+  font-size: 40px;
+}
+@media (min-width: 640px) {
+  h1 {
+    font-size: 4.66667em;
+    line-height: 1.07143em;
+    margin-top: 0em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-bottom: 0.07143em;
+  }
 }
 
 h2 {
@@ -2537,6 +2543,13 @@ div.password-confirm {
   padding-top: 0;
 }
 
+.footable-first-column {
+  white-space: nowrap;
+}
+
+.footable-toggle {
+  float: left;
+}
 .footable-toggle:before {
   content: "+";
   font-size: 40px;
@@ -2547,7 +2560,12 @@ div.password-confirm {
   }
 }
 
+.footable-toggle + div {
+  padding-left: 35px;
+}
+
 .footable-detail-show .footable-toggle:before {
+  color: #01986c;
   content: "-";
   font-size: 40px;
 }
@@ -2555,6 +2573,10 @@ div.password-confirm {
   .footable-detail-show .footable-toggle:before {
     display: none;
   }
+}
+
+.footable-row-detail-row {
+  background-color: #fcfcfc;
 }
 
 .footable-row-detail-name {
@@ -2573,6 +2595,15 @@ div.password-confirm {
   margin-bottom: 8px;
 }
 
+/**
+ * Edge-to-edge for view content on mobile
+ */
+@media (min-width: max-width 640px) {
+  .view-cream-schedule-timetable .view-content {
+    margin-left: -27px;
+    margin-right: -27px;
+  }
+}
 .field-label {
   font-size: 0.77778em;
   line-height: 1.28571em;
@@ -2597,6 +2628,10 @@ div.password-confirm {
   text-transform: uppercase;
   color: #00585c;
   margin-bottom: 0.85714em;
+}
+
+.node-session .field-name-field-session-room {
+  margin-bottom: 15px;
 }
 
 /* No files to import found in components/menu/* */

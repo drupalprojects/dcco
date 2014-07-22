@@ -33,3 +33,9 @@
 .views-field-title{
   @extend .field-title-teaser;
 }
+
+.node-session {
+  .field-name-field-session-room {
+    margin-bottom: 15px;
+  }
+}

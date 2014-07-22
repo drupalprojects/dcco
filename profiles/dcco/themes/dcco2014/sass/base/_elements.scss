@@ -37,9 +37,14 @@ figure {
 //-----------------------------------------------------------------------------
 
 h1 {
-  @include adjust-font-size-to($fs-h1);
-  @include rhythm(0, 0, 0, 1, $fs-h1);
   font-family: $ff-heading;
+  line-height: 1.1;
+
+  font-size: 40px;
+  @include breakpoint(640px) {
+    @include adjust-font-size-to($fs-h1);
+    @include rhythm(0, 0, 0, 1, $fs-h1);
+  }
 }
 
 h2 {
