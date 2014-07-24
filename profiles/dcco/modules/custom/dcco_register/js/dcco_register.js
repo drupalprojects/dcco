@@ -10,6 +10,10 @@
       var percentRounded = Math.ceil(percent * 100) / 100;
       var pricePoints = $('<ul class="dcco-register-price-points"></ul>');
 
+      if (percentRounded > 110) {
+        percentRounded = 110;
+      }
+
       // Insert the graph.
 
       $('<div class="dcco-register-graph" style="width: 100%; border: 1px solid #999; border-radius: 3px;"><div class="bar" style="width: ' + percentRounded + '%; height: 50px; background: #00C584;"></div></div>').appendTo('.view-dcco-register-total-contributions .view-header');
