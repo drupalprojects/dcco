@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file cream_timetable.module
+ * TODO: Enter file description here.
+ */
+
+/**
+ * Implements hook_views_api().
+ */
+function cream_timetable_views_api() {
+  return array(
+    'api' => 3,
+    'path' => drupal_get_path('module', 'cream_timetable'),
+    //'template path' => drupal_get_path('module', 'cream_timetable') . '/themes',
+  );
+}

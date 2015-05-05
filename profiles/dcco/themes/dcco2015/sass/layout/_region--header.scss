@@ -1,0 +1,227 @@
+//
+// @file
+// Header region styles.
+// ----------------------------------------------------------------------------
+
+// Header region
+
+#header {
+  @extend .clearfix;
+  background-color: $purple-black;
+  position: relative;
+
+  .l--constrained {
+    // padding-bottom: rhythm(1);
+    // padding-top: rhythm(1);
+    position: relative;
+  }
+
+  #utility {
+    position: relative;
+  }
+
+  .nav-toggle {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    // margin-top: rhythm(1, $fs-s);
+    width: 50%;
+  }
+
+  ul.nav {
+    text-align: center;
+    > li {
+      border-top: 1px solid $purple-dark;
+      padding: rhythm(3) 0;
+    }
+    a {
+      @include adjust-font-size-to($fs-xs, 4);
+      @extend .inline-block;
+      color: $orange-lighter;
+      font-weight: bold;
+      letter-spacing: .1em;
+      padding: 0 rhythm(1.5, $fs-xs);
+      text-decoration: none;
+      text-transform: uppercase;
+      @include transition;
+      &:hover {
+        color: $orange-white;
+      }
+      &.link-register {
+        @include border-radius(3px);
+        background: $white;
+        color: $purple-darkest;
+
+        &:hover {
+          background: $orange-lighter;
+          color: $purple-darkest;
+        }
+      }
+    }
+  }
+
+  @include breakpoint($tablet, $no-query: '.lt-ie9') {
+    .l--constrained {
+      @include clearfix;
+    }
+    #utility {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -(rhythm(2));
+    }
+    ul.nav {
+      text-align: left;
+      > li {
+        border: none;
+        padding: 0;
+        width: auto;
+        float: left;
+      }
+
+      a {
+        float: left;
+      }
+    }
+  }
+
+  /* //user menu
+  ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+    ul.nav > li {
+      width:100%;
+      padding:0.45em 0.25em;
+      margin:0 0 0.55em 0;
+    }
+    #block-system-user-menu {
+      width: 100%;
+    }
+  .nav-toggle {
+    text-decoration:none;
+    color: $white;
+  }
+  .mobile-user-menu {
+    display: block;
+    position: absolute;
+    bottom: -41px;
+    right: 50px;
+  } */
+
+  // user menu large screens
+  /* @include breakpoint($mobile-wide, $no-query: '.lt-ie9') {
+    ul.nav {
+      list-style:none;
+      text-align:right;
+
+      > li {
+        float: none;
+        text-transform:uppercase;
+        cursor:pointer;
+        text-align:right;
+        width: auto;
+        display: inline-block;
+        padding: 0;
+
+        > a {
+          text-decoration:none;
+          margin: 0 1em;
+          font-size: 1em;
+        }
+      }
+    }
+    .mobile-user-menu {
+      display: none;
+      position: relative;
+      bottom: none;
+      right: none;
+    }
+    #block-system-user-menu {
+      width: auto;
+    }
+  } */
+}
+
+// Branding component
+
+#branding {
+  text-align: center;
+  padding: rhythm(2);
+
+  > h1 {
+    @include adjust-font-size-to(20px);
+    background-color: #3f1d32;
+    line-height: 30px;
+    margin: -6px 0;
+    padding: 6px 20px;
+    text-transform: uppercase;
+
+    > a {
+      color: $white;
+      text-decoration: none;
+      @include transition;
+      &:hover {
+        color: $orange-lighter;
+      }
+    }
+  }
+
+  > h2 {
+    @include adjust-font-size-to($fs-m, 5);
+    color: $white;
+    display: none;
+    font-family: $ff-body;
+    font-weight: normal;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  @include breakpoint($tablet, $no-query: '.lt-ie9') {
+    padding: rhythm(1) 0;
+    float: left;
+    text-align: left;
+
+    > h1 {
+      float: left;
+      margin-right: rhythm(5, $fs-l);
+    }
+
+    > h2 {
+      float: left;
+    }
+  }
+
+  @include breakpoint($desktop, $no-query: '.lt-ie9') {
+    > h2 {
+      display: block;
+    }
+  }
+
+}
+
+//  Masthead
+
+#masthead {
+  padding: 10%;
+  text-align: center;
+  @include breakpoint($tablet, $no-query: '.lt-ie9') {
+    padding: 5%;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto rhythm(5);
+    max-width: 80%;
+  }
+
+  .button--secondary {
+    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+      @include adjust-font-size-to($fs-xl, 4);
+      padding: rhythm(3, $fs-xl) rhythm(12, $fs-xl);
+    }
+  }
+}

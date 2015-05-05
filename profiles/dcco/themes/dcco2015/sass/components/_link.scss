@@ -1,0 +1,31 @@
+// Primary buttons
+.link--button {
+  @include button;
+  @include button--medium;
+  @include button--primary;
+}
+
+.button--primary {
+  @include button;
+  @include button--medium;
+  @include button--primary;
+}
+
+.button--secondary {
+  @include button;
+  @include button--medium;
+  @include button--secondary;
+}
+
+.button--tertiary {
+  @include button;
+  @include button--medium;
+  @include button--tertiary;
+}
+
+//
+// More links
+//
+.link--more {
+  font-weight: bold;
+}

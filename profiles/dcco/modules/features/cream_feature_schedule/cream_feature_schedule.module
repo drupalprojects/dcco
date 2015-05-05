@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Cream schedule feature.
+ */
+
+include_once 'cream_feature_schedule.features.inc';

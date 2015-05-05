@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the DCCO - Homepage Updates Section feature.
+ */
+
+include_once 'dcco_homepage_updates_section.features.inc';

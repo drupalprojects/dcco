@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the DCCO Sponsors feature.
+ */
+
+include_once 'dcco_sponsors.features.inc';

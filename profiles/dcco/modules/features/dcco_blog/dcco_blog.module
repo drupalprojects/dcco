@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the DCCO Blog feature.
+ */
+
+include_once 'dcco_blog.features.inc';

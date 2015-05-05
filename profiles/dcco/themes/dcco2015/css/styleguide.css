@@ -1,0 +1,94 @@
+body.styleguide .l--constrained {
+  padding-bottom: 3.33333em;
+  padding-top: 3.33333em;
+}
+
+h1.styleguide,
+h2.styleguide,
+h3.styleguide,
+h4.styleguide,
+h5.styleguide,
+h6.styleguide {
+  color: #666666;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  margin-top: 0;
+}
+
+h1.styleguide {
+  color: #333333;
+  margin: 0 0.35714em 0.71429em;
+}
+
+h2.styleguide {
+  background: #f0f0f0;
+  margin-bottom: 0;
+  padding: 0.41667em 0.83333em;
+}
+
+h3.styleguide {
+  font-size: 1em;
+  line-height: 1.33333em;
+  margin-bottom: 1.66667em;
+  text-transform: uppercase;
+}
+
+section.styleguide {
+  border-top: 1px solid #999999;
+  clear: both;
+}
+
+article.styleguide {
+  overflow: hidden;
+  *zoom: 1;
+  clear: both;
+  padding: 1.66667em;
+  padding-left: 200px;
+}
+article.styleguide > header.styleguide {
+  float: left;
+  margin-left: -200px;
+  padding-left: 1.66667em;
+}
+
+div.styleguide-color {
+  float: left;
+  margin-bottom: 2.66667em;
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+div.styleguide-color > strong {
+  font-size: 0.88889em;
+  line-height: 1.125em;
+  color: #666666;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 0.375em;
+}
+div.styleguide-color > span {
+  font-size: 0.88889em;
+  line-height: 1.125em;
+  color: #999999;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 1.5em;
+}
+
+div.styleguide-color-main {
+  z-index: 100;
+}
+div.styleguide-color-main:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  left: -2px;
+  top: -2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 4px solid black;
+}

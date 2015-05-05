@@ -1,0 +1,151 @@
+//
+// @file
+// Promo styles.
+// ----------------------------------------------------------------------------
+
+.promos {
+  padding: 50px 0;
+
+  @include breakpoint($tablet, $no-query: '.lt-ie9') {
+    padding: 50px 0 100px;
+  }
+}
+
+.promo {
+  .columns {
+    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+      display: table;
+    }
+  }
+
+  h2 {
+    @include adjust-font-size-to(36px);
+    color: $orange-lightest;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+
+    @include breakpoint($desktop, $no-query: '.lt-ie9') {
+      @include adjust-font-size-to(72px);
+    }
+  }
+
+  h3 {
+    @include adjust-font-size-to(20px);
+    color: $orange-light;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0 0 .667em 4px;
+    text-transform: uppercase;
+
+    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+      @include adjust-font-size-to(36px);
+    }
+  }
+
+  p {
+    @include adjust-font-size-to($fs-s, 4);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+      @include adjust-font-size-to($fs-m, 4.5);
+    }
+  }
+
+  hr {
+    width: 40%;
+    margin: 16px 0 10px 0;
+    text-align: left;
+
+    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+      margin-top: 24px;
+      width: 150px;
+    }
+
+  }
+
+  .columns__column {
+    width: 100%;
+
+    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+      display: table-cell;
+      vertical-align: middle;
+      width: 60%;
+    }
+  }
+
+  .columns__column + .columns__column {
+    display: none;
+
+    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+      display: table-cell;
+      width: 40%;
+    }
+  }
+
+  .button--tertiary {
+    margin-top: 20px;
+  }
+}
+
+.promo__body {
+  color: white;
+  font-family: $ff-sans;
+  font-size: $fs-l;
+}
+
+.promo__image {
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+
+  @include breakpoint($tablet, $no-query: '.lt-ie9') {
+    padding: 0 0 0 50px;
+  }
+
+  a, img {
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 50%; /* Saf3+, Chrome */
+    border-radius: 50%; /* Opera 10.5, IE 9 */
+  }
+}
+
+.slick-slider.promos__wrapper {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.slick-prev,
+.slick-next {
+  @include opacity(0);
+
+  @include breakpoint($tablet) {
+    @include opacity(1);
+  }
+}
+
+.slick-prev {
+  left: -10px;
+
+  @include breakpoint($tablet) {
+    left: -40px;
+  }
+}
+
+.slick-next {
+  right: -10px;
+
+  @include breakpoint($tablet) {
+    right: -40px;
+  }
+}
+
+.slick-dots {
+  button[type='button']:before {
+    color: white;
+    font-size: 16px;
+  }
+}

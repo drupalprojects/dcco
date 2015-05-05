@@ -1,0 +1,11 @@
+
+//
+// @file
+// Slick module styles.
+//
+
+.slick-list {
+  .slick-loading & {
+    background-color: transparent !important;
+  }
+}
