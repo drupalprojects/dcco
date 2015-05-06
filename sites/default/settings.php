@@ -21,7 +21,7 @@ if (isset($_SERVER['PANTHEON_ENVIRONMENT'])) {
       if (!isset($_SERVER['HTTP_X_SSL']) ||
         (isset($_SERVER['HTTP_X_SSL']) && $_SERVER['HTTP_X_SSL'] != 'ON')) {
         header('HTTP/1.0 301 Moved Permanently');
-        header('Location: https://dev-2015drupalcampcoloradoorg.pantheon.io'. $_SERVER['REQUEST_URI']);
+        header('Location: https://dev-2016drupalcampcoloradoorg.pantheon.io'. $_SERVER['REQUEST_URI']);
         exit();
       }
       break;
@@ -29,7 +29,7 @@ if (isset($_SERVER['PANTHEON_ENVIRONMENT'])) {
       if (!isset($_SERVER['HTTP_X_SSL']) ||
         (isset($_SERVER['HTTP_X_SSL']) && $_SERVER['HTTP_X_SSL'] != 'ON')) {
         header('HTTP/1.0 301 Moved Permanently');
-        header('Location: https://test-2015drupalcampcoloradoorg.pantheon.io'. $_SERVER['REQUEST_URI']);
+        header('Location: https://test-2016drupalcampcoloradoorg.pantheon.io'. $_SERVER['REQUEST_URI']);
         exit();
       }
       break;
