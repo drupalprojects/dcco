@@ -13,7 +13,7 @@ if (isset($_SERVER['PANTHEON_ENVIRONMENT'])) {
       if (!isset($_SERVER['HTTP_X_SSL']) ||
         (isset($_SERVER['HTTP_X_SSL']) && $_SERVER['HTTP_X_SSL'] != 'ON')) {
         header('HTTP/1.0 301 Moved Permanently');
-        header('Location: https://2015.drupalcampcolorado.org'. $_SERVER['REQUEST_URI']);
+        header('Location: https://2016.drupalcampcolorado.org'. $_SERVER['REQUEST_URI']);
         exit();
       }
       break;
@@ -40,14 +40,14 @@ if (isset($_SERVER['PANTHEON_ENVIRONMENT'])) {
  * Implements Redis cache on Pantheon.
  */
 // All Pantheon Environments.
-if (defined('PANTHEON_ENVIRONMENT')) {
-  // Use Redis for caching.
-  $conf['redis_client_interface'] = 'PhpRedis';
-  $conf['cache_backends'][] = 'sites/all/modules/redis/redis.autoload.inc';
-  $conf['cache_default_class'] = 'Redis_Cache';
-  $conf['cache_prefix'] = array('default' => 'pantheon-redis');
-  // Do not use Redis for cache_form (no performance difference).
-  $conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
-  // Use Redis for Drupal locks (semaphore).
-  $conf['lock_inc'] = 'sites/all/modules/redis/redis.lock.inc';
-}
+//if (defined('PANTHEON_ENVIRONMENT')) {
+//  // Use Redis for caching.
+//  $conf['redis_client_interface'] = 'PhpRedis';
+//  $conf['cache_backends'][] = 'sites/all/modules/redis/redis.autoload.inc';
+//  $conf['cache_default_class'] = 'Redis_Cache';
+//  $conf['cache_prefix'] = array('default' => 'pantheon-redis');
+//  // Do not use Redis for cache_form (no performance difference).
+//  $conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
+//  // Use Redis for Drupal locks (semaphore).
+//  $conf['lock_inc'] = 'sites/all/modules/redis/redis.lock.inc';
+//}
