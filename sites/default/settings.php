@@ -1,6 +1,6 @@
 <?php
 /**
- * @file Additional settings for 2015.drupalcampcolorado.org.
+ * @file Additional settings for 2016.drupalcampcolorado.org.
  * Database connection and other settings are stored in prepend.php by Pantheon.
  */
 
@@ -10,30 +10,36 @@
 if (isset($_SERVER['PANTHEON_ENVIRONMENT'])) {
   switch ($_SERVER['PANTHEON_ENVIRONMENT']) {
     case 'live':
-      if (!isset($_SERVER['HTTP_X_SSL']) ||
-        (isset($_SERVER['HTTP_X_SSL']) && $_SERVER['HTTP_X_SSL'] != 'ON')) {
+      if (!isset($_SERVER['HTTP_X_SSL']) || (isset($_SERVER['HTTP_X_SSL']) && $_SERVER['HTTP_X_SSL'] != 'ON')) {
         header('HTTP/1.0 301 Moved Permanently');
         header('Location: https://2016.drupalcampcolorado.org'. $_SERVER['REQUEST_URI']);
         exit();
       }
       break;
     case 'dev':
-      if (!isset($_SERVER['HTTP_X_SSL']) ||
-        (isset($_SERVER['HTTP_X_SSL']) && $_SERVER['HTTP_X_SSL'] != 'ON')) {
+      if (!isset($_SERVER['HTTP_X_SSL']) || (isset($_SERVER['HTTP_X_SSL']) && $_SERVER['HTTP_X_SSL'] != 'ON')) {
         header('HTTP/1.0 301 Moved Permanently');
         header('Location: https://dev-2016drupalcampcoloradoorg.pantheon.io'. $_SERVER['REQUEST_URI']);
         exit();
       }
       break;
     case 'test':
-      if (!isset($_SERVER['HTTP_X_SSL']) ||
-        (isset($_SERVER['HTTP_X_SSL']) && $_SERVER['HTTP_X_SSL'] != 'ON')) {
+      if (!isset($_SERVER['HTTP_X_SSL']) || (isset($_SERVER['HTTP_X_SSL']) && $_SERVER['HTTP_X_SSL'] != 'ON')) {
         header('HTTP/1.0 301 Moved Permanently');
         header('Location: https://test-2016drupalcampcoloradoorg.pantheon.io'. $_SERVER['REQUEST_URI']);
         exit();
       }
       break;
   }
+}
+else {
+  $databases['default']['default'] = array(
+    'driver' => 'mysql',
+    'database' => 'dcco2016',
+    'username' => 'dcco2016',
+    'password' => 'dcco2016',
+    'host' => 'localhost',
+  );
 }
 
 /**
