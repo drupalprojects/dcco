@@ -42,6 +42,12 @@ else {
   );
 }
 
+// Load local settings.php files.
+$local_settings = __DIR__ . '/local.settings.php';
+if (file_exists($local_settings)) {
+  include $local_settings;
+}
+
 /**
  * Implements Redis cache on Pantheon.
  */
