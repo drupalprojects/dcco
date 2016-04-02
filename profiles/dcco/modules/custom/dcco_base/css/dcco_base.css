@@ -1,0 +1,11 @@
+.block-slack-invite__slack-logo {
+  display: block;
+  float: left;
+  margin-right: 3em;
+}
+
+@media screen and (max-width: 700px) {
+  .block-slack-invite__slack-logo {
+    display: none;
+  }
+}
