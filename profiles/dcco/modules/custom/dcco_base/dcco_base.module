@@ -1,0 +1,61 @@
+<?php
+/**
+ * @file
+ * DCCO general customizations.
+ */
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function dcco_base_form_slack_invite_send_form_alter(&$form, &$form_state, $form_id) {
+  // Adjust the email field description.
+  $form['slack_email']['#description'] = t("We'll send your invitation to this address.");
+}
+
+/**
+ * Implements hook_block_view_alter().
+ */
+function dcco_base_block_view_alter(&$data, $block) {
+  if ($block->delta == 'slack-invite-send-request') {
+    // Add a preamble to the block.
+    $desc = array(
+      t("DrupalCamp Colorado is organized by volunteers like you!"),
+      t("If you would like to get involved, please join us on Slack!"),
+    );
+
+    // Reset the content array.
+    $form = $data['content'];
+    $data['content'] = array();
+
+    // Add a slack logo.
+    $data['content']['logo'] = array(
+      '#theme' => 'image',
+      '#path' => drupal_get_path('module', 'dcco_base') . '/images/slack_icon.png',
+      '#attributes' => array(
+        'alt' => t('Slack logo.'),
+        'class' => array('block-slack-invite__slack-logo'),
+      ),
+      '#weight' => 0,
+      '#attached' => array(
+        'css' => array(
+          drupal_get_path('module', 'dcco_base') . '/css/dcco_base.css',
+        ),
+      ),
+    );
+
+    // Add a preamble.
+    $data['content']['preamble'] = array(
+      '#type' => 'markup',
+      '#markup' => implode('<br />', $desc),
+      '#weight' => 10,
+    );
+
+    // Re-add the form.
+    $data['content']['form'] = $form;
+    $data['content']['form']['#weight'] = 30;
+
+    // Adjust the block title for the slack form block.
+    // @todo: Shouldn't this be possible through the admin interface?
+    $data['title'] = t("Join Us on Slack");
+  }
+}
