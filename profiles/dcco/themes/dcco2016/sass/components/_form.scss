@@ -1,0 +1,170 @@
+//
+// @file
+// Form component.
+//
+// Ideally we would be sticking to .form-item, .form-item-label and
+// .form-item-description, but we need to make some allowances for drupal's
+// default markup.
+// ----------------------------------------------------------------------------
+
+
+.form-item,
+.form-actions {
+  margin: rhythm(4) 0;
+}
+
+.form-item{
+  .image-widget-data{
+    width: 100%
+  }
+}
+
+.field-label-inline {
+  > div {
+    display: inline-block;
+  }
+  div > div {
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+
+.button-operator{
+  width: 100%;
+  text-align: center;
+  display: block;
+  @include breakpoint($mobile-wide, $no-query: '.lt-ie9') {
+    width: auto;
+    text-align: initial;
+    display: initial;
+  }
+}
+
+.commerce-credit-card-expiration{
+  .form-select{
+    width: auto;
+  }
+}
+.form-select{
+  width: 100%;
+  @include breakpoint($mobile-wide, $no-query: '.lt-ie9') {
+    width: auto;
+  }
+}
+
+.form-managed-file .form-file{
+  margin-bottom: 10px;
+  @include breakpoint($mobile-wide, $no-query: '.lt-ie9') {
+    margin-bottom: auto;
+  }
+}
+
+.form-submit{
+  width: 100%;
+  @include breakpoint($mobile-wide, $no-query: '.lt-ie9') {
+    width: auto;
+  }
+}
+
+.form-item-description {
+  @include adjust-font-size-to($fs-xs);
+  font-family: $ff-sans;
+}
+
+
+// FIELDSETS
+fieldset{
+  min-width: 100%;
+  margin: 0 0 0 -14px;
+  @include breakpoint($mobile-wide, $no-query: '.lt-ie9') {
+    min-width: auto;
+    margin: auto;
+  }
+}
+
+.fieldset-legend {
+  font-family: $ff-sans;
+  font-weight: bold;
+}
+
+.fieldset-description {
+  @include adjust-font-size-to($fs-s);
+  margin-bottom: rhythm(4, $fs-s);
+  font-family: $ff-sans;
+}
+
+
+// AUTOCOMPLETE
+// Adjust the background position to account for the larger input size.
+html.js input.form-autocomplete {
+  background-position: 100% 6px;
+
+  &.throbbing {
+    background-position: 100% -14px;
+  }
+}
+
+
+// CHECKBOXES & RADIOS
+// Since these are groups of related form-items, we reduce the spacing a bit.
+.form-type-checkboxes .form-type-checkbox,
+.form-type-radios .form-type-radio {
+  margin: rhythm(1) 0;
+}
+
+
+// ERRORS
+input.error,
+textarea.error,
+select.error {
+  border: 2px solid red;
+}
+
+
+// MACHINE NAMES
+.machine-name-label {
+  font-family: $ff-sans;
+  font-weight: bold;
+}
+
+.machine-name-value {
+  font-family: $ff-mono;
+  margin: 0 .5em;
+}
+
+
+// REQUIRED
+.form-required,
+.marker {
+  color: $clr-error;
+  font-weight: bold;
+}
+
+
+// VERTICAL TABS
+// These are based on the FAPI vertical tab markup which is different than the
+//  nav component.
+// @todo See if consolidating these is feasible.
+// @todo Consolidate these styles with core's vertical-tabs.css
+.vertical-tab-button {
+  position: relative;
+  font-family: $ff-sans;
+}
+
+// Setting the active tab by id assumes only one set of vertical tabs per page.
+// @todo Change #active-vertical-tab to .active-vertical-tab
+#active-vertical-tab {
+  // Removes the ackward box outline on :focus
+  top: 0;
+}
+
+
+// Spacing on buttons
+input[type="submit"] {
+  margin-right: 1em;
+}
+
+.button, #edit-submit + .button, #edit-cancel {
+  margin-left: 1em;
+  margin-right: 0;
+}

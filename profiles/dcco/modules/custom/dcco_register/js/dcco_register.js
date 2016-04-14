@@ -16,23 +16,23 @@
 
       // Insert the graph.
 
-      $('<div class="dcco-register-graph" style="width: 100%; border: 1px solid #ff6c54; border-radius: 3px;"><div class="bar" style="width: ' + percentRounded + '%; height: 50px; background: #f6a06b;"></div></div>').appendTo('.view-dcco-register-total-contributions .view-header');
+      $('<div class="dcco-register-graph" style="width: 100%; border: 1px solid #004499; border-radius: 3px;"><div class="bar" style="width: ' + percentRounded + '%; height: 50px; background: #00388d;"></div></div>').appendTo('.view-dcco-register-total-contributions .view-header');
 
       // Insert the price points.
 
-      $('<li class="button--secondary margin--bottom">' + Drupal.t('Free Level') + '</li>')
+      $('<li class="button--primary margin--bottom">' + Drupal.t('Free Level') + '</li>')
         .click(function(){
           $('#edit-amount').val('0');
         })
         .appendTo(pricePoints);
 
-      $('<li class="button--secondary margin--bottom">' + Drupal.t('$25 - Contributor Level' + '<br/>' + '(free T-shirt)') + '</li>')
+      $('<li class="button--primary margin--bottom">' + Drupal.t('$25 - Contributor Level' + '<br/>' + '(free T-shirt)') + '</li>')
         .click(function(){
           $('#edit-amount').val('25');
         })
         .appendTo(pricePoints);
 
-      $('<li class="button--secondary">' +  Drupal.t('$50 - Yeti Level' + '<br/>' + '(free T-shirt + awesomeness)') + '</li>')
+      $('<li class="button--primary">' +  Drupal.t('$50 - Yeti Level' + '<br/>' + '(free T-shirt + awesomeness)') + '</li>')
         .click(function(){
           $('#edit-amount').val('50');
         })

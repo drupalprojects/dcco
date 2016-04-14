@@ -1,0 +1,23 @@
+//
+// @file
+// Page layout styles.
+//
+// This file should contain the global layout styles for how regions
+// relate to one another on a given page.
+// ----------------------------------------------------------------------------
+
+// Set the page width.
+.l--constrained {
+  margin: 0 auto;
+  max-width: 94%;
+  padding: 0 $w-gutter-half;
+  width: $w-full;
+}
+
+body {
+  @include background(image-url("splash/background-splash.jpg", false, false) 50% 50% fixed);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

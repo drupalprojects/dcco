@@ -1,0 +1,41 @@
+//
+// @file
+// Field styles.
+// ----------------------------------------------------------------------------
+
+// Default field label
+.field-label {
+  @include adjust-font-size-to($fs-xs);
+  font-weight: bold;
+  color: blend-overlay(rgba($black, .25), $clr-text);
+}
+
+.field-title-teaser {
+  @include adjust-font-size-to($fs-xxl, 6);
+  font-family: $ff-heading;
+  font-weight: bold;
+  margin-bottom: rhythm(2, $fs-xxxxl);
+}
+
+.submitted,
+.field-date {
+  @include adjust-font-size-to($fs-xs);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $teal-darker;
+  margin-bottom: rhythm(2, $fs-xs);
+}
+
+
+.views-field-created {
+  @extend .field-date;
+}
+.views-field-title{
+  @extend .field-title-teaser;
+}
+
+.node-session {
+  .field-name-field-session-room {
+    margin-bottom: 15px;
+  }
+}

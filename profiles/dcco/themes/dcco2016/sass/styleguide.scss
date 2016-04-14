@@ -1,0 +1,105 @@
+//
+// @file
+// Styleguide styles
+// ----------------------------------------------------------------------------
+
+
+@import "base/vars";
+@import "compass";
+
+$ff-styleguide: "Helvetica Neue", Arial, Helvetica, sans-serif;
+
+//  Typography
+
+body.styleguide {
+  // background: $gray-lightest;
+  .l--constrained {
+    // background: $white;
+    padding-bottom: rhythm(10);
+    padding-top: rhythm(10);
+  }
+}
+
+h1.styleguide,
+h2.styleguide,
+h3.styleguide,
+h4.styleguide,
+h5.styleguide,
+h6.styleguide {
+  color: $gray-dark;
+  font-family: $ff-styleguide;
+  margin-top: 0;
+}
+
+h1.styleguide {
+  color: $gray-darker;
+  margin: 0 rhythm(5, $fs-h1) rhythm(10, $fs-h1);
+}
+
+h2.styleguide {
+  background: $gray-white;
+  margin-bottom: 0;
+  padding: rhythm(2.5, $fs-h2) rhythm(5, $fs-h2);
+}
+
+h3.styleguide {
+  @include adjust-font-size-to($fs-m);
+  margin-bottom: rhythm(5, $fs-m);
+  text-transform: uppercase;
+}
+
+section.styleguide {
+  border-top: 1px solid $gray;
+  clear: both;
+}
+
+article.styleguide {
+  @include clearfix;
+  clear: both;
+  padding: rhythm(5);
+  padding-left: 200px;
+  > header.styleguide {
+    float: left;
+    margin-left: -200px;
+    padding-left: rhythm(5);
+  }
+}
+
+div.styleguide-color {
+  float: left;
+  margin-bottom: rhythm(8);
+  height: 100px;
+  width: 100px;
+  position: relative;
+  > strong {
+    @include adjust-font-size-to($fs-s, 3);
+    color: $gray-dark;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: rhythm(1, $fs-s);
+  }
+  > span {
+    @include adjust-font-size-to($fs-s, 3);
+    color: $gray;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: rhythm(4, $fs-s);
+  }
+}
+
+div.styleguide-color-main {
+  z-index: 100;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    left: -2px;
+    top: -2px;
+    @include box-sizing(border-box);
+    border: 4px solid $black;
+  }
+}

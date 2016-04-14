@@ -1,0 +1,22 @@
+.node-sponsor {
+ .field-name-field-sponsor-logo {
+   margin: 0 auto;
+   text-align: center;
+   width: 200px;
+
+   @include breakpoint($tablet, $no-query: '.lt-ie9') {
+     float: right;
+     margin-left: 20px;
+   }
+ }
+
+  .field-name-field-sponsor-url,
+  .field-name-field-sponsorship-level {
+    margin-top: 15px;
+    div { display: inline; }
+  }
+
+  #comments {
+    display:none; /* hide existing comments */
+  }
+}
