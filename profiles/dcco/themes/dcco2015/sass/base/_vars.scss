@@ -1,0 +1,161 @@
+//
+// @file
+// Variables for use throughout this compass project.
+//-----------------------------------------------------------------------------
+
+// IE Support
+//-----------------------------------------------------------------------------
+// Setting this to false will result in smaller output, but no support for ie6 hacks.
+// $legacy-support-for-ie6: true; // Overrides default set in Support partial.
+
+// Setting this to false will result in smaller output, but no support for ie7 hacks.
+$legacy-support-for-ie7: true; // Overrides default set in Support partial.
+
+//  Color.
+//-----------------------------------------------------------------------------
+$white:             #ffffff;
+$black:             #000000;
+
+$gray-white:        #f0f0f0;
+$gray-lightest:     #dbdbdb;
+$gray-lighter:      #c7c7c7;
+$gray-light:        #b3b3b3;
+$gray:              #999;
+$gray-dark:         #666;
+$gray-darker:       #333;
+$gray-darkest:      #292929;
+$gray-black:        #141414;
+
+$red:               #B52828;
+
+$orange:            #f27b25;
+
+$green:             #9cc524;
+
+
+//  DCCO 2014 Colors
+
+$blue:                  #004499;
+
+
+$orange-white:          #fef5ef;
+$orange-lightest:       #f6a06b;
+$orange-lighter:        #ffa264;
+$orange-light:          #ff6c54;
+$teal:                  #01986c;
+$purple-dark:             #4e3041;
+$teal-darker:           #00585c;
+$purple-darkest:        #3f1d32;
+$purple-black:          #311928;
+
+$gray-green:            #50625c;
+
+// Semantic color.
+//----------------------------------------------------------------------------
+$clr-neutral:      $gray;      // Default nuetral color
+$clr-text:         $gray-green;     // Default body copy color
+$clr-link:         $orange-light;     // Default link color
+$clr-link_hover:   $orange-lighter;     // Default link color
+$clr-accent:       $teal;     // Default accent color
+$clr-border:       mix($orange-lightest, $orange-lighter);    // Default border and required color
+$clr-status:       $green;      // Default status color
+$clr-warning:      $orange;          // Default warning color
+$clr-error:        $red;             // Default error and required color
+$clr-table-border: $gray-light;      // Default table border color
+$clr-table-odd:    $gray-white;      // Default table odd row color
+$clr-table-even:   transparent;      // Default table even row color
+
+// Typefaces.
+//----------------------------------------------------------------------------
+$ff-mono:  Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New", Courier, monospace;;
+$ff-heading:  "sofia-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ff-sans:  "anago", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ff-sofia: "sofia-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ff-serif: Georgia, "Times New Roman", Times, serif;
+
+// Semantic fonts.
+//----------------------------------------------------------------------------
+$ff-body:    $ff-sofia;
+$ff-display: $ff-sofia;
+
+// Font size.
+//----------------------------------------------------------------------------
+$fs-xxs:     13px;
+$fs-xs:      14px;
+$fs-s:       16px;
+$fs-m:       18px;
+$fs-l:       21px;
+$fs-xl:      24px;
+$fs-xxl:     28px;
+$fs-xxxl:    32px;
+$fs-xxxxl:   36px;
+$fs-xxxxxl:  60px;
+$fs-xxxxxxl: 84px;
+
+// Semantic font size.
+//----------------------------------------------------------------------------
+$fs-h1: $fs-xxxxxxl !default;
+$fs-h2: $fs-xxxxl !default;
+$fs-h3: $fs-xl !default;
+$fs-h4: $fs-m !default;
+$fs-h5: $fs-s !default;
+$fs-h6: $fs-xxs !default;
+
+// Indentation.
+//----------------------------------------------------------------------------
+$indent-amount: 3em !default;
+
+// Vertical rhythm.
+//----------------------------------------------------------------------------
+$base-font-size:    $fs-m;       // Font-size of your body copy.
+$base-line-height:  6px;         // Setting the base-line-height half.
+                                 // the height of the desired body copy.
+                                 // line-height helps prevent sparse.
+                                 // leading at different font-sizes.
+
+// Layout
+//----------------------------------------------------------------------------
+// Grid.
+$grid-column-count: 24;
+$grid-gutter-width: 0;
+
+// Breakpoint.
+$mobile: 480px;
+$mobile-wide: 600px;
+$tablet: 914px;
+$tablet-wide: 992px;
+$desktop: 1080px;
+$desktop-wide: 1382px;
+
+// Width.
+$w-full: 1104px;
+$w-content: 620px;
+$w-sidebar: 320px;
+$w-sidebar-first: 320px;
+$w-gutter: 30px;
+$w-gutter-half: $w-gutter / 2;
+
+// Transition.
+//----------------------------------------------------------------------------
+$default-transition-duration: .15s;
+
+// Text shadow.
+//----------------------------------------------------------------------------
+$default-text-shadow-color: rgba($gray-dark, .6);
+$default-text-shadow-blur: 1px;
+$default-text-shadow-v-offset: 1px;
+
+// Border radius.
+//----------------------------------------------------------------------------
+$radius-s: .25em;
+$radius-m: .5em;
+$radius-l: 50%;
+
+// Button settings.
+//----------------------------------------------------------------------------
+$clr-btn--primary:   $teal;
+$clr-btn--secondary: $purple-black;
+$clr-btn--tertiary:  $orange-light;
+$btn-style: 'none';
+$btn-highlight-strength: .5;
+$btn-shadow-strength: .5;

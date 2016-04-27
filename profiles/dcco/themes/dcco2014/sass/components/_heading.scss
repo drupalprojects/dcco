@@ -1,0 +1,45 @@
+//
+// @file
+// Heading and title styles.
+// ----------------------------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+  color: $teal;
+}
+
+// Page titles
+.page-title {
+  font-weight: normal;
+  margin-bottom: rhythm(3, $fs-h1);
+  margin-top: rhythm(5, $fs-h1);
+}
+
+// Article title (non-full-display node titles )
+.article-title {
+  margin: 0 0 rhythm(1, $fs-xl);
+  @include adjust-font-size-to($fs-xl, 3);
+  font-family: $ff-heading;
+  font-weight: bold;
+}
+
+// Block title
+// .block-title {
+//   @include adjust-font-size-to($fs-l);
+//   margin-bottom: rhythm(4, $fs-l);
+//   color: $clr-text;
+//   font-family: $ff-body;
+//   text-transform: uppercase;
+// }
+
+.block-title {
+  @include adjust-font-size-to($fs-xxxxxl);
+  border-bottom: 3px solid $clr-border;
+  // margin-bottom: rhythm(10, $fs-xxxxxl);
+  padding: 5% 0;
+  // margin-top: rhythm(10, $fs-xxxxxl);
+  padding-bottom: rhythm(4, $fs-xxxxxl);
+  font-family: $ff-heading;
+  font-weight: normal;
+  text-transform: none;
+  color: $teal;
+}

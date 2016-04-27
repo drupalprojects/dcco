@@ -1,0 +1,134 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function dcco_register_menu() {
+
+  $items = array();
+
+  $items['register'] = array(
+    'title' => 'Register',
+    'type' => MENU_CALLBACK,
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('dcco_register_registration'),
+    'access arguments' => array('access checkout'),
+    'menu_name' => 'dcco-actions',
+    'weight' => 0,
+  );
+
+  return $items;
+
+}
+
+/**
+ * Implements hook_default_rules_configuration().
+ */
+function dcco_register_default_rules_configuration() {
+
+  $config = array();
+
+  $includes_directory = drupal_get_path('module', 'dcco_register') . '/includes';
+  $files = file_scan_directory($includes_directory, '/\.rules\.json$/');
+
+  foreach ($files as $path => $file) {
+    list($name, $extension) = explode('.', $file->name);
+    $config[$name] = rules_import(file_get_contents($path));
+  }
+
+  return $config;
+
+}
+
+/**
+ * Creates form for register page.
+ */
+function dcco_register_registration() {
+
+  $form = array();
+
+  $form['#attached'] = array(
+    'js' => array(
+      drupal_get_path('module', 'dcco_register') . '/js/dcco_register.js',
+    )
+  );
+
+  $form['amount'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Contribution Amount'),
+    '#size' => 9,
+    '#default_value' => 25,
+    '#field_suffix' => commerce_default_currency(),
+  );
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Register'),
+  );
+
+  return $form;
+
+}
+
+/**
+ * Creates line item from registration form.
+ */
+function dcco_register_registration_submit($form, &$form_state) {
+
+  global $user;
+
+  $order_id = commerce_cart_order_id($user->uid);
+
+  if ($order_id) {
+    $order = commerce_order_load($order_id);
+  }
+  else {
+    $order = commerce_cart_order_new($user->uid);
+  }
+
+  $product = commerce_product_load_by_sku('dcco2015');
+
+  if ($product) {
+
+    // Create the line item and put the custom amount in the registration price field.
+    $line_item = commerce_product_line_item_new($product);
+    $line_item->field_registration_price[LANGUAGE_NONE][0] = array(
+      'amount' => $form_state['values']['amount'] * 100,
+      'currency_code' => $line_item->commerce_unit_price[LANGUAGE_NONE][0]['currency_code']
+    );
+
+    // Save the line item.
+    commerce_line_item_save($line_item);
+    // Add the product to the cart.
+    // Don't combine multiple registration line items.
+    commerce_cart_product_add($user->uid, $line_item, FALSE);
+
+  }
+
+  $form_state['redirect'] = 'checkout';
+
+}
+
+/**
+ * Validates registration form.
+ */
+function dcco_register_registration_validate($form, &$form_state) {
+
+  // Check that the amount is a positive number.
+  if (!is_numeric($form_state['values']['amount']) || $form_state['values']['amount'] < 0) {
+    form_set_error('amount', t('Please enter a valid amount.'));
+  }
+
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function dcco_register_views_api() {
+
+  return array(
+    'api' => 2,
+    'path' => drupal_get_path('module', 'dcco_register'),
+  );
+
+}

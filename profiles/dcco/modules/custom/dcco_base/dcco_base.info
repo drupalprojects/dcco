@@ -1,0 +1,9 @@
+name = DCCO Main
+description = General customizations and tweaks to the DCCO site.
+core = 7.x
+version = VERSION
+package = DCCO
+
+;dependencies[] =
+
+;files[] =

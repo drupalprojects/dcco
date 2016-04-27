@@ -1,0 +1,65 @@
+<?php
+/**
+* Implementation of hook_install().
+*/
+function personal_information_profile_install(){
+  // Force the vocabularies to exist before adding terms.
+  $vocabs = array();
+  module_load_include('inc', 'personal_information_profile', 'personal_information_profile.features.taxonomy');
+  $vocabs = personal_information_profile_taxonomy_default_vocabularies();
+  foreach ($vocabs as $vocab) {
+    if (!taxonomy_vocabulary_machine_name_load($vocab->name)) {
+      taxonomy_vocabulary_save($vocab); 
+    }
+  }
+ 
+  // Food Preference taxonomy terms
+  $food_preference = array(
+    'Herbivore',
+    'Omnivore',    
+  );
+  _personal_information_profile_load_terms($food_preference, 'food_preference');
+
+  //Job Title taxonomy terms
+  $job_title = array(
+    'Front End Developer',
+    'Back End Developer',
+    'Designer',
+    'Project Manager',
+    'Sales',
+    'Drupalista',
+    'Other',
+  );
+  _personal_information_profile_load_terms($job_title, 'job_title');
+ 
+  //T Shirt Size taxonomy terms
+  $t_shirt_size = array(
+    'Small',
+    'Medium',
+    'Large',
+    'X-Large',
+    'XX-Large',
+  );
+  _personal_information_profile_load_terms($t_shirt_size, 't_shirt_size');
+}
+
+/**
+* Custom function to load an array of terms into a specified vocabulary.
+*/
+function _personal_information_profile_load_terms($terms, $vocab_name){
+  $vocab = taxonomy_vocabulary_machine_name_load($vocab_name);
+  if ($vocab == false) {
+    drupal_set_message('Error while attempting to install vocabulary ' . $vocab_name, 'error');
+  }
+  else {
+    foreach($terms as $weight => $term){
+      $data = new stdClass();
+      $data->name = $term;
+      $data->vid = $vocab->vid;
+      $data->weight = $weight;
+
+      taxonomy_term_save($data);
+    }
+  }
+}
+?>

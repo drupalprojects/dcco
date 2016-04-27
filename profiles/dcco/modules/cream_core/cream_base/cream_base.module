@@ -1,0 +1,18 @@
+<?php
+/**
+ * @file
+ * Cream base
+ */
+
+/**
+ * Implements hook_form_alter().
+ */
+function cream_base_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id) {
+    case 'schedule_node_form':
+      $form['title']['#title'] = t('Day');
+      $form['title']['#description'] = t('Please enter a day that you can easily reference to.');
+      $form['#node']->menu['hidden'] = true;
+      break;
+  }
+}

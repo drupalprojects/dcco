@@ -1,0 +1,95 @@
+//
+// @file
+// Footer region styles.
+// ----------------------------------------------------------------------------
+
+// Footer region
+#footer {
+  padding: rhythm(2) 0 rhythm(1);
+  text-transform: uppercase;
+  width: 100%;
+
+  #block-menu-menu-social-menu {
+    @include border-radius(3px);
+    border-bottom: 3px solid $blue-lightest;
+    padding-bottom: rhythm(4);
+    width: 100%;
+
+    a {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      @include adjust-font-size-to($fs-h3);
+      @include rhythm(4, 0, 0, 0, $fs-h3);
+      color: $yellow;
+      font-family: $ff-heading;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-decoration: none;
+      @extend .icon-twitter;
+      @extend .icon;
+
+      @include breakpoint($tablet, $no-query: '.lt-ie9') {
+        @include adjust-font-size-to($fs-h2);
+        @include rhythm(4, 0, 0, 0, $fs-h2);
+      }
+
+      &:before {
+        font-size: 60px;
+        margin-right: 10px;
+        vertical-align: -5px;
+      }
+    }
+  }
+
+  #block-menu-menu-footer-menu {
+    float: left;
+
+    ul.nav {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-weight: bold;
+      font-size: 0.8em;
+      letter-spacing: 2px;
+      list-style: none;
+      width: 100%;
+
+      > li {
+        cursor: pointer;
+        display: inline-block;
+        float: none;
+        text-align: center;
+        width: auto;
+
+        > a {
+          color: $white;
+          margin: 0 0.5em 0 0;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+#block-block-3,
+#block-system-powered-by {
+  color: $white;
+  padding-top: 5px;
+  text-transform: uppercase;
+  a {
+    color: $yellow;
+    text-decoration: none;
+  }
+}
+
+#block-system-powered-by {
+  @include breakpoint(min-width 500px) {
+    float: right;
+  }
+}
+
+#block-block-3 {
+  @include breakpoint(min-width 500px) {
+    float: left;
+    text-align: right;
+  }
+}

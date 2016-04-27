@@ -1,0 +1,29 @@
+//
+// @file
+// Styles for all regions within main.
+// ----------------------------------------------------------------------------
+
+// Main
+#main {
+  background-color: $white;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.front {
+  #main-content {
+    background: $white;
+  }
+}
+
+
+// Above content
+#above-content {
+  background-color: $blue-black;
+  padding-top: rhythm(2);
+}
+
+// Main content
+#main-content {
+  padding: 0;
+}

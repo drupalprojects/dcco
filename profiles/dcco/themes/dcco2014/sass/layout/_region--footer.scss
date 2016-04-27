@@ -1,0 +1,84 @@
+//
+// @file
+// Footer region styles.
+// ----------------------------------------------------------------------------
+
+// Footer region
+#footer {
+  background-color: transparentize($teal-black, 0.25);
+  padding: rhythm(2) 0 rhythm(1);
+  text-transform: uppercase;
+  width: 100%;
+
+  #block-menu-menu-social-menu {
+    @include border-radius(3px);
+    border-bottom: 3px solid $teal-darker;
+    padding-bottom: rhythm(4);
+    width: 100%;
+
+    a {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      @include adjust-font-size-to($fs-h3);
+      @include rhythm(4, 0, 0, 0, $fs-h3);
+      color: $teal-lighter;
+      font-family: $ff-heading;
+      font-weight: 100;
+      letter-spacing: 4px;
+      text-decoration: none;
+      @extend .icon-twitter;
+      @extend .icon;
+
+      @include breakpoint($tablet, $no-query: '.lt-ie9') {
+        @include adjust-font-size-to($fs-h2);
+        @include rhythm(4, 0, 0, 0, $fs-h2);
+      }
+
+      &:before {
+        font-size: 60px;
+        margin-right: 10px;
+        vertical-align: -5px;
+      }
+    }
+  }
+
+  #block-menu-menu-footer-menu {
+    float: left;
+
+    ul.nav {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-weight: bold;
+      font-size: 0.8em;
+      letter-spacing: 2px;
+      list-style: none;
+      width: 100%;
+
+      > li {
+        cursor: pointer;
+        display: inline-block;
+        float: none;
+        text-align: center;
+        width: auto;
+
+        > a {
+          color: $white;
+          margin: 0 0.5em 0 0;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  #block-system-powered-by {
+    color: $white;
+    padding-top: 5px;
+    text-align: right;
+    text-transform: uppercase;
+    float:right;
+    a {
+      color: $teal-lighter;
+      text-decoration: none;
+    }
+  }
+}

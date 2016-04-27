@@ -1,0 +1,16 @@
+name = DrupalCamp Colorado Register
+description = Provides registration functionality.
+package = DrupalCamp Colorado
+core = 7.x
+
+dependencies[] = commerce_order_ui
+dependencies[] = commerce_product_ui
+dependencies[] = commerce_payment_ui
+dependencies[] = commerce_line_item_ui
+dependencies[] = commerce_product_reference
+dependencies[] = commerce_checkout
+dependencies[] = commerce_cart
+
+dependencies[] = commerce_stripe
+
+files[] = dcco_register.views_default.inc

@@ -1,0 +1,14 @@
+name = Cream Timetable
+description = Provides a Views timetable plugin for Cream timetables.
+package = Cream
+dependencies[] = views
+dependencies[] = timetable
+core = 7.x
+files[] = cream_timetable_plugin_style_timetable.inc
+
+; Information added by Drupal.org packaging script on 2014-06-01
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "cream"
+datestamp = "1401643128"
+

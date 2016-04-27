@@ -1,0 +1,153 @@
+<?php
+
+/**
+ * Implements hook_enable().
+ */
+function dcco_register_enable() {
+  dcco_create_product();
+  dcco_create_price_field();
+  dcco_enable_total_block();
+}
+
+/**
+ * Adds price field to 'product' line item type.
+ */
+function dcco_create_price_field() {
+
+  $field_name = 'field_registration_price';
+  $bundle = 'product';
+  $entity_type = 'commerce_line_item';
+
+  // Create field
+
+  $prior_field = field_read_field($field_name, array('include_inactive' => TRUE));
+
+  if (empty($prior_field)) {
+
+    $new_field = array(
+      'field_name' => $field_name,
+      'type' => 'commerce_price',
+      'module' => 'commerce_price',
+      'cardinality' => 1,
+      'settings' => array(),
+    );
+
+    field_create_field($new_field);
+
+  }
+
+  // Create instance
+
+  $prior_instance = field_read_instance($entity_type, $field_name, $bundle);
+
+  if (empty($prior_instance)) {
+
+    $new_instance = array(
+      'label' => 'Registration Price',
+      'field_name' => $field_name,
+      'bundle' => $bundle,
+      'entity_type' => $entity_type,
+      'widget' => array(
+        'weight' => 2,
+        'type' => 'commerce_price_full',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'currency_code' => 'default',
+        ),
+      ),
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'type' => 'commerce_price_formatted_amount',
+          'settings' => array(
+            'calculation' => FALSE,
+          ),
+          'module' => 'commerce_price',
+          'weight' => 4,
+        ),
+      ),
+    );
+
+    field_create_instance($new_instance);
+
+  }
+
+}
+
+/**
+ * Creates dcco2014 product.
+ */
+function dcco_create_product() {
+
+  $sku = 'dcco2015';
+  $title = 'DrupalCamp Colorado 2015 Registration';
+  $price_usd = 1;
+  $prior_product = commerce_product_load_by_sku($sku);
+
+  if (!$prior_product) {
+
+    // Create new product.
+
+    $new_product = commerce_product_new('product');
+
+    $new_product->status = TRUE;
+    $new_product->uid = 1;
+
+    $new_product->sku = $sku;
+    $new_product->title = $title;
+    $new_product->created = $new_product->changed = time();
+
+    $price = array(
+      LANGUAGE_NONE => array(
+        0 => array(
+          'amount' => $price_usd * 100,
+          'currency_code' => commerce_default_currency(),
+        )
+      )
+    );
+
+    $form = array(
+      '#parents' => array()
+    );
+    $form_state = array(
+      'values' => array(
+        'commerce_price' => $price,
+      )
+    );
+
+    // Notify field widgets to save their field data
+    field_attach_submit('commerce_product', $new_product, $form, $form_state);
+
+    commerce_product_save($new_product);
+
+  }
+
+}
+
+function dcco_enable_total_block() {
+
+  $default_theme = variable_get('theme_default', 'bartik');
+  // Views does a hash of the display name for the delta, to keep it short enough.
+  $delta = 'ea58d061ef7023785c2f8de1814b945b';
+
+  db_merge('block')
+    ->key(array('module' => 'views', 'delta' => $delta, 'theme' => $default_theme))
+    ->fields(
+      array(
+        'module' => 'views',
+        'delta' => $delta,
+        'theme' => $default_theme,
+        'status' => 1,
+        'weight' => -10,
+        'region' => 'highlighted',
+        'pages' => 'register',
+        'cache' => -1,
+        'visibility' => 1,
+      )
+    )
+    ->execute();
+
+}
