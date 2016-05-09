@@ -2353,10 +2353,12 @@ div.password-confirm {
 
 .dcco-register-price-points li {
   cursor: pointer;
+}
+.dcco-register-price-points li button {
   width: 100%;
 }
 @media (min-width: 480px) {
-  .dcco-register-price-points li {
+  .dcco-register-price-points li button {
     width: 465px;
   }
 }

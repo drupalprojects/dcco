@@ -1,10 +1,12 @@
 .dcco-register-price-points {
   li {
     cursor: pointer;
-    width: 100%;
 
-    @include breakpoint($mobile, $no-query: '.lt-ie9') {
-      width: 465px;
+    button {
+      width: 100%;
+      @include breakpoint($mobile, $no-query: '.lt-ie9') {
+        width: 465px;
+      }
     }
   }
 }

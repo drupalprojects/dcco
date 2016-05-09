@@ -14,27 +14,33 @@
         percentRounded = 110;
       }
 
+      function scrollToSubmit() {
+        $('html, body').animate({
+          scrollTop: $("#edit-submit").offset().top
+        }, 2000);
+      }
+
       // Insert the graph.
 
       $('<div class="dcco-register-graph" style="width: 100%; border: 1px solid #004499; border-radius: 3px;"><div class="bar" style="width: ' + percentRounded + '%; height: 50px; background: #00388d;"></div></div>').appendTo('.view-dcco-register-total-contributions .view-header');
 
       // Insert the price points.
 
-      $('<li><button class="button--primary margin--bottom">' + Drupal.t('Free Level') + '</button></li>')
+      $('<li><button class="button--secondary margin--bottom">' + Drupal.t('Free Level') + '</button></li>')
         .click(function(){
-          $('#edit-amount').val('0');
+          $('#edit-amount').val('0'); scrollToSubmit();
         })
         .appendTo(pricePoints);
 
-      $('<li><button class="button--primary margin--bottom">' + Drupal.t('$25 - Contributor Level') + '</button><p>Free T-shirt</p></li>')
+      $('<li><button class="button--secondary margin--bottom">' + Drupal.t('$25 - Contributor Level') + '</button><p>Free T-shirt</p></li>')
         .click(function(){
-          $('#edit-amount').val('25');
+          $('#edit-amount').val('25'); scrollToSubmit()
         })
         .appendTo(pricePoints);
 
-      $('<li><button class="button--primary margin--top">' +  Drupal.t('$50 - Yeti Level') + '</button><p>Free T-shirt + Awesomeness</p></li>')
+      $('<li><button class="button--secondary margin--top">' +  Drupal.t('$50 - Yeti Level') + '</button><p>Free T-shirt + Awesomeness</p></li>')
         .click(function(){
-          $('#edit-amount').val('50');
+          $('#edit-amount').val('50'); scrollToSubmit();
         })
         .appendTo(pricePoints);
 
