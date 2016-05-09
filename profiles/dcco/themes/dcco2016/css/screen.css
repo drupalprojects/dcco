@@ -2362,11 +2362,12 @@ div.password-confirm {
     width: 465px;
   }
 }
-.dcco-register-price-points .page-register .form-item-amount {
+
+.page-register .form-item-amount {
   display: inline-block;
   width: 200px;
 }
-.dcco-register-price-points h2.block-title {
+.page-register h2.block-title {
   font-size: 2em;
 }
 
