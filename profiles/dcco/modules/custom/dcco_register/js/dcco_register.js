@@ -27,19 +27,22 @@
       // Insert the price points.
 
       $('<li><button class="button--secondary margin--bottom">' + Drupal.t('Free Level') + '</button></li>')
-        .click(function(){
+        .click(function(e){
+          e.preventDefault();
           $('#edit-amount').val('0'); scrollToSubmit();
         })
         .appendTo(pricePoints);
 
       $('<li><button class="button--secondary margin--bottom">' + Drupal.t('$25 - Contributor Level') + '</button><p>Free T-shirt</p></li>')
-        .click(function(){
+        .click(function(e){
+          e.preventDefault();
           $('#edit-amount').val('25'); scrollToSubmit()
         })
         .appendTo(pricePoints);
 
-      $('<li><button class="button--secondary margin--top">' +  Drupal.t('$50 - Yeti Level') + '</button><p>Free T-shirt + Awesomeness</p></li>')
-        .click(function(){
+      $('<li><button class="button--secondary margin--top margin-bottom">' +  Drupal.t('$50 - Yeti Level') + '</button><p>Free T-shirt + Awesomeness</p></li>')
+        .click(function(e){
+          e.preventDefault();
           $('#edit-amount').val('50'); scrollToSubmit();
         })
         .appendTo(pricePoints);
