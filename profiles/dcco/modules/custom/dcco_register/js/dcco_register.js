@@ -20,19 +20,19 @@
 
       // Insert the price points.
 
-      $('<li class="button--primary margin--bottom">' + Drupal.t('Free Level') + '</li>')
+      $('<li><button class="button--primary margin--bottom">' + Drupal.t('Free Level') + '</button></li>')
         .click(function(){
           $('#edit-amount').val('0');
         })
         .appendTo(pricePoints);
 
-      $('<li class="button--primary margin--bottom">' + Drupal.t('$25 - Contributor Level' + '<br/>' + '(free T-shirt)') + '</li>')
+      $('<li><button class="button--primary margin--bottom">' + Drupal.t('$25 - Contributor Level') + '</button><p>Free T-shirt</p></li>')
         .click(function(){
           $('#edit-amount').val('25');
         })
         .appendTo(pricePoints);
 
-      $('<li class="button--primary">' +  Drupal.t('$50 - Yeti Level' + '<br/>' + '(free T-shirt + awesomeness)') + '</li>')
+      $('<li><button class="button--primary margin--top">' +  Drupal.t('$50 - Yeti Level') + '</button><p>Free T-shirt + Awesomeness</p></li>')
         .click(function(){
           $('#edit-amount').val('50');
         })
@@ -40,7 +40,7 @@
 
       pricePoints.prependTo('#dcco-register-registration');
 
-      $('<p>Contribute $25.00 or more and receive a DrupalCamp 2015 T-shirt while supplies last.</p>').prependTo('#dcco-register-registration');
+      $('<p>Contribute $25.00 or more and receive a DrupalCamp 2016 T-shirt while supplies last.</p>').prependTo('#dcco-register-registration');
 
     }
 
