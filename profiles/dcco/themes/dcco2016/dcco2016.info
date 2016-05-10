@@ -29,11 +29,13 @@ regions[admin_footer]       = Admin Footer
 
 ;-------------- C S S -------------
 stylesheets[all][] = js/vendor/slick/slick.css
+stylesheets[all][] = js/responsive-nav/responsive-nav.css
 stylesheets[all][] = css/screen.css
 
 stylesheets[print][] = css/override/keep/print.css
 
 ;-------------- J S -------------
 scripts[] = js/main.js
+scripts[] = js/responsive-nav/responsive-nav.js
 scripts[] = js/menu.js
 scripts[] = js/vendor/slick/slick.js
