@@ -2174,8 +2174,8 @@ div.password-confirm {
   margin: 0;
   padding: 0;
   *zoom: 1;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 .view-user-personal-information.all-users .community_users:before, .view-user-personal-information.all-users .community_users:after {
   content: " ";
@@ -2186,7 +2186,7 @@ div.password-confirm {
 }
 .view-user-personal-information.all-users .community_users li {
   float: left;
-  padding: 0 0;
+  padding: 0 5px;
   width: 50%;
   list-style-type: none;
   min-height: 200px;
@@ -2451,16 +2451,6 @@ div.password-confirm {
   border-top: 3px solid #00388d;
   margin-bottom: 3.33333em;
   padding-top: 3.33333em;
-}
-
-.view-user-personal-information .community_users li {
-  padding: 5px;
-}
-.view-user-personal-information .community_users a {
-  display: block;
-}
-.view-user-personal-information .community_users a img {
-  border-radius: 50%;
 }
 
 #block-views-updates-block {

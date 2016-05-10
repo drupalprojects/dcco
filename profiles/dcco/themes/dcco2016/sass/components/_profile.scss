@@ -74,7 +74,7 @@
 
   &.all-users{
     .community_users {
-      $gutter: 0;
+      $gutter: 10px;
       $columns: 2;
       $nup-gutter-method: 'expand';
       margin: 0;
