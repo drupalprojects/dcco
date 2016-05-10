@@ -35,4 +35,5 @@ stylesheets[print][] = css/override/keep/print.css
 
 ;-------------- J S -------------
 scripts[] = js/main.js
+scripts[] = js/menu.js
 scripts[] = js/vendor/slick/slick.js
