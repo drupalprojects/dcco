@@ -14,7 +14,7 @@
 .page-register {
   #highlighted {
     display: none;
-    
+
     @include breakpoint($mobile) {
       display: block;
       float: right;

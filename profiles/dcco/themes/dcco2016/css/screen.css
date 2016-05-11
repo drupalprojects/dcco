@@ -1748,15 +1748,29 @@ h1, h2, h3, h4, h5, h6 {
 .nav-tabs > li,
 .nav-pills > li {
   float: left;
+  max-width: 140px;
   text-align: center;
+}
+@media (min-width: 480px) {
+  .nav-tabs > li,
+  .nav-pills > li {
+    max-width: none;
+  }
 }
 
 .nav-tabs > li > a,
 .nav-pills > li > a {
   display: block;
-  padding-right: 12px;
-  padding-left: 12px;
-  margin-right: 4px;
+  padding: 5px;
+  font-size: .65em;
+}
+@media (min-width: 480px) {
+  .nav-tabs > li > a,
+  .nav-pills > li > a {
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: 4px;
+  }
 }
 
 .nav-tabs > li > a {
