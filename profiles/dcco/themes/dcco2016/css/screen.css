@@ -2171,31 +2171,32 @@ div.password-confirm {
   color: white;
 }
 .view-user-personal-information.all-users .community_users {
+  columns: 2;
+  list-style: none;
   margin: 0;
-  padding: 0;
-  *zoom: 1;
-  margin-left: -5px;
-  margin-right: -5px;
 }
-.view-user-personal-information.all-users .community_users:before, .view-user-personal-information.all-users .community_users:after {
-  content: " ";
-  display: table;
-}
-.view-user-personal-information.all-users .community_users:after {
-  clear: both;
+@media (min-width: 480px) {
+  .view-user-personal-information.all-users .community_users {
+    columns: 4;
+  }
 }
 .view-user-personal-information.all-users .community_users li {
-  float: left;
-  padding: 0 5px;
-  width: 50%;
-  list-style-type: none;
-  min-height: 200px;
+  break-inside: avoid;
+  padding: 10px;
   text-align: center;
 }
-@media (min-width: 914px) {
-  .view-user-personal-information.all-users .community_users li {
-    width: 20%;
-  }
+.view-user-personal-information.all-users .community_users li div a {
+  display: block;
+}
+.view-user-personal-information.all-users .community_users li img {
+  border-radius: 50%;
+  width: 150px;
+}
+.view-user-personal-information.all-users .community_users li h3 {
+  font-size: .65em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .promos {

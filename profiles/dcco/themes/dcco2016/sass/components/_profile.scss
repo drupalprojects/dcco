@@ -74,21 +74,31 @@
 
   &.all-users{
     .community_users {
-      $gutter: 10px;
-      $columns: 2;
-      $nup-gutter-method: 'expand';
+      columns: 2;
+      list-style: none;
       margin: 0;
-      padding: 0;
-      @include nup-container($gutter, $nup-gutter-method);
+
+      @include breakpoint($mobile, $no-query: '.lt-ie9') {
+        columns: 4;
+      }
+
       li {
-        @include nup-base($gutter, $columns, $nup-gutter-method);
-        @include nup-item($columns);
-        list-style-type: none;
-        min-height: 200px;
+        break-inside: avoid;
+        padding: 10px;
         text-align: center;
 
-        @include breakpoint($tablet, $no-query: '.lt-ie9') {
-          @include nup-item(5);
+        div a {
+          display: block;
+        }
+
+        img {
+          border-radius: 50%;
+          width: 150px;
+        }
+
+        h3 {
+          font-size: .65em;
+          @include textEllipsis();
         }
       }
     }

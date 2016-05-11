@@ -11,3 +11,9 @@
 .float--right {
   float: right;
 }
+
+@mixin textEllipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
