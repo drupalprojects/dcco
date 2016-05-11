@@ -72,13 +72,18 @@
   // border: 1px solid $gray-lightest;
   background-color: $blue-dark;
   color: $white;
-  padding: rhythm(2, $fs-s) rhythm(4, $fs-s);
   @include transition;
-  @include adjust-font-size-to($fs-s);
+  @include adjust-font-size-to($fs-xs);
   font-weight: bold;
   letter-spacing: .1em;
+  padding: 5px;
   text-decoration: none;
   text-transform: uppercase;
+
+  @include breakpoint ($mobile) {
+    padding: rhythm(2, $fs-s) rhythm(4, $fs-s);
+    @include adjust-font-size-to($fs-s);
+  }
 
   &:hover {
     // border-color: $gray-light $gray-light $white;

@@ -1782,17 +1782,24 @@ h1, h2, h3, h4, h5, h6 {
   border-top-right-radius: 3px;
   background-color: #0041a3;
   color: #edfbff;
-  padding: 0.75em 1.5em;
   -webkit-transition: all 0.15s;
   -moz-transition: all 0.15s;
   -o-transition: all 0.15s;
   transition: all 0.15s;
-  font-size: 0.88889em;
-  line-height: 1.5em;
+  font-size: 0.77778em;
+  line-height: 1.28571em;
   font-weight: bold;
   letter-spacing: .1em;
+  padding: 5px;
   text-decoration: none;
   text-transform: uppercase;
+}
+@media (min-width: 480px) {
+  .nav-tabs > li > a {
+    padding: 0.75em 1.5em;
+    font-size: 0.88889em;
+    line-height: 1.5em;
+  }
 }
 .nav-tabs > li > a:hover {
   background-color: #0041a3;
