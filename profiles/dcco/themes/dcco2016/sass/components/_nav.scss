@@ -29,25 +29,16 @@
 .nav-tabs > li,
 .nav-pills > li {
   float: left;
-  max-width: 140px;
   text-align: center;
-
-  @include breakpoint($mobile) {
-    max-width: none;
-  }
 }
 
 .nav-tabs > li > a,
 .nav-pills > li > a {
   display: block;
-  padding: 5px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 4px;
   font-size: .65em;
-
-  @include breakpoint($mobile) {
-    padding-right: 12px;
-    padding-left: 12px;
-    margin-right: 4px;
-  }
 }
 
 // TABS
@@ -76,7 +67,7 @@
   @include adjust-font-size-to($fs-xs);
   font-weight: bold;
   letter-spacing: .1em;
-  padding: 5px;
+  padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
 

@@ -1748,29 +1748,16 @@ h1, h2, h3, h4, h5, h6 {
 .nav-tabs > li,
 .nav-pills > li {
   float: left;
-  max-width: 140px;
   text-align: center;
-}
-@media (min-width: 480px) {
-  .nav-tabs > li,
-  .nav-pills > li {
-    max-width: none;
-  }
 }
 
 .nav-tabs > li > a,
 .nav-pills > li > a {
   display: block;
-  padding: 5px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 4px;
   font-size: .65em;
-}
-@media (min-width: 480px) {
-  .nav-tabs > li > a,
-  .nav-pills > li > a {
-    padding-right: 12px;
-    padding-left: 12px;
-    margin-right: 4px;
-  }
 }
 
 .nav-tabs > li > a {
@@ -1790,7 +1777,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.28571em;
   font-weight: bold;
   letter-spacing: .1em;
-  padding: 5px;
+  padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -2390,6 +2377,15 @@ div.password-confirm {
 }
 .page-register h2.block-title {
   font-size: 2em;
+}
+
+.page-user-register .nav-tabs li:first-child {
+  display: none;
+}
+@media (min-width: 480px) {
+  .page-user-register .nav-tabs li:first-child {
+    display: block;
+  }
 }
 
 #block-search-form {

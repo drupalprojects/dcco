@@ -22,4 +22,20 @@
   }
 }
 
+.page-user-register {
+  .nav-tabs {
+
+    // Remove the first (active) tab on mobile since we're tight on space.
+    li:first-child {
+      display: none;
+    }
+
+    @include breakpoint($mobile) {
+      li:first-child {
+        display: block;
+      }
+    }
+  }
+}
+
 
