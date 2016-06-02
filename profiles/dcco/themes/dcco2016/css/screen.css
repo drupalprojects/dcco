@@ -772,11 +772,12 @@ tr.even {
 }
 
 body {
-  background: url('../img/splash/background-splash.jpg') 50% 50% fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url('../img/splash/background-splash-mobile.jpg') 60% 60% fixed;
+}
+@media (min-width: 480px) {
+  body {
+    background: url('../img/splash/background-splash.jpg') 60% 60% fixed;
+  }
 }
 
 #footer {
