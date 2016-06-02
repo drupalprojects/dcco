@@ -19,9 +19,9 @@
 }
 
 body {
-  @include background(image-url("splash/background-splash.jpg", false, false) 50% 50% fixed);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  @include background(image-url("splash/background-splash-mobile.jpg", false, false) 60% 60% fixed);
+
+  @include breakpoint($mobile) {
+    @include background(image-url("splash/background-splash.jpg", false, false) 60% 60% fixed);
+  }
 }

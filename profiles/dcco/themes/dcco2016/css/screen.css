@@ -701,7 +701,6 @@ th,
 td {
   padding: 8px;
   vertical-align: top;
-  border-top: 1px solid #b3b3b3;
 }
 
 caption + thead tr:first-child th,
@@ -2635,7 +2634,9 @@ div.password-confirm {
     background: #edfbff;
     color: #00585c;
     display: block;
-    font-weight: bold;
+    font-size: 0.88889em;
+    line-height: 1.125em;
+    font-weight: normal;
     padding: 0.66667em 1em;
     position: relative;
   }
@@ -2697,12 +2698,21 @@ div.password-confirm {
   }
 }
 
+.footable-first-column a {
+  display: block;
+  font-size: 21px;
+  line-height: 1.2em;
+  padding-left: 30px;
+  padding-top: 6px;
+  font-weight: normal;
+}
+
 .footable-toggle + div {
   padding-left: 35px;
 }
 
 .footable-detail-show .footable-toggle:before {
-  color: #01986c;
+  color: #004499;
   content: "-";
   font-size: 40px;
 }
@@ -2712,14 +2722,11 @@ div.password-confirm {
   }
 }
 
-.footable-row-detail-row {
-  background-color: #fcfcfc;
-}
-
 .footable-row-detail-name {
-  color: #01986c;
+  color: #004499;
   font-family: "sofia-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 28px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .footable-row-detail-row + .footable-row-detail-row {
