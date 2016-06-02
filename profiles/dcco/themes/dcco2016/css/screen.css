@@ -1254,6 +1254,18 @@ body {
   }
 }
 
+.badge {
+  background-color: #666666;
+  border-radius: 4px;
+  color: white;
+  font-size: 90%;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.badge a {
+  color: white;
+}
+
 .travel-map {
   width: 265px;
 }
@@ -2421,6 +2433,33 @@ div.password-confirm {
 .node-sponsor #comments {
   display: none;
   /* hide existing comments */
+}
+
+.node-training-session .aside {
+  margin-bottom: 20px;
+}
+@media (min-width: 480px) {
+  .node-training-session .aside {
+    float: right;
+    margin-left: 50px;
+    width: 415px;
+  }
+}
+.node-training-session .aside .price {
+  display: inline-block;
+  font-size: 24px;
+  width: 150px;
+}
+.node-training-session .aside .room, .node-training-session .aside .track, .node-training-session .aside .level {
+  display: block;
+  padding: 20px 0 0;
+  width: 100%;
+}
+.node-training-session .aside img {
+  margin-top: 20px;
+}
+.node-training-session .aside .commerce-add-to-cart {
+  display: inline-block;
 }
 
 .field-name-field-tags > div {

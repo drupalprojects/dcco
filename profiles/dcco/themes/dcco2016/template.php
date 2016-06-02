@@ -11,7 +11,7 @@ include 'inc/menu.inc';
 include 'inc/node.inc';
 
 
-function dcco2015_preprocess_html(&$vars) {
+function dcco2016_preprocess_html(&$vars) {
   // return;
   $theme_path = drupal_get_path('theme', 'dcco2016');
   drupal_add_css($theme_path . '/js/responsive-nav/responsive-nav.css');

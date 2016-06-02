@@ -1,0 +1,33 @@
+.node-training-session {
+  .aside {
+    margin-bottom: 20px;
+
+    @include breakpoint($mobile) {
+      float: right;
+      margin-left: 50px;
+      width: 415px;
+    }
+
+    .price {
+      display: inline-block;
+      font-size: $fs-h3;
+      width: 150px;
+    }
+
+    .room, .track, .level  {
+      display: block;
+      padding: 20px 0 0;
+      width: 100%;
+    }
+
+    img {
+      margin-top: 20px;
+    }
+
+
+
+    .commerce-add-to-cart {
+      display: inline-block;
+    }
+  }
+}
