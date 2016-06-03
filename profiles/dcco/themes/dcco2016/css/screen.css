@@ -2437,21 +2437,27 @@ div.password-confirm {
   clear: both;
 }
 
-.node-add-session .filter-wrapper {
+.node-session-form .filter-wrapper {
   display: none;
 }
-.node-add-session .field-name-session-timeslot,
-.node-add-session .field-name-experience-level,
-.node-add-session .field-name-track {
+.node-session-form .field-name-field-session-timeslot,
+.node-session-form .field-name-field-experience-level,
+.node-session-form .field-name-field-track {
   display: inline-block;
   width: 100%;
 }
 @media (min-width: 480px) {
-  .node-add-session .field-name-session-timeslot,
-  .node-add-session .field-name-experience-level,
-  .node-add-session .field-name-track {
+  .node-session-form .field-name-field-session-timeslot,
+  .node-session-form .field-name-field-experience-level,
+  .node-session-form .field-name-field-track {
     width: 33.33333%;
   }
+}
+.node-session-form .ckeditor-links {
+  display: none;
+}
+.node-session-form .field-name-field-speaker > .cf {
+  margin-top: 20px;
 }
 
 .node-sponsor .field-name-field-sponsor-logo {
