@@ -82,7 +82,12 @@
 }
 
 #block-system-powered-by {
-    float: right;
+  display: none;
+  float: right;
+  
+  @include breakpoint($mobile) {
+    display: block;
+  }
 }
 
 #block-block-3 {

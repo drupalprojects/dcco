@@ -65,6 +65,16 @@
 
         img {
           border-radius: 50%;
+          max-width: 130px;
+
+          @include breakpoint($mobile) {
+            max-width: 200px;
+          }
+        }
+
+        h4.label {
+          display: inline-block;
+          width: 130px;
         }
       }
 

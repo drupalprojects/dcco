@@ -862,7 +862,13 @@ body {
 }
 
 #block-system-powered-by {
+  display: none;
   float: right;
+}
+@media (min-width: 480px) {
+  #block-system-powered-by {
+    display: block;
+  }
 }
 
 #block-block-3 {
@@ -2171,6 +2177,16 @@ div.password-confirm {
 }
 .view-user-personal-information.single-user .community_users li img {
   border-radius: 50%;
+  max-width: 130px;
+}
+@media (min-width: 480px) {
+  .view-user-personal-information.single-user .community_users li img {
+    max-width: 200px;
+  }
+}
+.view-user-personal-information.single-user .community_users li h4.label {
+  display: inline-block;
+  width: 130px;
 }
 .view-user-personal-information.single-user .community_users .bio {
   color: #666666;
