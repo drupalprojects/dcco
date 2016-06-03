@@ -2474,7 +2474,7 @@ div.password-confirm {
 .node-session .field-name-field-session-room {
   margin-bottom: 15px;
 }
-.node-session .room, .node-session .track, .node-session .level, .node-session .speaker {
+.node-session .room, .node-session .track, .node-session .level, .node-session .speaker, .node-session .time {
   display: block;
   padding: 20px 0 0;
   width: 100%;
