@@ -1460,9 +1460,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-title {
+  font-size: 21px;
   font-weight: normal;
   margin-bottom: 0.3em;
   margin-top: 0.5em;
+}
+@media (min-width: 480px) {
+  .page-title {
+    font-size: 60px;
+  }
 }
 
 .article-title {
@@ -2467,6 +2473,11 @@ div.password-confirm {
 
 .node-session .field-name-field-session-room {
   margin-bottom: 15px;
+}
+.node-session .room, .node-session .track, .node-session .level, .node-session .speaker {
+  display: block;
+  padding: 20px 0 0;
+  width: 100%;
 }
 
 .node-sponsor .field-name-field-sponsor-logo {

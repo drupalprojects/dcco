@@ -39,4 +39,11 @@
   .field-name-field-session-room {
     margin-bottom: 15px;
   }
+
+  .room, .track, .level, .speaker  {
+    display: block;
+    padding: 20px 0 0;
+    width: 100%;
+  }
+
 }

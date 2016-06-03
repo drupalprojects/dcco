@@ -88,33 +88,28 @@
   <?php print render($title_suffix); ?>
 
   <div class="content clearfix"<?php print $content_attributes; ?>>
-    <aside class="aside">
-      <span class="price"><?php print render($content['product:commerce_price']); ?></span>
 
-      <?php
-      hide($content['comments']);
-      hide($content['links']);
-      hide($content['field_session_room']);
-      hide($content['field_session_timeslot']);
-      hide($content['field_speaker']);
-      hide($content['field_track']);
-      hide($content['field_level']);
-      ?>
-      <?php print render($content['field_register_for_training']); ?>
+    <?php
 
+    // We hide the comments and links now so that we can render them later.
+    hide($content['comments']);
+    hide($content['links']);
+    hide($content['field_session_room']);
+    hide($content['field_session_timeslot']);
+    hide($content['field_speaker']);
+    hide($content['field_track']);
+    hide($content['field_level']);
+
+    print render($content);
+
+    ?>
+    <div class="session-details">
       <?php if (!empty($content['field_speaker'])) : ?><span class="speaker">Speaker: <?php print render($content['field_speaker']); ?></span><?php endif; ?>
+      <?php if (!empty($content['field_session_timeslot'])) : ?><span class="time">Time: <?php print render($content['field_session_timeslot']); ?></span><?php endif; ?>
       <?php if (!empty($content['field_session_room'])) : ?><span class="room">Room: <span class="badge"><?php print render($content['field_session_room']); ?></span></span><?php endif; ?>
       <?php if (!empty($content['field_track'])) : ?><span class="track">Track: <span class="badge"><?php print render($content['field_track']); ?></span></span><?php endif; ?>
       <?php if (!empty($content['field_level'])) : ?><span class="level">Experience level: <span class="badge"><?php print render($content['field_experience_level']); ?></span></span><?php endif; ?>
-
-      <?php print render($content['field_image']); ?>
-    </aside>
-    <?php
-    // We hide the comments and links now so that we can render them later.
-
-
-    print render($content);
-    ?>
+    </div>
   </div>
 
 </div>
