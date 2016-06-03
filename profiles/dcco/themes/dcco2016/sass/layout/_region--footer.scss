@@ -84,7 +84,7 @@
 #block-system-powered-by {
   display: none;
   float: right;
-  
+
   @include breakpoint($mobile) {
     display: block;
   }

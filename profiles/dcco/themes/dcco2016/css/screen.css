@@ -2188,6 +2188,13 @@ div.password-confirm {
   display: inline-block;
   width: 130px;
 }
+.view-user-personal-information.single-user .community_users li > a {
+  background-color: #004499;
+  border-radius: 4px;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+}
 .view-user-personal-information.single-user .community_users .bio {
   color: #666666;
   margin-bottom: 10px;
