@@ -98,7 +98,7 @@
     hide($content['field_session_timeslot']);
     hide($content['field_speaker']);
     hide($content['field_track']);
-    hide($content['field_level']);
+    hide($content['field_experience_level']);
 
     print render($content);
 
@@ -108,7 +108,7 @@
       <?php if (!empty($content['field_session_timeslot'])) : ?><span class="time">Time: <?php print render($content['field_session_timeslot']); ?></span><?php endif; ?>
       <?php if (!empty($content['field_session_room'])) : ?><span class="room">Room: <span class="badge"><?php print render($content['field_session_room']); ?></span></span><?php endif; ?>
       <?php if (!empty($content['field_track'])) : ?><span class="track">Track: <span class="badge"><?php print render($content['field_track']); ?></span></span><?php endif; ?>
-      <?php if (!empty($content['field_level'])) : ?><span class="level">Experience level: <span class="badge"><?php print render($content['field_experience_level']); ?></span></span><?php endif; ?>
+      <?php if (!empty($content['field_experience_level'])) : ?><span class="level">Experience level: <span class="badge"><?php print render($content['field_experience_level']); ?></span></span><?php endif; ?>
     </div>
   </div>
 
