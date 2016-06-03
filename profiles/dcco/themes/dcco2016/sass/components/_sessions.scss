@@ -1,4 +1,11 @@
 .node-session-form {
+
+  .form-item-title {
+    width: 90%;
+    font-size: 20px;
+    padding: 10px;
+  }
+  }
   .filter-wrapper {
     display: none;
   }
@@ -14,14 +21,20 @@
       width: 33.33333%;
     }
   }
-  
-  .ckeditor-links {
+
+  .ckeditor_links {
     display: none;
   }
 
-  .field-name-field-speaker {
-    & > .cf {
-      margin-top: 20px;
+  .field-speaker-add-more-wrapper {
+    .description {
+      margin-bottom: 20px;
     }
+  }
+}
+
+.node-session {
+  .field-name-field-session-room {
+    margin-bottom: 15px;
   }
 }
