@@ -34,7 +34,10 @@
   @extend .field-title-teaser;
 }
 
-.form-item .description {
-  color: $gray-light;
-  font-style: italic;
+.form-item,
+.text-format-wrapper {
+  .description {
+    color: $gray-light;
+    font-style: italic;
+  }
 }

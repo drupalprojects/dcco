@@ -2437,9 +2437,9 @@ div.password-confirm {
   clear: both;
 }
 
-.node-session-form .form-item-title {
+.node-session-form .form-item-title input {
   width: 90%;
-  font-size: 20px;
+  font-size: 21px;
   padding: 10px;
 }
 .node-session-form .filter-wrapper {
@@ -2461,7 +2461,7 @@ div.password-confirm {
 .node-session-form .ckeditor_links {
   display: none;
 }
-.node-session-form .field-speaker-add-more-wrapper .description {
+.node-session-form #field-speaker-add-more-wrapper .description {
   margin-bottom: 20px;
 }
 
@@ -2832,7 +2832,8 @@ div.password-confirm {
   margin-bottom: 0.85714em;
 }
 
-.form-item .description {
+.form-item .description,
+.text-format-wrapper .description {
   color: #b3b3b3;
   font-style: italic;
 }

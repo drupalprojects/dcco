@@ -1,11 +1,13 @@
 .node-session-form {
 
   .form-item-title {
-    width: 90%;
-    font-size: 20px;
-    padding: 10px;
+    input {
+      width: 90%;
+      font-size: $fs-l;
+      padding: 10px;
+    }
   }
-  
+
   .filter-wrapper {
     display: none;
   }
@@ -26,7 +28,7 @@
     display: none;
   }
 
-  .field-speaker-add-more-wrapper {
+  #field-speaker-add-more-wrapper {
     .description {
       margin-bottom: 20px;
     }
