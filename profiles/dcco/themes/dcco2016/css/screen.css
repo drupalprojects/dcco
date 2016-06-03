@@ -2195,6 +2195,9 @@ div.password-confirm {
   margin-top: 10px;
   padding: 10px;
 }
+.view-user-personal-information.single-user .community_users li .cf:last-child {
+  margin-bottom: 40px;
+}
 .view-user-personal-information.single-user .community_users .bio {
   color: #666666;
   margin-bottom: 10px;
@@ -2432,6 +2435,23 @@ div.password-confirm {
 }
 #block-search-form:after {
   clear: both;
+}
+
+.node-add-session .filter-wrapper {
+  display: none;
+}
+.node-add-session .field-name-session-timeslot,
+.node-add-session .field-name-experience-level,
+.node-add-session .field-name-track {
+  display: inline-block;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .node-add-session .field-name-session-timeslot,
+  .node-add-session .field-name-experience-level,
+  .node-add-session .field-name-track {
+    width: 33.33333%;
+  }
 }
 
 .node-sponsor .field-name-field-sponsor-logo {

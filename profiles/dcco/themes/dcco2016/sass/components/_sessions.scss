@@ -1,0 +1,23 @@
+.node-add-session {
+  .filter-wrapper {
+    display: none;
+  }
+
+  .field-name-session-timeslot,
+  .field-name-experience-level,
+  .field-name-track {
+
+    display: inline-block;
+    width: 100%;
+
+    @include breakpoint($mobile) {
+      width: 33.33333%;
+    }
+  }
+
+  .field-name-field-speaker {
+    & > .cf {
+      margin-top: 20px;
+    }
+  }
+}
