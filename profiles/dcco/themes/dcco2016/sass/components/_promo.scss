@@ -4,7 +4,7 @@
 // ----------------------------------------------------------------------------
 
 .promos {
-  padding: 50px 0;
+  padding: 0 0 20px;
 
   @include breakpoint($tablet, $no-query: '.lt-ie9') {
     padding: 50px 0 100px;
@@ -23,11 +23,11 @@
     color: white;
     font-weight: bold;
     letter-spacing: 4px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     text-transform: uppercase;
 
     @include breakpoint($desktop, $no-query: '.lt-ie9') {
-      @include adjust-font-size-to(72px);
+      @include adjust-font-size-to(40px);
     }
   }
 
@@ -66,8 +66,12 @@
 
   }
 
+  .columns {
+    display: flex;
+  }
+
   .columns__column {
-    width: 100%;
+    width: 70%;
 
     @include breakpoint($tablet, $no-query: '.lt-ie9') {
       display: table-cell;
@@ -77,7 +81,7 @@
   }
 
   .columns__column + .columns__column {
-    display: none;
+    width: 30%;
 
     @include breakpoint($tablet, $no-query: '.lt-ie9') {
       display: table-cell;
@@ -94,8 +98,13 @@
 
 .promo__body {
   color: white;
+  display: none;
   font-family: $ff-sans;
   font-size: $fs-l;
+
+  @include breakpoint($mobile) {
+    display: block;
+  }
 }
 
 .promo__image {
