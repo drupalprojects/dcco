@@ -26,4 +26,18 @@
 // Main content
 #main-content {
   padding: 0;
+
+  &.has-sidebar {
+    position: relative;
+
+    .aside {
+      @include breakpoint($mobile) {
+        margin-top: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 250px;
+      }
+    }
+  }
 }
