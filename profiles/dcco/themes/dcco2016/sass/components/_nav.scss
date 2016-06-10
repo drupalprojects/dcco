@@ -247,17 +247,18 @@
     @include border-radius(3px);
     background-color: $blue-black;
     a {
-      color: white;
+      color: $yellow;
+      font-size: 1.2em;
+      font-weight: bold;
+      padding: 10px;
+      text-transform: uppercase;
     }
 
     &.active {
       background-color: $blue;
 
       a {
-        color: $yellow;
-        font-size: 1.2em;
-        font-weight: bold;
-        padding: 10px;
+
       }
     }
   }

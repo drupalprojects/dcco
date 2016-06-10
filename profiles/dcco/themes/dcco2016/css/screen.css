@@ -2002,16 +2002,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #003469;
 }
 .nav-pills li a {
-  color: white;
-}
-.nav-pills li.active {
-  background-color: #004499;
-}
-.nav-pills li.active a {
   color: #fbe600;
   font-size: 1.2em;
   font-weight: bold;
   padding: 10px;
+  text-transform: uppercase;
+}
+.nav-pills li.active {
+  background-color: #004499;
 }
 .nav-pills li + li {
   margin-left: 5px;
