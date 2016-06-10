@@ -240,18 +240,24 @@
 
 .nav-pills {
   position: absolute;
+  right: 0;
   top: 70px;
+
   li {
     @include border-radius(3px);
-    background-color: $blue-lightest;
+    background-color: $blue-black;
     a {
       color: white;
     }
 
     &.active {
-      background-color: $blue-lightest;
+      background-color: $blue;
+
       a {
-        color: $blue-dark;
+        color: $yellow;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 10px;
       }
     }
   }
