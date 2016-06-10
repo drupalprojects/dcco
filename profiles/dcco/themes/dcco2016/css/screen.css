@@ -1018,13 +1018,6 @@ body {
   }
 }
 
-.landing-teaser a {
-  color: #fbe600;
-  font-size: 1.5em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 #branding {
   text-align: center;
   padding: 0.66667em;
@@ -2852,6 +2845,13 @@ div.password-confirm {
 }
 .block--proposals div + div {
   margin-top: 20px;
+}
+
+.landing-teaser a {
+  color: #fbe600;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .field-label {
