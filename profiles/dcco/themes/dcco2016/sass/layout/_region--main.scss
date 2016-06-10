@@ -30,13 +30,14 @@
   &.has-sidebar {
     position: relative;
 
+    // This is ugly...
     .aside {
       @include breakpoint($mobile) {
         padding: 40px 20px;
         position: absolute;
         right: 0;
         top: 0;
-        width: 250px;
+        width: 350px;
       }
     }
   }
