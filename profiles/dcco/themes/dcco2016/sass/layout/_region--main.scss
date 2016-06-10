@@ -33,6 +33,7 @@
     // This is ugly...
     .aside {
       @include breakpoint($mobile) {
+        margin-top: 40px;
         padding: 40px 20px;
         position: absolute;
         right: 0;

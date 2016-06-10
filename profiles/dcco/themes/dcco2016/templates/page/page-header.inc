@@ -28,10 +28,13 @@
 <?php endif; // end navigation?>
 
 <?php if ($is_front): ?>
+  <div class="landing-teaser"><a href="/proposals" class="button--secondary">Now accepting session proposals. Share your knowledge with the Drupal community.</a></div>
   <div id="masthead">
     <div class="l--constrained">
       <img src="/profiles/dcco/themes/dcco2016/img/logo-dcco-2016.png" alt="DrupalCamp Colorado 2016" />
-      <a href="/register" class="button--secondary">Register</a>
+      <div>
+        <a href="/register" class="button--secondary">Register</a>
+      </div>
     </div>
   </div>
 <?php endif; ?>
