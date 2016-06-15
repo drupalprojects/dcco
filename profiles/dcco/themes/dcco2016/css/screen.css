@@ -1989,6 +1989,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-pills {
+  padding: 10px;
   position: absolute;
   right: 0;
   top: 70px;
