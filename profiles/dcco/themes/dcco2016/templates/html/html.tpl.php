@@ -17,7 +17,7 @@
   <link rel="apple-touch-icon" sizes="152x152" href="/profiles/dcco/themes/dcco2016/favicons/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/profiles/dcco/themes/dcco2016/favicons/apple-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="192x192"  href="/profiles/dcco/themes/dcco2016/favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/profiles/dcco/themes/dcco2016/favicons/avicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/profiles/dcco/themes/dcco2016/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="/profiles/dcco/themes/dcco2016/favicons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/profiles/dcco/themes/dcco2016/favicons/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
