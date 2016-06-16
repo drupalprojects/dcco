@@ -7,8 +7,11 @@
       $mainMenu.find('.updates a').addClass('icon-comment');
       $mainMenu.find('.sponsors a').addClass('icon-heart');
       $mainMenu.find('.travel a').addClass('icon-plane');
+      $mainMenu.find('.training a').addClass('icon-certificate');
+      $mainMenu.find('.community a').addClass('icon-user');
 
-      // Activate Slick carousel on landing page promo.
+
+    // Activate Slick carousel on landing page promo.
       $('.promos__wrapper').slick({
           slide: 'li',
           arrows: true,
