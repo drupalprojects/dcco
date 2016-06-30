@@ -104,7 +104,7 @@
 
     ?>
     <div class="session-details">
-      <?php if (!empty($content['field_speaker'])) : ?><span class="speaker">Speaker: <?php print render($content['field_speaker']); ?></span><?php endif; ?>
+      <?php if (!empty($content['field_speaker'])) : ?><span class="speaker">Speaker(s): <?php print render($content['field_speaker']); ?></span><?php endif; ?>
       <?php if (!empty($content['field_session_timeslot'])) : ?><span class="time">Time: <?php print render($content['field_session_timeslot']); ?></span><?php endif; ?>
       <?php if (!empty($content['field_session_room'])) : ?><span class="room">Room: <span class="badge"><?php print render($content['field_session_room']); ?></span></span><?php endif; ?>
       <?php if (!empty($content['field_track'])) : ?><span class="track">Track: <span class="badge"><?php print render($content['field_track']); ?></span></span><?php endif; ?>
