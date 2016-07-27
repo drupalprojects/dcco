@@ -1274,7 +1274,7 @@ body {
 }
 
 .badge {
-  background-color: #666666;
+  background-color: #004499;
   border-radius: 4px;
   color: white;
   font-size: 90%;
@@ -2845,6 +2845,12 @@ div.password-confirm {
 }
 .view-cream-schedule-timetable .views-field-field-timeslot-time {
   width: 100px;
+}
+.view-cream-schedule-timetable .badge a {
+  font-size: 14px;
+}
+.view-cream-schedule-timetable .views-field-track {
+  width: 300px;
 }
 .view-cream-schedule-timetable .views-field-title-2 {
   width: 120px;
