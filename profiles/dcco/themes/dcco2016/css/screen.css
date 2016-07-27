@@ -2856,6 +2856,11 @@ div.password-confirm {
   width: 120px;
 }
 
+@media (min-width: 500px) {
+  .footable-toggle + div {
+    padding-left: 0;
+  }
+}
 .block--proposals {
   text-align: center;
 }
