@@ -2843,6 +2843,13 @@ div.password-confirm {
     margin-right: -27px;
   }
 }
+.view-cream-schedule-timetable .views-field-field-timeslot-time {
+  width: 100px;
+}
+.view-cream-schedule-timetable .views-field-title-2 {
+  width: 120px;
+}
+
 .block--proposals {
   text-align: center;
 }
