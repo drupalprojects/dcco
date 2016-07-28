@@ -1,0 +1,26 @@
+
+.page-user {
+
+  .profile {
+    img {
+      float: right;
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      label {
+        display: inline-block;
+        font-family: "sofia-pro";
+        margin-right: 5px;
+        text-transform: uppercase;
+        width: 150px;
+      }
+    }
+  }
+
+}

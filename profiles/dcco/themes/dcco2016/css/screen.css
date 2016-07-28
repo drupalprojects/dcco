@@ -2572,6 +2572,23 @@ div.password-confirm {
   box-shadow: none;
 }
 
+.page-user .profile img {
+  float: right;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.page-user .profile ul {
+  list-style: none;
+  padding: 0;
+}
+.page-user .profile ul label {
+  display: inline;
+  font-family: "sofia-pro";
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
 .view-header .dcco-sponsors-header {
   font-size: 0.75em;
   margin: 0 0 10px 0;
