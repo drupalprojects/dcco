@@ -2583,10 +2583,11 @@ div.password-confirm {
   padding: 0;
 }
 .page-user .profile ul label {
-  display: inline;
+  display: inline-block;
   font-family: "sofia-pro";
   margin-right: 5px;
   text-transform: uppercase;
+  width: 200px;
 }
 
 .view-header .dcco-sponsors-header {
