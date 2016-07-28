@@ -2575,24 +2575,37 @@ div.password-confirm {
 .page-user .profile img {
   float: right;
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
+  height: 75px;
+  margin-left: 10px;
+  width: 75px;
+}
+@media (min-width: 500px) {
+  .page-user .profile img {
+    height: 150px;
+    width: 150px;
+  }
 }
 .page-user .profile ul {
   list-style: none;
   padding: 0;
 }
-.page-user .profile ul .bio {
-  margin-left: 205px;
-  margin-top: -30px;
-  margin-bottom: 10px;
+@media (min-width: 500px) {
+  .page-user .profile ul .bio {
+    margin-left: 205px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+  }
 }
 .page-user .profile ul label {
   display: inline-block;
   font-family: "sofia-pro";
   margin-right: 5px;
   text-transform: uppercase;
-  width: 200px;
+}
+@media (min-width: 500px) {
+  .page-user .profile ul label {
+    width: 200px;
+  }
 }
 
 .view-header .dcco-sponsors-header {

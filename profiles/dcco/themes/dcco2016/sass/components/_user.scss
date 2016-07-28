@@ -5,8 +5,14 @@
     img {
       float: right;
       border-radius: 50%;
-      height: 150px;
-      width: 150px;
+      height: 75px;
+      margin-left: 10px;
+      width: 75px;
+
+      @media (min-width: 500px) {
+        height: 150px;
+        width: 150px;
+      }
     }
 
     ul {
@@ -14,9 +20,12 @@
       padding: 0;
 
       .bio {
-        margin-left: 205px;
-        margin-top: -30px;
-        margin-bottom: 10px;
+
+        @media (min-width: 500px) {
+          margin-left: 205px;
+          margin-top: -30px;
+          margin-bottom: 10px;
+        }
       }
 
       label {
@@ -24,7 +33,10 @@
         font-family: "sofia-pro";
         margin-right: 5px;
         text-transform: uppercase;
-        width: 200px;
+
+        @media (min-width: 500px) {
+          width: 200px;
+        }
       }
     }
   }
