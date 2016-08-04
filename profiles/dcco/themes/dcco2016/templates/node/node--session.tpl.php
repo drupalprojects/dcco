@@ -102,6 +102,15 @@
 
     print render($content);
 
+    // Remove the #printed flag generated from hide() and render() to be able to
+    // evaluate emptiness. This fixes a bug where empty session detail fields
+    // weren't being hidden below.
+    foreach ($content as $key => $field) {
+      if (strpos($key, 'field_') === 0) {
+        unset($content[$key]['#printed']);
+      }
+    }
+
     ?>
     <div class="session-details">
       <?php if (!empty($content['field_speaker'])) : ?><span class="speaker">Speaker(s): <?php print render($content['field_speaker']); ?></span><?php endif; ?>
