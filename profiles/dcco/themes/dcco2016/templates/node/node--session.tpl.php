@@ -100,7 +100,30 @@
     hide($content['field_track']);
     hide($content['field_experience_level']);
 
+    ?>
+
+    <div class="session-speakers">
+      <?php foreach($content['speakers'] as $speaker) { ?>
+        <div class="session-speaker">
+          <a href="/user/<?php print render($speaker['uid']); ?>"><?php  print render($speaker['speaker_image']); ?></a>
+          <h4><a href="/user/<?php print render($speaker['uid']); ?>"><?php print render($speaker['speaker_first_name']['und'][0]['safe_value']); ?> <?php print render($speaker['speaker_last_name']['und'][0]['safe_value']); ?></a></h4>
+        </div>
+      <?php } ?>
+    </div>
+
+
+    <?php
     print render($content);
+
+
+    // Remove the #printed flag generated from hide() and render() to be able to
+    // evaluate emptiness. This fixes a bug where empty session detail fields
+    // weren't being hidden below.
+    foreach ($content as $key => $field) {
+      if (strpos($key, 'field_') === 0) {
+        unset($content[$key]['#printed']);
+      }
+    }
 
     ?>
     <div class="session-details">

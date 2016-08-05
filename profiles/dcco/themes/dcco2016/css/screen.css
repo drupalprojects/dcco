@@ -2505,6 +2505,18 @@ div.password-confirm {
   padding: 20px 0 0;
   width: 100%;
 }
+.node-session .session-speakers {
+  float: right;
+  width: 200px;
+}
+.node-session .session-speaker {
+  text-align: center;
+}
+.node-session .session-speaker img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
 
 .node-sponsor .field-name-field-sponsor-logo {
   margin: 0 auto;
