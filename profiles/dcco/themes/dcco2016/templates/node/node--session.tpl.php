@@ -115,10 +115,6 @@
     <?php
     print render($content);
 
-<<<<<<< HEAD
-
-=======
->>>>>>> ca33147e84e3869dfc5bfec85e98493fc351470a
     // Remove the #printed flag generated from hide() and render() to be able to
     // evaluate emptiness. This fixes a bug where empty session detail fields
     // weren't being hidden below.
