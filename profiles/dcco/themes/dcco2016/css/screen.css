@@ -2507,15 +2507,27 @@ div.password-confirm {
 }
 .node-session .session-speakers {
   float: right;
-  width: 200px;
+  margin-left: 30px;
+  width: 100px;
+}
+@media (min-width: 500px) {
+  .node-session .session-speakers {
+    width: 200px;
+  }
 }
 .node-session .session-speaker {
   text-align: center;
 }
 .node-session .session-speaker img {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
+}
+@media (min-width: 500px) {
+  .node-session .session-speaker img {
+    height: 200px;
+    width: 200px;
+  }
 }
 
 .node-sponsor .field-name-field-sponsor-logo {
