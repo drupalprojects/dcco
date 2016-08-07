@@ -46,7 +46,7 @@
       if (!empty($profile['field_bio'])) { print '<li><label>Bio</label><div class="bio">' . render($profile['field_bio']) . '</div></li>'; }
       if (!empty($profile['field_how_long_drupal'])) { print '<li><label>Drupal experience</label>' . render($profile['field_how_long_drupal']) . '</li>'; }
       if (!empty($profile['field_twitter'])) { print '<li><label>Twitter</label><a href="'. render($profile['field_twitter']) . '">' . render($profile['field_twitter']) . '</a></li>'; }
-      if (!empty($profile['field_irc_nickname'])) { print '<li><label>IRC</label><a href="https://drupal.org/u/">' . render($profile['field_irc_nickname']) . '</a></li>'; }
+      if (!empty($profile['field_irc_nickname'])) { print '<li><label>IRC</label><a href="https://drupal.org/u/' . render($profile['field_irc_nickname']) . '">' . render($profile['field_irc_nickname']) . '</a></li>'; }
     print '</ul>';
   }
   ?>
