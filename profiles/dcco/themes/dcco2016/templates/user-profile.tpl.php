@@ -41,12 +41,12 @@
     print render($profile['field_profile_image']);
     print '<ul>';
       print '<li><label>Name</label>' . render($profile['field_first_name']) . ' ' . render($profile['field_last_name']) . '</li>';
-      if (!empty($profile['field_organization'])) { print '<li><label>Organization</label>' . render($profile['field_organization']); }
-      if (!empty($profile['field_job_title'])) { print '<li><label>Job title</label>' . render($profile['field_job_title']); }
-      if (!empty($profile['field_bio'])) { print '<li><label>Bio</label><div class="bio">' . render($profile['field_bio']) . '</div>'; }
-      if (!empty($profile['field_bio'])) { print '<li><label>Drupal experience</label>' . render($profile['field_how_long_drupal']); }
-      if (!empty($profile['field_bio'])) { print '<li><label>Twitter</label>' . render($profile['field_twitter']); }
-      if (!empty($profile['field_bio'])) { print '<li><label>IRC</label>' . render($profile['field_irc']); }
+      if (!empty($profile['field_organization'])) { print '<li><label>Organization</label>' . render($profile['field_organization']) . '</li>'; }
+      if (!empty($profile['field_job_title'])) { print '<li><label>Job title</label>' . render($profile['field_job_title']) . '</li>'; }
+      if (!empty($profile['field_bio'])) { print '<li><label>Bio</label><div class="bio">' . render($profile['field_bio']) . '</div></li>'; }
+      if (!empty($profile['field_how_long_drupal'])) { print '<li><label>Drupal experience</label>' . render($profile['field_how_long_drupal']) . '</li>'; }
+      if (!empty($profile['field_twitter'])) { print '<li><label>Twitter</label><a href="'. render($profile['field_twitter']) . '">' . render($profile['field_twitter']) . '</a></li>'; }
+      if (!empty($profile['field_irc_nickname'])) { print '<li><label>IRC</label><a href="https://drupal.org/u/">' . render($profile['field_irc_nickname']) . '</a></li>'; }
     print '</ul>';
   }
   ?>
