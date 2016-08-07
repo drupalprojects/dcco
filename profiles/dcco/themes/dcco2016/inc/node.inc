@@ -19,7 +19,7 @@ function dcco2016_preprocess_node(&$vars) {
     $profile = profile2_load_by_user($speaker['target_id']);
     $profile_image = $profile['personal_information']->field_profile_image;
     $image_vars = array(
-      'style_name' => 'large',
+      'style_name' => 'user_photo',
       'path' => $profile_image['und'][0]['uri'],
     );
     $image = !empty($profile_image) ? theme_image_style($image_vars) : null;
