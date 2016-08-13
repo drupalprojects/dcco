@@ -100,38 +100,13 @@
     hide($content['field_track']);
     hide($content['field_experience_level']);
 
-    ?>
-
-    <div class="session-speakers">
-      <?php foreach($content['speakers'] as $speaker) { ?>
-        <div class="session-speaker">
-          <a href="/user/<?php print render($speaker['uid']); ?>"><?php  print render($speaker['speaker_image']); ?></a>
-          <h4><a href="/user/<?php print render($speaker['uid']); ?>"><?php print render($speaker['speaker_first_name']['und'][0]['safe_value']); ?> <?php print render($speaker['speaker_last_name']['und'][0]['safe_value']); ?></a></h4>
-        </div>
-      <?php } ?>
-    </div>
-
-
-    <?php
     print render($content);
-
-    // Remove the #printed flag generated from hide() and render() to be able to
-    // evaluate emptiness. This fixes a bug where empty session detail fields
-    // weren't being hidden below.
-    foreach ($content as $key => $field) {
-      if (strpos($key, 'field_') === 0) {
-        unset($content[$key]['#printed']);
-      }
-    }
 
     ?>
     <div class="session-details">
-      <?php if (!empty($content['field_speaker'])) : ?><span class="speaker">Speaker(s): <?php print render($content['field_speaker']); ?></span><?php endif; ?>
-      <?php if (!empty($content['field_session_timeslot'])) : ?><span class="time">Time: <?php print render($content['field_session_timeslot']); ?></span><?php endif; ?>
-      <?php if (!empty($content['field_session_room'])) : ?><span class="room">Room: <span class="badge"><?php print render($content['field_session_room']); ?></span></span><?php endif; ?>
       <?php if (!empty($content['field_track'])) : ?><span class="track">Track: <span class="badge"><?php print render($content['field_track']); ?></span></span><?php endif; ?>
       <?php if (!empty($content['field_experience_level'])) : ?><span class="level">Experience level: <span class="badge"><?php print render($content['field_experience_level']); ?></span></span><?php endif; ?>
     </div>
   </div>
-
+<p>&nbsp;</p>
 </div>

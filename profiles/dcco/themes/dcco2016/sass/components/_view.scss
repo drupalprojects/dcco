@@ -306,3 +306,29 @@
     }
   }
 }
+
+.view-cream-schedule-timetable {
+  .views-field-field-timeslot-time {
+    width: 100px;
+  }
+
+  .badge {
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .views-field-field-track {
+    width: 300px;
+  }
+
+  .views-field-title-2 {
+    width: 120px;
+  }
+}
+
+@media (min-width: 500px) {
+  .footable-toggle + div {
+    padding-left: 0;
+  }
+}
