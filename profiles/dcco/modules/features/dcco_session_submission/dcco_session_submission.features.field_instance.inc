@@ -70,7 +70,7 @@ function dcco_session_submission_field_default_field_instances() {
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -93,7 +93,7 @@ function dcco_session_submission_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -109,7 +109,7 @@ function dcco_session_submission_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -131,7 +131,49 @@ function dcco_session_submission_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-session-field_slides'.
+  $field_instances['node-session-field_slides'] = array(
+    'bundle' => 'session',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_slides',
+    'label' => 'Slides / Supporting Documents',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => 'slides',
+      'file_extensions' => 'pdf doc docx xls xlsx csv txt rtf html zip mp3 wma mpg flv avi jpg jpeg png gif',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 2,
     ),
   );
 
@@ -149,7 +191,7 @@ function dcco_session_submission_field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -181,7 +223,7 @@ function dcco_session_submission_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 6,
+      'weight' => 8,
     ),
   );
 
@@ -197,7 +239,7 @@ function dcco_session_submission_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -219,7 +261,7 @@ function dcco_session_submission_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 6,
     ),
   );
 
@@ -245,7 +287,7 @@ function dcco_session_submission_field_default_field_instances() {
           'youtube_width' => '',
         ),
         'type' => 'youtube_video',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -266,7 +308,7 @@ function dcco_session_submission_field_default_field_instances() {
       'module' => 'youtube',
       'settings' => array(),
       'type' => 'youtube',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -276,6 +318,7 @@ function dcco_session_submission_field_default_field_instances() {
   t('Accepted');
   t('Checking this box will signify that this session has been accepted.');
   t('Experience level');
+  t('Slides / Supporting Documents');
   t('Speaker(s)');
   t('Tell us what this session is about and why it would be good for DrupalCamp Colorado');
   t('Track');
