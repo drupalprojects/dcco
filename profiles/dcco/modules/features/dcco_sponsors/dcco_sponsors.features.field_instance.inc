@@ -10,8 +10,8 @@
 function dcco_sponsors_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-sponsor-body'
-  $field_instances['node-sponsor-body'] = array(
+  // Exported field_instance: 'node-sponsor-field_bio'.
+  $field_instances['node-sponsor-field_bio'] = array(
     'bundle' => 'sponsor',
     'default_value' => NULL,
     'deleted' => 0,
@@ -22,24 +22,20 @@ function dcco_sponsors_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Sponsor description',
-    'required' => 0,
+    'field_name' => 'field_bio',
+    'label' => 'Sponsor Bio',
+    'required' => 1,
     'settings' => array(
-      'display_summary' => 1,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -47,15 +43,14 @@ function dcco_sponsors_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
+        'rows' => 5,
       ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 4,
+      'type' => 'text_textarea',
+      'weight' => 7,
     ),
   );
 
-  // Exported field_instance: 'node-sponsor-field_related_attendees'
+  // Exported field_instance: 'node-sponsor-field_related_attendees'.
   $field_instances['node-sponsor-field_related_attendees'] = array(
     'bundle' => 'sponsor',
     'default_value' => NULL,
@@ -64,11 +59,8 @@ function dcco_sponsors_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 4,
       ),
       'teaser' => array(
@@ -98,7 +90,7 @@ function dcco_sponsors_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sponsor-field_sponsor_logo'
+  // Exported field_instance: 'node-sponsor-field_sponsor_logo'.
   $field_instances['node-sponsor-field_sponsor_logo'] = array(
     'bundle' => 'sponsor',
     'deleted' => 0,
@@ -109,10 +101,10 @@ function dcco_sponsors_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'medium',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -126,13 +118,13 @@ function dcco_sponsors_field_default_field_instances() {
     'label' => 'Sponsor logo',
     'required' => 0,
     'settings' => array(
-      'alt_field' => 0,
+      'alt_field' => 1,
       'default_image' => 0,
       'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
+      'file_extensions' => 'png gif jpg jpeg svg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '200x80',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -148,7 +140,7 @@ function dcco_sponsors_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sponsor-field_sponsor_url'
+  // Exported field_instance: 'node-sponsor-field_sponsor_url'.
   $field_instances['node-sponsor-field_sponsor_url'] = array(
     'bundle' => 'sponsor',
     'default_value' => NULL,
@@ -160,7 +152,7 @@ function dcco_sponsors_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -202,7 +194,7 @@ function dcco_sponsors_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sponsor-field_sponsorship_level'
+  // Exported field_instance: 'node-sponsor-field_sponsorship_level'.
   $field_instances['node-sponsor-field_sponsorship_level'] = array(
     'bundle' => 'sponsor',
     'default_value' => NULL,
@@ -210,10 +202,9 @@ function dcco_sponsors_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'teaser' => array(
@@ -242,8 +233,8 @@ function dcco_sponsors_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Related attendees');
+  t('Sponsor Bio');
   t('Sponsor URL');
-  t('Sponsor description');
   t('Sponsor logo');
   t('Sponsorship level');
 

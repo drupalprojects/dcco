@@ -10,7 +10,8 @@
 function dcco_training_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'commerce_product-product_training-commerce_price'
+  // Exported field_instance:
+  // 'commerce_product-product_training-commerce_price'.
   $field_instances['commerce_product-product_training-commerce_price'] = array(
     'bundle' => 'product_training',
     'default_value' => NULL,
@@ -36,7 +37,7 @@ function dcco_training_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'commerce_price',
         'settings' => array(
           'calculation' => 'calculated_sell_price',
@@ -143,7 +144,7 @@ function dcco_training_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-training_session-body'
+  // Exported field_instance: 'node-training_session-body'.
   $field_instances['node-training_session-body'] = array(
     'bundle' => 'training_session',
     'default_value' => NULL,
@@ -155,7 +156,7 @@ function dcco_training_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -187,7 +188,7 @@ function dcco_training_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-training_session-field_experience_level'
+  // Exported field_instance: 'node-training_session-field_experience_level'.
   $field_instances['node-training_session-field_experience_level'] = array(
     'bundle' => 'training_session',
     'default_value' => NULL,
@@ -199,7 +200,7 @@ function dcco_training_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 2,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -224,7 +225,58 @@ function dcco_training_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-training_session-field_register_for_training'
+  // Exported field_instance: 'node-training_session-field_image'.
+  $field_instances['node-training_session-field_image'] = array(
+    'bundle' => 'training_session',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'large',
+        ),
+        'type' => 'image',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_image',
+    'label' => 'Promo Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 1,
+      'default_image' => 0,
+      'file_directory' => 'training/logos',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '1024KB',
+      'max_resolution' => '1200x1200',
+      'min_resolution' => '',
+      'title_field' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-training_session-field_register_for_training'.
   $field_instances['node-training_session-field_register_for_training'] = array(
     'bundle' => 'training_session',
     'default_value' => array(
@@ -246,7 +298,7 @@ function dcco_training_field_default_field_instances() {
           'show_single_product_attributes' => 0,
         ),
         'type' => 'commerce_cart_add_to_cart_form',
-        'weight' => 4,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -276,7 +328,7 @@ function dcco_training_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-training_session-field_session_room'
+  // Exported field_instance: 'node-training_session-field_session_room'.
   $field_instances['node-training_session-field_session_room'] = array(
     'bundle' => 'training_session',
     'default_value' => NULL,
@@ -284,9 +336,12 @@ function dcco_training_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 5,
       ),
       'teaser' => array(
@@ -312,7 +367,7 @@ function dcco_training_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-training_session-field_track'
+  // Exported field_instance: 'node-training_session-field_track'.
   $field_instances['node-training_session-field_track'] = array(
     'bundle' => 'training_session',
     'default_value' => NULL,
@@ -324,7 +379,7 @@ function dcco_training_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -345,7 +400,7 @@ function dcco_training_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -354,6 +409,7 @@ function dcco_training_field_default_field_instances() {
   t('Body');
   t('Experience level');
   t('Price');
+  t('Promo Image');
   t('Room');
   t('Track');
   t('Training Classes');

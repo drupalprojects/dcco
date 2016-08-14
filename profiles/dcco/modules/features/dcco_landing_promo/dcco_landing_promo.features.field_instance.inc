@@ -10,7 +10,7 @@
 function dcco_landing_promo_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-promo-body'
+  // Exported field_instance: 'node-promo-body'.
   $field_instances['node-promo-body'] = array(
     'bundle' => 'promo',
     'default_value' => NULL,
@@ -54,7 +54,7 @@ function dcco_landing_promo_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promo-field_image'
+  // Exported field_instance: 'node-promo-field_image'.
   $field_instances['node-promo-field_image'] = array(
     'bundle' => 'promo',
     'deleted' => 0,
@@ -104,7 +104,7 @@ function dcco_landing_promo_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promo-field_promo_link'
+  // Exported field_instance: 'node-promo-field_promo_link'.
   $field_instances['node-promo-field_promo_link'] = array(
     'bundle' => 'promo',
     'default_value' => NULL,
@@ -158,7 +158,7 @@ function dcco_landing_promo_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promo-field_promo_subtitle'
+  // Exported field_instance: 'node-promo-field_promo_subtitle'.
   $field_instances['node-promo-field_promo_subtitle'] = array(
     'bundle' => 'promo',
     'default_value' => NULL,

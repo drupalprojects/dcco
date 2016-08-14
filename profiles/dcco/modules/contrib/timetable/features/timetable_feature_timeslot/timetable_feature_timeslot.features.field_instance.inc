@@ -10,7 +10,7 @@
 function timetable_feature_timeslot_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'timeslot-timeslot-field_timeslot_time'
+  // Exported field_instance: 'timeslot-timeslot-field_timeslot_time'.
   $field_instances['timeslot-timeslot-field_timeslot_time'] = array(
     'bundle' => 'timeslot',
     'default_value' => NULL,
@@ -22,9 +22,9 @@ function timetable_feature_timeslot_field_default_field_instances() {
         'module' => 'timefield',
         'settings' => array(
           'display_format' => array(
-            'hour' => 'G',
+            'hour' => 'g',
             'minute' => 'i',
-            'period' => 'none',
+            'period' => 'a',
             'period_separator' => '',
             'separator' => ':',
           ),

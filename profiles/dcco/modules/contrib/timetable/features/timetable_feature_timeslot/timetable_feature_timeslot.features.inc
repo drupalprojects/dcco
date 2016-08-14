@@ -9,12 +9,12 @@
  */
 function timetable_feature_timeslot_eck_bundle_info() {
   $items = array(
-  'timeslot_timeslot' => array(
-  'machine_name' => 'timeslot_timeslot',
-  'entity_type' => 'timeslot',
-  'name' => 'timeslot',
-  'label' => 'Timeslot',
-),
+    'timeslot_timeslot' => array(
+      'machine_name' => 'timeslot_timeslot',
+      'entity_type' => 'timeslot',
+      'name' => 'timeslot',
+      'label' => 'Timeslot',
+    ),
   );
   return $items;
 }
@@ -23,12 +23,12 @@ function timetable_feature_timeslot_eck_bundle_info() {
  * Implements hook_eck_entity_type_info().
  */
 function timetable_feature_timeslot_eck_entity_type_info() {
-$items = array(
-       'timeslot' => array(
-  'name' => 'timeslot',
-  'label' => 'Timeslot',
-  'properties' => array(),
-),
+  $items = array(
+    'timeslot' => array(
+      'name' => 'timeslot',
+      'label' => 'Timeslot',
+      'properties' => array(),
+    ),
   );
   return $items;
 }

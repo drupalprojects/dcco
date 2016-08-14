@@ -10,14 +10,13 @@
 function cream_feature_schedule_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_schedule_date'
+  // Exported field_base: 'field_schedule_date'.
   $field_bases['field_schedule_date'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_schedule_date',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'date',
@@ -40,21 +39,13 @@ function cream_feature_schedule_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_schedule_description'
+  // Exported field_base: 'field_schedule_description'.
   $field_bases['field_schedule_description'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_schedule_description',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -67,14 +58,13 @@ function cream_feature_schedule_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_schedule_timeslots'
+  // Exported field_base: 'field_schedule_timeslots'.
   $field_bases['field_schedule_timeslots'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_schedule_timeslots',
-    'foreign keys' => array(),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -112,21 +102,13 @@ function cream_feature_schedule_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_session_description'
+  // Exported field_base: 'field_session_description'.
   $field_bases['field_session_description'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_session_description',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -139,7 +121,7 @@ function cream_feature_schedule_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_session_room'
+  // Exported field_base: 'field_session_room'.
   $field_bases['field_session_room'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -148,14 +130,6 @@ function cream_feature_schedule_field_default_field_bases() {
     'field_name' => 'field_session_room',
     'field_permissions' => array(
       'type' => 2,
-    ),
-    'foreign keys' => array(
-      'eck_room' => array(
-        'columns' => array(
-          'target_id' => 'id',
-        ),
-        'table' => 'eck_room',
-      ),
     ),
     'indexes' => array(
       'target_id' => array(
@@ -194,7 +168,7 @@ function cream_feature_schedule_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_session_timeslot'
+  // Exported field_base: 'field_session_timeslot'.
   $field_bases['field_session_timeslot'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -203,14 +177,6 @@ function cream_feature_schedule_field_default_field_bases() {
     'field_name' => 'field_session_timeslot',
     'field_permissions' => array(
       'type' => 2,
-    ),
-    'foreign keys' => array(
-      'eck_timeslot' => array(
-        'columns' => array(
-          'target_id' => 'id',
-        ),
-        'table' => 'eck_timeslot',
-      ),
     ),
     'indexes' => array(
       'target_id' => array(
@@ -246,14 +212,13 @@ function cream_feature_schedule_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_session_track'
+  // Exported field_base: 'field_session_track'.
   $field_bases['field_session_track'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_session_track',
-    'foreign keys' => array(),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -291,6 +256,39 @@ function cream_feature_schedule_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'field_session_url'.
+  $field_bases['field_session_url'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_session_url',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'profile2_private' => FALSE,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
   );
 
   return $field_bases;
