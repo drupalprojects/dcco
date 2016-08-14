@@ -274,10 +274,7 @@ function dcco_session_submission_views_default_views() {
   $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['content'] = '<div>
-	<a class="button--primary" href="/node/add/session">Propose a session</a>
-</div>
-<h3>Here is the list of proposed sessions.</h3>
+  $handler->display->display_options['header']['area_text_custom']['content'] = '<h3>Here is the list of proposed sessions.</h3>
 <p>Check back occasionally to see what you can look forward to at the camp.</p>';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Profile: URL */

@@ -4,6 +4,7 @@ core = 7.x
 package = Features
 version = 7.x-1.0-beta1
 project = dcco_session_submission
+dependencies[] = commerce_cart
 dependencies[] = cream_feature_schedule
 dependencies[] = entityreference
 dependencies[] = features
