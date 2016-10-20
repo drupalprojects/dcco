@@ -286,6 +286,9 @@ function cream_feature_schedule_strongarm() {
         'title' => array(
           'weight' => '-5',
         ),
+        'path' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(),
     ),
@@ -313,11 +316,17 @@ function cream_feature_schedule_strongarm() {
       'search_result' => array(
         'custom_settings' => FALSE,
       ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
           'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '10',
         ),
       ),
       'display' => array(),
@@ -478,7 +487,7 @@ function cream_feature_schedule_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_session';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['node_submitted_session'] = $strongarm;
 
   return $export;

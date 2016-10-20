@@ -1274,7 +1274,7 @@ body {
 }
 
 .badge {
-  background-color: #666666;
+  background-color: #004499;
   border-radius: 4px;
   color: white;
   font-size: 90%;
@@ -2505,6 +2505,30 @@ div.password-confirm {
   padding: 20px 0 0;
   width: 100%;
 }
+.node-session .session-speakers {
+  float: right;
+  margin-left: 30px;
+  width: 100px;
+}
+@media (min-width: 500px) {
+  .node-session .session-speakers {
+    width: 200px;
+  }
+}
+.node-session .session-speaker {
+  text-align: center;
+}
+.node-session .session-speaker img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+@media (min-width: 500px) {
+  .node-session .session-speaker img {
+    height: 200px;
+    width: 200px;
+  }
+}
 
 .node-sponsor .field-name-field-sponsor-logo {
   margin: 0 auto;
@@ -2570,6 +2594,42 @@ div.password-confirm {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+
+.page-user .profile img {
+  float: right;
+  border-radius: 50%;
+  height: 75px;
+  margin-left: 10px;
+  width: 75px;
+}
+@media (min-width: 500px) {
+  .page-user .profile img {
+    height: 150px;
+    width: 150px;
+  }
+}
+.page-user .profile ul {
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 500px) {
+  .page-user .profile ul .bio {
+    margin-left: 205px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+  }
+}
+.page-user .profile ul label {
+  display: inline-block;
+  font-family: "sofia-pro";
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+@media (min-width: 500px) {
+  .page-user .profile ul label {
+    width: 200px;
+  }
 }
 
 .view-header .dcco-sponsors-header {
@@ -2841,6 +2901,24 @@ div.password-confirm {
   .view-cream-schedule-timetable .view-content {
     margin-left: -27px;
     margin-right: -27px;
+  }
+}
+.view-cream-schedule-timetable .views-field-field-timeslot-time {
+  width: 100px;
+}
+.view-cream-schedule-timetable .badge a {
+  font-size: 14px;
+}
+.view-cream-schedule-timetable .views-field-field-track {
+  width: 300px;
+}
+.view-cream-schedule-timetable .views-field-title-2 {
+  width: 120px;
+}
+
+@media (min-width: 500px) {
+  .footable-toggle + div {
+    padding-left: 0;
   }
 }
 .block--proposals {

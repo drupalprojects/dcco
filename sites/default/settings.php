@@ -35,10 +35,10 @@ if (isset($_SERVER['PANTHEON_ENVIRONMENT'])) {
 else {
   $databases['default']['default'] = array(
     'driver' => 'mysql',
-    'database' => 'dcco2016',
-    'username' => 'dcco2016',
-    'password' => 'dcco2016',
-    'host' => 'localhost',
+    'database' => 'dcco',
+    'username' => 'root',
+    'password' => 'redhead21',
+    'host' => '127.0.0.1',
   );
 }
 
@@ -47,6 +47,8 @@ $local_settings = __DIR__ . '/local.settings.php';
 if (file_exists($local_settings)) {
   include $local_settings;
 }
+
+$conf['THEME_DEBUG'] = TRUE;
 
 /**
  * Implements Redis cache on Pantheon.

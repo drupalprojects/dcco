@@ -14,7 +14,10 @@ function dcco_session_submission_user_default_permissions() {
   $permissions['create session content'] = array(
     'name' => 'create session content',
     'roles' => array(
+      'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
+      'developer' => 'developer',
+      'session curator' => 'session curator',
     ),
     'module' => 'node',
   );

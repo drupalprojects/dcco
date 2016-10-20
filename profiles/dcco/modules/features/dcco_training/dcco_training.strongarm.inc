@@ -114,7 +114,7 @@ function dcco_training_strongarm() {
         ),
         'product:commerce_price' => array(
           'default' => array(
-            'weight' => '3',
+            'weight' => '0',
             'visible' => TRUE,
           ),
         ),

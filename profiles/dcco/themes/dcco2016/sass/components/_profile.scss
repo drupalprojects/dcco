@@ -108,19 +108,15 @@
 
   &.all-users{
     .community_users {
-      columns: 2;
       list-style: none;
       margin: 0;
       padding: 0;
 
-      @include breakpoint($mobile, $no-query: '.lt-ie9') {
-        columns: 4;
-      }
-
       li {
-        break-inside: avoid;
+        float: left;
         padding: 10px;
         text-align: center;
+        width: 200px;
 
         div a {
           display: block;

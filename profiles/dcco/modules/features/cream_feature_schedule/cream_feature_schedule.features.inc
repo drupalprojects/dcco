@@ -25,12 +25,12 @@ function cream_feature_schedule_views_api($module = NULL, $api = NULL) {
  */
 function cream_feature_schedule_eck_bundle_info() {
   $items = array(
-  'room_room' => array(
-  'machine_name' => 'room_room',
-  'entity_type' => 'room',
-  'name' => 'room',
-  'label' => 'Room',
-),
+    'room_room' => array(
+      'machine_name' => 'room_room',
+      'entity_type' => 'room',
+      'name' => 'room',
+      'label' => 'Room',
+    ),
   );
   return $items;
 }
@@ -39,18 +39,18 @@ function cream_feature_schedule_eck_bundle_info() {
  * Implements hook_eck_entity_type_info().
  */
 function cream_feature_schedule_eck_entity_type_info() {
-$items = array(
-       'room' => array(
-  'name' => 'room',
-  'label' => 'Room',
-  'properties' => array(
-    'title' => array(
-      'label' => 'Title',
-      'type' => 'text',
-      'behavior' => 'title',
+  $items = array(
+    'room' => array(
+      'name' => 'room',
+      'label' => 'Room',
+      'properties' => array(
+        'title' => array(
+          'label' => 'Title',
+          'type' => 'text',
+          'behavior' => 'title',
+        ),
+      ),
     ),
-  ),
-),
   );
   return $items;
 }
@@ -84,14 +84,7 @@ function cream_feature_schedule_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
-    /*'session' => array(
-      'name' => t('Session'),
-      'base' => 'node_content',
-      'description' => t('A session can be a presentation, a BoF, or a sprint.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),*/
   );
+  drupal_alter('node_info', $items);
   return $items;
 }

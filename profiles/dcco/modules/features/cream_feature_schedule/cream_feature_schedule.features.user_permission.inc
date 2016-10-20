@@ -15,7 +15,8 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'create field_session_room',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'field_permissions',
   );
@@ -25,7 +26,8 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'create field_session_timeslot',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'field_permissions',
   );
@@ -35,7 +37,8 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'create keynote content',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'node',
   );
@@ -45,7 +48,8 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'create schedule content',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'node',
   );
@@ -55,28 +59,19 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'create scheduled_item content',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'node',
   );
-
-  // Exported permission: 'create session content'.
-  /*$permissions['create session content'] = array(
-    'name' => 'create session content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'organiser' => 'organiser',
-      'participant' => 'participant',
-    ),
-    'module' => 'node',
-  );*/
 
   // Exported permission: 'delete any keynote content'.
   $permissions['delete any keynote content'] = array(
     'name' => 'delete any keynote content',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'node',
   );
@@ -86,7 +81,8 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'delete any schedule content',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'node',
   );
@@ -96,27 +92,19 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'delete any scheduled_item content',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'node',
   );
-
-  // Exported permission: 'delete any session content'.
-  /*$permissions['delete any session content'] = array(
-    'name' => 'delete any session content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'organiser' => 'organiser',
-    ),
-    'module' => 'node',
-  );*/
 
   // Exported permission: 'eck add room room entities'.
   $permissions['eck add room room entities'] = array(
     'name' => 'eck add room room entities',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'eck',
   );
@@ -126,7 +114,8 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'eck add timeslot timeslot entities',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'eck',
   );
@@ -136,7 +125,8 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'eck administer room room entities',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'eck',
   );
@@ -146,7 +136,8 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'eck delete room room entities',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'eck',
   );
@@ -156,7 +147,8 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'eck delete timeslot timeslot entities',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'eck',
   );
@@ -166,7 +158,8 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'eck edit room room entities',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'eck',
   );
@@ -176,7 +169,8 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'eck edit timeslot timeslot entities',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'eck',
   );
@@ -186,7 +180,8 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'eck list room room entities',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'eck',
   );
@@ -207,47 +202,39 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'edit any keynote content',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit any schedule content'.
-  /*$permissions['edit any schedule content'] = array(
+  $permissions['edit any schedule content'] = array(
     'name' => 'edit any schedule content',
     'roles' => array(
-      'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
     ),
     'module' => 'node',
-  );*/
+  );
 
   // Exported permission: 'edit any scheduled_item content'.
   $permissions['edit any scheduled_item content'] = array(
     'name' => 'edit any scheduled_item content',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'node',
   );
-
-  // Exported permission: 'edit any session content'.
-  /*$permissions['edit any session content'] = array(
-    'name' => 'edit any session content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'organiser' => 'organiser',
-    ),
-    'module' => 'node',
-  );*/
 
   // Exported permission: 'edit field_session_room'.
   $permissions['edit field_session_room'] = array(
     'name' => 'edit field_session_room',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'field_permissions',
   );
@@ -257,27 +244,19 @@ function cream_feature_schedule_user_default_permissions() {
     'name' => 'edit field_session_timeslot',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'field_permissions',
   );
-
-  // Exported permission: 'edit own session content'.
-  /*$permissions['edit own session content'] = array(
-    'name' => 'edit own session content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'participant' => 'participant',
-    ),
-    'module' => 'node',
-  );*/
 
   // Exported permission: 'edit schedule timetable'.
   $permissions['edit schedule timetable'] = array(
     'name' => 'edit schedule timetable',
     'roles' => array(
       'administrator' => 'administrator',
-      'organiser' => 'organiser',
+      'developer' => 'developer',
+      'organizer' => 'organizer',
     ),
     'module' => 'timetable',
   );

@@ -16,12 +16,6 @@ function cream_feature_common_user_default_roles() {
     'weight' => 6,
   );
 
-  // Exported role: organiser.
-  $roles['organiser'] = array(
-    'name' => 'organiser',
-    'weight' => 3,
-  );
-
   // Exported role: participant.
   $roles['participant'] = array(
     'name' => 'participant',

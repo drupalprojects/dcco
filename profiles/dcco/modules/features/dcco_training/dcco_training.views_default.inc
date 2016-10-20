@@ -31,7 +31,11 @@ function dcco_training_views_default_views() {
     4 => '4',
     2 => '2',
   );
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
@@ -103,14 +107,27 @@ function dcco_training_views_default_views() {
   $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['content'] = '<p>DrupalCamp Colorado\'s training is world class.</p>
+  $handler->display->display_options['header']['area_text_custom']['content'] = '<p>Drupalcamp Colorado is excited to offer the following several outstanding training classes for you to choose from. These are full-day classes offered on August 12th at the King Center on the Auraria Campus, 855 Lawrence Way, Denver, CO. <em>Build-a-Module Training is in room 311 of the King Center, Content Strategy Workshop is in Room 312</em></p>
+
+<p>Lunch is not provided. There are many <a href="/session/lunch">restaurants</a> in the Tivoli and surrounding area.</p>
+
+<p><i><b>Trainers</b></i>: The projectors use VGA connectors. Registration is at 9:00am when the building is unlocked.</p> 
+
+<p>These classes are open to anyone who would like to learn more about Drupal. You do not have to be registered for the camp to attend.</p>
 ';
   /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'There are no sessions for your criteria. Please adjust the filters and submit again.';
+  $handler->display->display_options['empty']['area']['content'] = '<p>Drupalcamp Colorado is excited to offer the following several outstanding training classes for you to choose from. These are full-day classes offered on August 12th at the King Center on the Auraria Campus, 855 Lawrence Way, Denver, CO.</p>
+
+<p>Lunch is not provided. There are many <a href="https://www.google.com/maps/search/restaurants/@39.7452383,-105.0057945,16z/data=!3m1!4b1!4m8!2m7!3m6!1srestaurants!2sTivoli,+University+of+Colorado+Denver,+Denver,+CO+80204!3s0x876c78c8863eaf15:0x47b188a00d2cccda!4m2!1d-105.005976!2d39.7450774" target="_blank">restaurants</a> in the Tivoli and surrounding area.</p>
+
+<p><i><b>Trainers</b>: The projectors use VGA connectors. Registration is at 9:00am when the building is unlocked.</p> 
+
+<p>These classes are open to anyone who would like to learn more about Drupal. You do not have to be registered for the camp to attend.</p>
+';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -155,52 +172,12 @@ function dcco_training_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'training_session' => 'training_session',
   );
-  /* Filter criterion: Content: Track (field_track) */
-  $handler->display->display_options['filters']['field_track_tid']['id'] = 'field_track_tid';
-  $handler->display->display_options['filters']['field_track_tid']['table'] = 'field_data_field_track';
-  $handler->display->display_options['filters']['field_track_tid']['field'] = 'field_track_tid';
-  $handler->display->display_options['filters']['field_track_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_track_tid']['expose']['operator_id'] = 'field_track_tid_op';
-  $handler->display->display_options['filters']['field_track_tid']['expose']['label'] = 'Filter by Track';
-  $handler->display->display_options['filters']['field_track_tid']['expose']['operator'] = 'field_track_tid_op';
-  $handler->display->display_options['filters']['field_track_tid']['expose']['identifier'] = 'field_track_tid';
-  $handler->display->display_options['filters']['field_track_tid']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    10 => 0,
-    9 => 0,
-    5 => 0,
-    6 => 0,
-    8 => 0,
-    4 => 0,
-    7 => 0,
-  );
-  $handler->display->display_options['filters']['field_track_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_track_tid']['vocabulary'] = 'track';
-  /* Filter criterion: Content: Experience level (field_experience_level) */
-  $handler->display->display_options['filters']['field_experience_level_tid']['id'] = 'field_experience_level_tid';
-  $handler->display->display_options['filters']['field_experience_level_tid']['table'] = 'field_data_field_experience_level';
-  $handler->display->display_options['filters']['field_experience_level_tid']['field'] = 'field_experience_level_tid';
-  $handler->display->display_options['filters']['field_experience_level_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_experience_level_tid']['expose']['operator_id'] = 'field_experience_level_tid_op';
-  $handler->display->display_options['filters']['field_experience_level_tid']['expose']['label'] = 'Filter By Experience Level';
-  $handler->display->display_options['filters']['field_experience_level_tid']['expose']['operator'] = 'field_experience_level_tid_op';
-  $handler->display->display_options['filters']['field_experience_level_tid']['expose']['identifier'] = 'field_experience_level_tid';
-  $handler->display->display_options['filters']['field_experience_level_tid']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    10 => 0,
-    9 => 0,
-    5 => 0,
-    6 => 0,
-    8 => 0,
-    4 => 0,
-    7 => 0,
-  );
-  $handler->display->display_options['filters']['field_experience_level_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_experience_level_tid']['vocabulary'] = 'experience_level';
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = '1';
 
   /* Display: Training */
   $handler = $view->new_display('page', 'Training', 'page');
@@ -224,20 +201,11 @@ function dcco_training_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '600',
   );
-  /* Field: Content: Track */
-  $handler->display->display_options['fields']['field_track']['id'] = 'field_track';
-  $handler->display->display_options['fields']['field_track']['table'] = 'field_data_field_track';
-  $handler->display->display_options['fields']['field_track']['field'] = 'field_track';
   /* Field: Content: Experience level */
   $handler->display->display_options['fields']['field_experience_level']['id'] = 'field_experience_level';
   $handler->display->display_options['fields']['field_experience_level']['table'] = 'field_data_field_experience_level';
   $handler->display->display_options['fields']['field_experience_level']['field'] = 'field_experience_level';
   $handler->display->display_options['fields']['field_experience_level']['label'] = 'Level';
-  /* Field: Content: Accepted */
-  $handler->display->display_options['fields']['field_accepted']['id'] = 'field_accepted';
-  $handler->display->display_options['fields']['field_accepted']['table'] = 'field_data_field_accepted';
-  $handler->display->display_options['fields']['field_accepted']['field'] = 'field_accepted';
-  $handler->display->display_options['fields']['field_accepted']['exclude'] = TRUE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['path'] = 'training';
   $export['training'] = $view;

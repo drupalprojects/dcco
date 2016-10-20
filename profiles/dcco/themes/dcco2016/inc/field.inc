@@ -40,9 +40,9 @@ function dcco2016_preprocess_field(&$vars) {
   // dpm($mode, 'Mode:');
 
   // Example: Using an alternative theme function.
-  // if($name == 'field_tags') {
-  //   $vars['theme_hook_suggestions'][] = 'field__custom_separated';
-  // }
+   if($name == 'field_speaker') {
+     $vars['theme_hook_suggestions'][] = 'field__speaker';
+   }
 
   // Apply odd or even classes along with our custom classes to each item.
   foreach ($vars['items'] as $delta => $item) {

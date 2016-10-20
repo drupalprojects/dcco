@@ -10,7 +10,7 @@
 function dcco_sponsors_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'body'
+  // Exported field_base: 'body'.
   $field_bases['body'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -19,14 +19,6 @@ function dcco_sponsors_field_default_field_bases() {
       0 => 'node',
     ),
     'field_name' => 'body',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -39,14 +31,13 @@ function dcco_sponsors_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_related_attendees'
+  // Exported field_base: 'field_related_attendees'.
   $field_bases['field_related_attendees'] = array(
     'active' => 1,
     'cardinality' => 10,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_related_attendees',
-    'foreign keys' => array(),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -73,20 +64,15 @@ function dcco_sponsors_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_sponsor_logo'
+  // Exported field_base: 'field_sponsor_logo'.
   $field_bases['field_sponsor_logo'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_sponsor_logo',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
+    'field_permissions' => array(
+      'type' => 0,
     ),
     'indexes' => array(
       'fid' => array(
@@ -97,20 +83,20 @@ function dcco_sponsors_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => 0,
+      'profile2_private' => FALSE,
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_sponsor_url'
+  // Exported field_base: 'field_sponsor_url'.
   $field_bases['field_sponsor_url'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_sponsor_url',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -133,20 +119,15 @@ function dcco_sponsors_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_sponsorship_level'
+  // Exported field_base: 'field_sponsorship_level'.
   $field_bases['field_sponsorship_level'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_sponsorship_level',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
+    'field_permissions' => array(
+      'type' => 0,
     ),
     'indexes' => array(
       'tid' => array(
