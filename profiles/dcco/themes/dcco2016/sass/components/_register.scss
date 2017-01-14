@@ -1,5 +1,41 @@
 .dcco-register-price-points {
   li {
     cursor: pointer;
+
+    button {
+      width: 100%;
+      @include breakpoint($mobile, $no-query: '.lt-ie9') {
+        width: 465px;
+      }
+    }
   }
 }
+
+.page-register {
+  .form-item-amount {
+    display: inline-block;
+    width: 200px;
+  }
+
+  h2.block-title {
+    font-size: 2em;
+  }
+}
+
+.page-user-register {
+  .nav-tabs {
+
+    // Remove the first (active) tab on mobile since we're tight on space.
+    li:first-child {
+      display: none;
+    }
+
+    @include breakpoint($mobile) {
+      li:first-child {
+        display: block;
+      }
+    }
+  }
+}
+
+

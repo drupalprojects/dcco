@@ -161,7 +161,8 @@
         // border: 1px solid $gray;
         color: $teal-darker;
         display: block;
-        font-weight: bold;
+        @include adjust-font-size-to($fs-s, 3);
+        font-weight: normal;
         padding: rhythm(2, $fs-m) rhythm(3, $fs-m);
         position: relative;
         &:before {
@@ -242,6 +243,17 @@
   }
 }
 
+.footable-first-column {
+  a {
+    display: block;
+    font-size: $fs-l;
+    line-height: 1.2em;
+    padding-left: 30px;
+    padding-top: 6px;
+    font-weight: normal;
+  }
+}
+
 .footable-toggle + div {
   padding-left: 35px;
 }
@@ -249,7 +261,7 @@
 .footable-detail-show {
   .footable-toggle {
     &:before {
-      color: $teal;
+      color: $blue;
       content: "-";
       font-size: 40px;
     }
@@ -263,13 +275,13 @@
 }
 
 .footable-row-detail-row {
-  background-color: #fcfcfc;
 }
 
 .footable-row-detail-name {
-  color: $teal;
+  color: $blue;
   font-family: $ff-heading;
-  font-size: $fs-xxl;
+  font-size: $fs-m;
+  text-transform: uppercase;
 }
 
 .footable-row-detail-row + .footable-row-detail-row {

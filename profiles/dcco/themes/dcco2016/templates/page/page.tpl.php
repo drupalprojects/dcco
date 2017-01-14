@@ -18,7 +18,13 @@
         </div>
       <?php endif; // end messages ?>
 
-      <div id="main-content">
+    <? // We only support first sidebar at the moment. ?>
+    <?php
+    if ($page['sidebar_first']):
+        $sidebar_class = 'has-sidebar';
+    endif ?>
+
+      <div id="main-content" class="<?php print $sidebar_class ?>">
 
         <?php if (render($tabs)): ?>
           <div id="tabs">

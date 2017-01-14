@@ -13,7 +13,10 @@
 
 .page-register {
   #highlighted {
-    @include breakpoint($tablet) {
+    display: none;
+
+    @include breakpoint($mobile) {
+      display: block;
       float: right;
       margin-left: 50px;
       width: 50%;

@@ -33,7 +33,7 @@ function dcco_register_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<p>For DrupalCamp Colorado 2015, you can set your own registration price. <strong>How much is this camp worth to you?</strong></p>
+  $handler->display->display_options['header']['area']['content'] = '<p>For DrupalCamp Colorado 2016, you can set your own registration price. <strong>How much is this camp worth to you?</strong></p>
 
       <p>Any registration contributions beyond our budget target will be donated to 3 charities: <a href="http://adainitiative.org/">The Ada Initiative</a>, <a href="http://code.org/">Code.org</a>, and <a href="https://www.eff.org/">Electronic Frontier Foundation</a>. Thank you for generously supporting the Camp and these organizations.</p>
 

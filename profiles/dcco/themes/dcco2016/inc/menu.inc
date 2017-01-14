@@ -14,7 +14,7 @@ function dcco2016_menu_tree__main_menu($variables) {
 /**
  * Implements hook_preprocess_menu_link().
  */
-function dcco2015_preprocess_menu_link(&$vars) {
+function dcco2016_preprocess_menu_link(&$vars) {
 
   // Set shortcut variables. Hooray for less typing!
   $menu = $vars['element']['#original_link']['menu_name'];

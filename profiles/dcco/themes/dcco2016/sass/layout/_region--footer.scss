@@ -82,14 +82,15 @@
 }
 
 #block-system-powered-by {
-  @include breakpoint(min-width 500px) {
-    float: right;
+  display: none;
+  float: right;
+
+  @include breakpoint($mobile) {
+    display: block;
   }
 }
 
 #block-block-3 {
-  @include breakpoint(min-width 500px) {
     float: left;
     text-align: right;
-  }
 }

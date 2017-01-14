@@ -34,8 +34,10 @@
   @extend .field-title-teaser;
 }
 
-.node-session {
-  .field-name-field-session-room {
-    margin-bottom: 15px;
+.form-item,
+.text-format-wrapper {
+  .description {
+    color: $gray-light;
+    font-style: italic;
   }
 }

@@ -1,23 +1,18 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/icon\/\*\.png}line{font-family:\00003106}}
 .icon-sprite {
   background: url('../img/icon-s0d0719499c.png') no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/utilities\/_clearfix\.scss}line{font-family:\0000315}}
 .clearfix {
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/utilities\/_clearfix\.scss}line{font-family:\000037}}
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/utilities\/_clearfix\.scss}line{font-family:\0000311}}
 .clearfix:after {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\0000319}}
 article,
 aside,
 details,
@@ -32,25 +27,21 @@ summary {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\0000329}}
 audio,
 canvas,
 video {
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\0000342}}
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\0000352}}
 [hidden] {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\0000375}}
 html,
 input,
 select,
@@ -58,56 +49,46 @@ textarea {
   font-family: "sofia-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\0000383}}
 body {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\0000396}}
 a:focus {
   outline: thin dotted;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003106}}
 a:hover,
 a:active {
   outline: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003120}}
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003129}}
 b,
 strong {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003133}}
 blockquote {
   margin: 0.33333em 3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003142}}
 dfn {
   font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003150}}
 mark {
   background: #ff0;
   color: #000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003160}}
 p,
 pre {
   margin: 0.33333em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003173}}
 pre,
 code,
 kbd,
@@ -118,31 +99,26 @@ samp {
   line-height: 1.33333em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003185}}
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003198}}
 q {
   quotes: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003205}}
 q:before,
 q:after {
   content: '';
   content: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003210}}
 small {
   font-size: 75%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003220}}
 sub,
 sup {
   font-size: 75%;
@@ -151,17 +127,14 @@ sup {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003227}}
 sup {
   top: -0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003231}}
 sub {
   bottom: -0.25em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003247}}
 dl,
 menu,
 ol,
@@ -169,47 +142,39 @@ ul {
   margin: 0.33333em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003252}}
 dd {
   margin: 0 0 0 3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003262}}
 menu,
 ol,
 ul {
   padding: 0 0 0 3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003271}}
 nav ul,
 nav ol {
   list-style: none;
   list-style-image: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003287}}
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003296}}
 svg:not(:root) {
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003309}}
 figure {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003322}}
 form {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003330}}
 fieldset {
   border-color: #00388d;
   margin: 0.66667em 0;
@@ -227,14 +192,12 @@ fieldset {
   padding-right: 0.61111em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003346}}
 legend {
   border: 0;
   padding: 0;
   white-space: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003364}}
 button,
 input,
 select,
@@ -245,13 +208,11 @@ textarea {
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003378}}
 button,
 input {
   line-height: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003392}}
 button,
 input[type="button"],
 input[type="reset"],
@@ -261,13 +222,11 @@ input[type="submit"] {
   overflow: visible;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003405}}
 button[disabled],
 input[disabled] {
   cursor: default;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003417}}
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -276,7 +235,6 @@ input[type="radio"] {
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003431}}
 input[type="search"] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
@@ -284,49 +242,41 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003441}}
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003451}}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003461}}
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_normalize\.scss}line{font-family:\00003475}}
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\0000311}}
 * html {
   font-size: 112.5%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\0000315}}
 html {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.33333em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\0000322}}
 body {
   color: #50625c;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\0000332}}
 div,
 section,
 header,
@@ -340,12 +290,10 @@ figure {
   *behavior: url("/profiles/dcco/themes/dcco2014/polyfills/boxsizing.htc");
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\0000339}}
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\0000342}}
 h1 {
   font-family: "sofia-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.1;
@@ -353,7 +301,6 @@ h1 {
   text-transform: uppercase;
 }
 @media (min-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\0000342}}
   h1 {
     font-size: 3.33333em;
     line-height: 1.1em;
@@ -364,7 +311,6 @@ h1 {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\0000354}}
 h2 {
   font-size: 1.77778em;
   line-height: 1.125em;
@@ -375,7 +321,6 @@ h2 {
   font-family: "sofia-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\0000360}}
 h3 {
   font-size: 1.33333em;
   line-height: 1.25em;
@@ -386,7 +331,6 @@ h3 {
   font-family: "sofia-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\0000366}}
 h4 {
   font-size: 1em;
   line-height: 1.33333em;
@@ -397,7 +341,6 @@ h4 {
   font-family: "sofia-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\0000372}}
 h5 {
   font-size: 0.88889em;
   line-height: 1.5em;
@@ -408,7 +351,6 @@ h5 {
   font-family: "sofia-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\0000378}}
 h6 {
   font-size: 0.72222em;
   line-height: 1.38462em;
@@ -420,33 +362,27 @@ h6 {
   text-transform: uppercase;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\0000390}}
 a {
   color: #0041a3;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/\.rvm\/gems\/ruby-2\.2\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000324}}
 a:hover {
   color: #004499;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/\.rvm\/gems\/ruby-2\.2\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/links\/_hover-link\.scss}line{font-family:\000034}}
 a:hover {
   text-decoration: underline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\0000399}}
 p {
   margin: 0 0 0.66667em;
   max-width: 45em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003104}}
 blockquote {
   margin: 0.66667em 0 0.66667em 3em;
   font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003109}}
 hr {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -459,28 +395,23 @@ hr {
   height: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003121}}
 img {
   max-width: 100%;
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003130}}
 dl {
   margin-bottom: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003134}}
 dt {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003138}}
 dd {
   margin-left: 30px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003145}}
 label {
   font-size: 0.88889em;
   line-height: 1.5em;
@@ -489,13 +420,11 @@ label {
   font-family: "anago", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003153}}
 label.option {
   display: inline;
   font-weight: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003176}}
 textarea,
 input[type="date"],
 input[type="datetime"],
@@ -530,7 +459,6 @@ input[type="week"] {
   width: 100%;
 }
 @media (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003176}}
   textarea,
   input[type="date"],
   input[type="datetime"],
@@ -548,7 +476,6 @@ input[type="week"] {
     width: auto;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003191}}
 textarea:focus,
 input[type="date"]:focus,
 input[type="datetime"]:focus,
@@ -566,12 +493,10 @@ input[type="week"]:focus {
   border-color: #999999;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003196}}
 input[type="file"] {
   font-family: "anago", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003201}}
 input[type="submit"],
 button {
   display: -moz-inline-stack;
@@ -596,39 +521,33 @@ button {
   padding: 0.57143em 0.57143em;
   background: #004499;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/utilities\/_button\.scss}line{font-family:\0000315}}
 input[type="submit"]:hover,
 button:hover {
   color: #c4f1ff;
   text-decoration: none;
 }
 @media (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003201}}
   input[type="submit"],
   button {
     padding: 0.57143em 1.71429em;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/utilities\/_button\.scss}line{font-family:\0000352}}
 input[type="submit"]:hover,
 button:hover {
   background: #005bcc;
   color: #fbe600;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/utilities\/_button\.scss}line{font-family:\0000357}}
 input[type="submit"]:active,
 button:active {
   background: #005bcc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003207}}
 select {
   font-size: 1em;
   line-height: 1.33333em;
   margin-bottom: 0.375em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003216}}
 table {
   max-width: 100%;
   width: 100%;
@@ -637,24 +556,19 @@ table {
   margin-bottom: 0.66667em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003224}}
 thead {
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003227}}
 thead th {
   vertical-align: bottom;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003233}}
 th,
 td {
   padding: 8px;
   vertical-align: top;
-  border-top: 1px solid #b3b3b3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003245}}
 caption + thead tr:first-child th,
 caption + thead tr:first-child td,
 colgroup + thead tr:first-child th,
@@ -664,26 +578,21 @@ thead:first-child tr:first-child td {
   border-top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003250}}
 tbody + tbody {
   border-top: 2px solid #b3b3b3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003254}}
 tr.odd {
   background-color: #c4f1ff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003255}}
 tr.even {
   background-color: transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003261}}
 .clearfix {
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/\.rvm\/gems\/ruby-2\.2\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
 .clearfix:after {
   content: "\0020";
   display: block;
@@ -693,13 +602,11 @@ tr.even {
   visibility: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003265}}
 .intro {
   font-size: 1.55556em;
   line-height: 1.28571em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003269}}
 .inline-block {
   display: -moz-inline-stack;
   display: inline-block;
@@ -709,17 +616,14 @@ tr.even {
   *display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003273}}
 .float--left {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/base\/_elements\.scss}line{font-family:\00003276}}
 .float--right {
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/components\/_image\.scss}line{font-family:\0000310}}
 .image-frame > img,
 .image-frame > a > img {
   -webkit-box-sizing: border-box;
@@ -732,13 +636,11 @@ tr.even {
   background-color: #edfbff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/components\/_image\.scss}line{font-family:\0000320}}
 .image-left {
   float: left;
   margin: 0 30px 0.33333em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmccormick\/Sites\/2016drupalcampcoloradoorg\/profiles\/dcco\/themes\/dcco2016\/sass\/components\/_image\.scss}line{font-family:\0000325}}
 .image-right {
   float: right;
   margin: 0 0 0.33333em 30px;

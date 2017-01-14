@@ -9,15 +9,19 @@
 // Set the page width.
 .l--constrained {
   margin: 0 auto;
-  max-width: 94%;
   padding: 0 $w-gutter-half;
-  width: $w-full;
+  width: 100%;
+
+  @include breakpoint($mobile) {
+    max-width: 94%;
+    width: $w-full;
+  }
 }
 
 body {
-  @include background(image-url("splash/background-splash.jpg", false, false) 50% 50% fixed);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  @include background(image-url("splash/background-splash-mobile.jpg", false, false) 60% 60% fixed);
+
+  @include breakpoint($mobile) {
+    @include background(image-url("splash/background-splash.jpg", false, false) 60% 60% fixed);
+  }
 }
